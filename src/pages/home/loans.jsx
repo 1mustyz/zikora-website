@@ -10,7 +10,7 @@ import loanPic3 from '../../images/loan-image3.png'
 
 const LoansEmpower = () => {
   return (
-    <Box className='h-full pb-28 width-full pt-20 flex border-1 flex-col items-center'
+    <Box className='h-full pb-28 width-full pt-20 flex flex-col items-center'
       sx={{backgroundImage: `url(${loanPic3})`,
       backgroundRepeat: 'no-repeat',
       backgroundPositionX: 'right', 

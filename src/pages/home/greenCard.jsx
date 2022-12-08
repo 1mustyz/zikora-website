@@ -17,7 +17,9 @@ const GreenCard = () => {
         </Typography>
         <Typography  sx={{
             fontSize: '1.78rem',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            color: '#404040'
+
         }}>
             Zikora Green Card
         </Typography>
