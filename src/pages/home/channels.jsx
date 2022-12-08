@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Typography, Grid} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import Button from '../../components/button';
 import greenCardPic from '../../images/green-card.png'
 import channelsPic1 from '../../images/channels-image1.png'
@@ -12,7 +12,7 @@ import channelsPic3 from '../../images/channels-image3.png'
 const Channels = () => {
   return (
     <Box className='h-full width-full pt-20 flex flex-col items-center'
-   
+    sx={{backgroundColor: '#F7F7F7'}}
     >
         <Typography sx={{color: '#5E5E5E'}}>
             Our Banking Channels
