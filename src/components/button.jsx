@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Button from '@mui/material/Button';
 const button = ({title, style}) => {
   return (
-    <button style={{...style}}>{title}</button>
+    <Button sx={{...style}}>{title}</Button>
   )
 }
 
