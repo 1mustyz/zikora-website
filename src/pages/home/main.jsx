@@ -1,21 +1,9 @@
 import React from 'react'
 import Header from '../../components/header'
 import Button from '../../components/button'
-import mainPhoto from '../../images/My project 3jj(2).png'
 import homeMainBg from '../../images/home-main-bg.png'
 import homeMainFrame from '../../images/image 1.png'
-import homeMainFrame266 from '../../images/Frame 266.png'
-import homeMainVector336 from '../../images/Vector 336.png'
-import homeMainVector from '../../images/Vector.png'
-import {FaWallet} from 'react-icons/fa'
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-
-
-
-
-
-
 
 
 const HomeMain = () => {
@@ -73,7 +61,7 @@ const HomeMain = () => {
             </div>
 
             {/* right  */}
-            <div className='mt-10  rounded w-5/12 sm:w-full ' >
+            <div className='mt-10 sm:mb-20 rounded w-5/12 sm:w-full ' >
                 <img className='' src={homeMainFrame} alt="main image" />
             </div>
 
