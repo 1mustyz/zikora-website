@@ -4,6 +4,7 @@ import GreenCard from './greenCard'
 import LoansEmpower from './loans'
 import Channels from './channels'
 import Account from './accounts'
+import DownloadApp from './downloadApp'
 
 const IndexHome = () => {
   return (
@@ -13,6 +14,7 @@ const IndexHome = () => {
         <LoansEmpower />
         <Channels />
         <Account />
+        <DownloadApp />
 
     </div>
   )
