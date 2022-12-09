@@ -5,6 +5,7 @@ import LoansEmpower from './loans'
 import Channels from './channels'
 import Account from './accounts'
 import DownloadApp from './downloadApp'
+import Footer from '../../components/footer'
 
 const IndexHome = () => {
   return (
@@ -15,7 +16,7 @@ const IndexHome = () => {
         <Channels />
         <Account />
         <DownloadApp />
-
+        <Footer />
     </div>
   )
 }
