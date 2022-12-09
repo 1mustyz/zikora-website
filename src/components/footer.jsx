@@ -17,7 +17,6 @@ import footerBottomImage1 from '../images/footer-bottom-image1.png'
 const Footer = () => {
   return (
     <Box sx={{
-        marginBottom: '2rem',
         backgroundImage: `url(${footerBottomImage1})`,
         backgroundRepeat: 'no-repeat',
         backgroundPositionX: 'right', 
