@@ -15,21 +15,28 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "contacts",
-        element: <h1>contacts</h1>,
-      },
-    ]
+    // children: [
+    //   {
+    //     path: "/contacts",
+    //     element: <h1>contacts</h1>,
+    //   },
+    // ]
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//      <RouterProvider router={router} />
+//   </React.StrictMode>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
