@@ -1,8 +1,6 @@
-import logo from './logo.svg';
-import { Outlet } from "react-router-dom";
 import './App.css';
-import HomeMain from './pages/home/main';
 import IndexHome from './pages/home';
+import IndexAbout from './pages/about'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import IndexContact from './pages/contact';
 import React from 'react'
@@ -15,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path='/' index element={<IndexHome />}/>
           <Route path='contact' element={<IndexContact /> }/>
+          <Route path='about' element={<IndexAbout /> }/>
           
         </Routes>
       </div>
