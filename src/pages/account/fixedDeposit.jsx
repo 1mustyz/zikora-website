@@ -3,7 +3,6 @@ import {Box, Typography} from '@mui/material';
 import Button from '../../components/button';
 import loanPic1 from '../../images/loan-image1.png'
 import fixedBgPic from '../../images/account-image2.png'
-import Divider from '../../components/divider';
 
 const FixedDeposit = () => {
   return (
