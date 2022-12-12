@@ -4,6 +4,7 @@ import IndexAbout from './pages/about'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import IndexContact from './pages/contact';
 import IndexLoans from './pages/loans'
+import IndexAccount from './pages/account'
 import React from 'react'
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
           <Route path='contact' element={<IndexContact /> }/>
           <Route path='about' element={<IndexAbout /> }/>
           <Route path='loans' element={<IndexLoans /> }/>
-
+          <Route path='account' element={<IndexAccount /> }/>
           
         </Routes>
       </div>
