@@ -4,9 +4,23 @@ import  Button from './button'
 import Divider from './divider'
 import {IoIosArrowDown} from 'react-icons/io'
 import {RxHamburgerMenu} from 'react-icons/rx'
-import Box from '@mui/material/Box';
+import {Box, Menu, MenuItem} from '@mui/material';
+import { NavLink } from "react-router-dom";
+
 
 const Header = () => {
+ 
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+ 
+  
   return (
     <>
     <Box sx={{
@@ -24,18 +38,33 @@ const Header = () => {
 
       },
     }}>
+      <NavLink to='/'>
         <img className='sm:w-10' src={zikoraImg} alt="" />
+      </NavLink>
 
         <Box sx={{ '@media (max-width: 639px)': {
               display: 'none'
     
     
           },}}className='flex space-x-10 ml-20 '>
-            <div className='flex space-x-2 items-center'><p>Channels</p><Icon /></div>
-            <div className='flex space-x-2 items-center'><p>Loans</p><Icon /></div>
-            <div className='flex space-x-2 items-center'><p>Accounts</p><Icon /></div>
-            <p>About</p>
-            <p>Contacts</p>
+            <div className='flex space-x-2 items-center'><NavLink to='#'>Channels</NavLink><Icon /></div>
+            <div className='flex space-x-2 items-center'><NavLink to='/loans/'>Loans</NavLink><Icon /></div>
+            <div className='flex space-x-2 items-center'><NavLink onClick={handleClick}>Accounts</NavLink><Icon /></div>
+            <NavLink to='/about/'>About</NavLink>
+            <NavLink  to='/contact'>Contacts</NavLink>
+            
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+            >
+              <MenuItem onClick={handleClose}><NavLink to='/sub-account/'>Savings Account</NavLink></MenuItem>
+              
+            </Menu>
             
         </Box>
         <Button title='Join Now' style={{
