@@ -4,6 +4,11 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import CurrentAccount from './currentAccount';
+import Footer from '../../components/footer'
+import BankingAccount from './bankingAccount';
+import ZikoraSalary from './zikoraSalary';
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -17,7 +22,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{}}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -47,22 +52,37 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+      <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" variant='fullWidth' 
+          TabIndicatorProps={{
+            style: {
+              backgroundColor: "#608E75",
+              textTransform: 'none',
+            }
+          }}
+          sx={{
+          paddingLeft: '6rem',
+          paddingRight: '6rem',
+          textTransform: 'none',
+          }}>
+
+          <Tab label="Zikora Personal"  {...a11yProps(0)} />
+          <Tab label="Zikora Business Banking"  {...a11yProps(1)} />
+          <Tab label="Zikora Salary" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        <CurrentAccount />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+       <BankingAccount />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <ZikoraSalary />
       </TabPanel>
+      <Box sx={{marginTop: '8rem'}}>
+        <Footer />
+      </Box>
     </Box>
   );
 }
