@@ -11,12 +11,26 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
  
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openAccount, setOpenAccount] = React.useState(false)
+  const [openChannels, setOpenChannels] = React.useState(false)
+
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    setOpenAccount(true)
   };
+  const handleClickChannel = (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpenChannels(true)
+  };
+
   const handleClose = () => {
     setAnchorEl(null);
+    setOpenAccount(false)
+  };
+  const handleCloseChannel = () => {
+    setAnchorEl(null);
+    setOpenChannels(false)
   };
 
  
@@ -47,13 +61,13 @@ const Header = () => {
     
     
           },}}className='flex space-x-10 ml-20 '>
-            <div className='flex space-x-2 items-center'><NavLink to='#'>Channels</NavLink><Icon /></div>
+            <div className='flex space-x-2 items-center'><NavLink onClick={handleClickChannel}>Channels</NavLink><Icon /></div>
             <div className='flex space-x-2 items-center'><NavLink to='/loans/'>Loans</NavLink><Icon /></div>
             <div className='flex space-x-2 items-center'><NavLink onClick={handleClick}>Accounts</NavLink><Icon /></div>
             <NavLink to='/about/'>About</NavLink>
             <NavLink  to='/contact'>Contacts</NavLink>
             
-            <Menu
+            {openAccount && <Menu
               id="basic-menu"
               anchorEl={anchorEl}
               open={open}
@@ -64,7 +78,20 @@ const Header = () => {
             >
               <MenuItem onClick={handleClose}><NavLink to='/sub-account/'>Savings Account</NavLink></MenuItem>
               
-            </Menu>
+            </Menu> }
+
+            {openChannels && <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleCloseChannel}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+            >
+              <MenuItem onClick={handleCloseChannel}><NavLink to='/main-channels'>Banking Channel</NavLink></MenuItem>
+              
+            </Menu> }
             
         </Box>
         <Button title='Join Now' style={{
