@@ -10,6 +10,7 @@ import IndexMainChannels from './pages/channels/mainChannels'
 import IndexMobileBankingChannels from './pages/channels/mobileBanking'
 import IndexAgencyBankingChannels from './pages/channels/agencyBanking'
 import IndexUssdBankingChannels from './pages/channels/ussdBanking'
+import IndexPolicy from './pages/privacy/policy'
 
 
 import React from 'react'
@@ -30,6 +31,7 @@ const App = () => {
           <Route path='mobile-banking' element={<IndexMobileBankingChannels /> }/>
           <Route path='agency-banking' element={<IndexAgencyBankingChannels /> }/>
           <Route path='ussd-banking' element={<IndexUssdBankingChannels /> }/>
+          <Route path='privacy-policy' element={<IndexPolicy /> }/>
           
         </Routes>
       </div>
