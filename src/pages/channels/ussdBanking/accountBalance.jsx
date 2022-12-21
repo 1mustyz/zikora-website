@@ -1,15 +1,16 @@
 import React from 'react'
 import {Box, Typography, } from '@mui/material';
-import ussdBankingPic1 from '../../../images/ussd-banking-call.png'
-import ussdBankingPic2 from '../../../images/ussd-banking-smartphone.png'
-import mobileBankingPic3 from '../../../images/ussd-banking-celebrating 1.png'
+import ussdBankingPic1 from '../../../images/channels-image1.png'
+import ussdBankingPic2 from '../../../images/channels-image3.png'
 import mobileBankingPic4 from '../../../images/ussd-banking-dial-pad.png'
-import mobileBankingPic5 from '../../../images/ussd-banking-password 1.png'
+import mobileBankingPic5 from '../../../images/ussd-banking-accounting.png'
 
 import {MdOutlineArrowForward} from 'react-icons/md'
 
 
-const ActivateUssd = () => {
+
+
+const AccountBalance = () => {
   return (
     <Box className='h-full width-full pt-[7rem] mb-[6rem] flex flex-col items-center' >
         <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
@@ -21,7 +22,7 @@ const ActivateUssd = () => {
             color: '#404040'
 
         }}>
-             Activate USSD Banking
+             Check account balance
         </Typography>
 
         {/* board of directors */}
@@ -34,13 +35,11 @@ const ActivateUssd = () => {
             alignItems: 'center',
             marginTop: '4rem',
         }}>
-            <PreImageAndText pic={mobileBankingPic4} title="Dial *614*677#"/>
+            <PreImageAndText pic={mobileBankingPic4} title="Dial *614*677*0#"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={mobileBankingPic5} title="Set password"/>
-            <VerticalDivider />
-
-            <PreImageAndText pic={mobileBankingPic3} title="Ready to use..." />
+            <PreImageAndText pic={mobileBankingPic5} title="See balance"/>
+            
 
 
         </Box>
@@ -50,7 +49,7 @@ const ActivateUssd = () => {
         
           <Box className='w-[40%] h-[100%] flex flex-col justify-center pl-[2rem] bg-[#F7F7F7] rounded-tl-[1rem] rounded-bl-[1rem]'>
             <p className='text-[#5E5E5E] text-[16px]'>How to</p>
-            <p className='text-[#404040] text-[28px]'>Purchase Airtime</p>
+            <p className='text-[#404040] text-[28px]'>Transfer Money</p>
           </Box>
 
           <Box className=' w-[30%] h-[100%] flex flex-col gap-[2rem] pt-[2rem] pl-[2rem] bg-[#E8ECE3]'
@@ -61,11 +60,11 @@ const ActivateUssd = () => {
               backgroundPositionY: 'bottom'
             }}
           >
-            <p className='text-[18px] text-[#404040]'>For you</p>
+            <p className='text-[18px] text-[#404040]'>To Zikora Account</p>
             <Box className='flex flex-col gap-[1rem]'>
-              <TextAndArrow text="Dial *614*677* Amount# (e.g: *614*100#)" arrowColor="#CCCCCC" textColor="#404040"/>
-              <TextAndArrow text="Wait for the success message" arrowColor="#CCCCCC" textColor="#404040"/>
-              <TextAndArrow text="Start making call" arrowColor="#CCCCCC" textColor="#404040"/>
+              <TextAndArrow text="Dial *614*677* Amount# Account number# (e.g: *614*677*1000* 1232345#) " arrowColor="#CCCCCC" textColor="#404040"/>
+              <TextAndArrow text="Authanticate with 4 digit" arrowColor="#CCCCCC" textColor="#404040"/>
+              <TextAndArrow text="Create security code using menu option" arrowColor="#CCCCCC" textColor="#404040"/>
 
             </Box>
             
@@ -79,11 +78,11 @@ const ActivateUssd = () => {
               backgroundPositionY: 'bottom'
             }}
           >
-            <p className='text-[#FFFFFF]'>To Others Number</p>
+            <p className='text-[#FFFFFF]'>To Others Bank</p>
             <Box className='flex flex-col gap-[1rem]'>
-              <TextAndArrow text="Dial *614*677* Amount* Phone Number #" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
-              <TextAndArrow text="Wait for the success message" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
-              <TextAndArrow text="Enjoy" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
+              <TextAndArrow text="Dial *614*677* Amount* Account number # (e.g: *614*677*1000* 1234512345#)" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
+              <TextAndArrow text="Authanticate with 4 digit" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
+              <TextAndArrow text="Create security code using menu option" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
 
             </Box>
             
@@ -143,7 +142,7 @@ const PreImageAndText = ({pic, title, post}) => {
 
 const TextAndArrow = ({text, arrowColor, textColor}) => {
   return (
-    <div className='flex flex-row w-[75%] gap-[0.5rem]' >
+    <div className='flex flex-row w-[75%] gap-[0.5rem] ' >
       <MdOutlineArrowForward className={`mt-[8px] text-[${arrowColor}]`}/>
       <p className={`text-[16px] text-[${textColor}] leading-[30px]`}>{text}</p>
 
@@ -151,4 +150,4 @@ const TextAndArrow = ({text, arrowColor, textColor}) => {
   )
 }
 
-export default ActivateUssd
+export default AccountBalance
