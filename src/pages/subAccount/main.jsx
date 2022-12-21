@@ -40,7 +40,7 @@ const Main = () => {
               }}>
 
                 <Typography  sx={{                                                                                                                                                           
-                    fontSize: '40px ',
+                    fontSize: '38px ',
                     fontWeight: 'bold',
                     color: '#404040'
 
@@ -48,7 +48,7 @@ const Main = () => {
                     Current Accounts
                 </Typography>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '18px', marginTop: '0.8rem'}}>                                                                                                                                                                         
+                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>                                                                                                                                                                         
                     We provide different current accounts to give you access to overdraft facilities and customer finance for urgent business needs. 
                 </Typography>
               </Box>

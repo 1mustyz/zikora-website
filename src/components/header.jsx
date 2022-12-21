@@ -42,7 +42,7 @@ const Header = () => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        fontSize: '18px',
+        fontSize: '16px',
         fontFamily: 'Circular Std',
         marginBottom: '2rem',
         '@media (max-width: 639px)': {
@@ -92,6 +92,7 @@ const Header = () => {
               <MenuItem onClick={handleCloseChannel}><NavLink to='/main-channels'>Banking Channel</NavLink></MenuItem>
               <MenuItem onClick={handleCloseChannel}><NavLink to='/mobile-banking'>Mobile Banking</NavLink></MenuItem>
               <MenuItem onClick={handleCloseChannel}><NavLink to='/agency-banking'>Agency Banking</NavLink></MenuItem>
+              <MenuItem onClick={handleCloseChannel}><NavLink to='/ussd-banking'>USSD Banking</NavLink></MenuItem>
               
             </Menu> }
             
@@ -129,7 +130,7 @@ export default Header
 const Icon = () => {
   return (
     <div style={{
-        fontSize: '12px'
+        fontSize: '10px'
     }}><IoIosArrowDown /></div>
   )
 }

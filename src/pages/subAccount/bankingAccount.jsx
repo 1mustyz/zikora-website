@@ -31,14 +31,14 @@ const BankingAccount = () => {
             
             }}>
             <Typography sx={{
-                fontSize: '36px',
+                fontSize: '34px',
                 fontWeight: 'bold',
                 color: '#404040'
             }} >
                 Zikora Business Banking
             </Typography>
 
-            <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+            <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
             Whether you are starting a business or have an operational business that is ready to expand, Zikora has a team of financial advisors and banking tools to help you achieve your goals.
             </Typography>
 
@@ -66,7 +66,7 @@ const GreenCard = () => {
               Lorem ipsum
           </Typography>
           <Typography  sx={{
-              fontSize: '1.78rem',
+              fontSize: '1.58rem',
               fontWeight: 'bold',
               color: '#404040'
   
@@ -95,7 +95,7 @@ const GreenCard = () => {
                 color: 'white'
                 }}>
                 <Typography sx={{
-                  fontSize: '36px',
+                  fontSize: '34px',
                   fontWeight: 'bold'
                 }} >
                     Requirements.

@@ -28,18 +28,18 @@ const Mission = () => {
          
           }}>
           <Typography sx={{
-            fontSize: '35px',
+            fontSize: '33px',
             fontWeight: 'bold',
             color: '#404040'
           }} >
               Our Mission & Vission
           </Typography>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
               To provide digital platform designed to modernize the banking and business orientation of an expanding customer base.
           </Typography>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
               To be a Catalyst to the human and economic development of communities by providing financial solutions tailored to there need.
           </Typography>
          

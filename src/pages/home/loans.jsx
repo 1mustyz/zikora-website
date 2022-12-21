@@ -49,14 +49,14 @@ const LoansEmpower = () => {
                  
                   }}>
                   <Typography sx={{
-                    fontSize: '35px',
+                    fontSize: '33px',
                     fontWeight: 'bold',
                     color: '#404040'
                   }} >
                       Loans-that Empower
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                       As a business owner or salary earner, we provide loans that will surely cater to your cash needs. Apply now to get the financial backing you have been waiting for.
                   </Typography>
 
@@ -70,14 +70,14 @@ const LoansEmpower = () => {
                             textTransform: 'none',
                             marginTop: '4rem',
                             width: '40%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             "&:hover": {
                               border:"1px solid #564345",
                    
                             },
                             '@media (max-width: 639px)': {
                                 with: '100%',
-                                fontSize: '16px',
+                                fontSize: '14px',
                                 padding: '5% 28%',
 
                             },
@@ -100,7 +100,7 @@ const LoansEmpower = () => {
                  
                   }}>
                   <Typography sx={{
-                    fontSize: '35px',
+                    fontSize: '33px',
                     fontWeight: 'bold',
                     width: '60% ',
                     color: '#404040'
@@ -108,7 +108,7 @@ const LoansEmpower = () => {
                       World Class Customer Support
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                       Zikora is customer-centric. We have put together a strong team to provide support and guidance to all of our users
                   </Typography>
 
@@ -122,14 +122,14 @@ const LoansEmpower = () => {
                             textTransform: 'none',
                             marginTop: '4rem',
                             width: '40%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             "&:hover": {
                               border:"1px solid #564345",
                    
                             },
                             '@media (max-width: 639px)': {
                                 with: '100%',
-                                fontSize: '16px',
+                                fontSize: '14px',
                                 padding: '5% 28%',
 
                             },

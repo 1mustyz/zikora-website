@@ -31,14 +31,14 @@ const CuurentAccount = () => {
             
             }}>
             <Typography sx={{
-                fontSize: '36px',
+                fontSize: '34px',
                 fontWeight: 'bold',
                 color: '#404040'
             }} >
                 Zikora Personal
             </Typography>
 
-            <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+            <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                 Break down all your banking needs with a simple readily accesible account that gives you access to unlimited withdrawals, unlimited deposits and easy spending capabilities.
             </Typography>
 
@@ -69,7 +69,7 @@ const GreenCard = () => {
               Lorem ipsum
           </Typography>
           <Typography  sx={{
-              fontSize: '1.78rem',
+              fontSize: '1.58rem',
               fontWeight: 'bold',
               color: '#404040'
   
@@ -98,7 +98,7 @@ const GreenCard = () => {
                 color: 'white'
                 }}>
                 <Typography sx={{
-                  fontSize: '36px',
+                  fontSize: '34px',
                   fontWeight: 'bold'
                 }} >
                     Requirements.

@@ -28,7 +28,7 @@ const CompleteBanking = () => {
          
           }}>
           <Typography sx={{
-            fontSize: '35px',
+            fontSize: '33px',
             fontWeight: 'bold',
             color: '#404040',
             width: '70%'
@@ -36,7 +36,7 @@ const CompleteBanking = () => {
               Complete banking solution with Zikora App
           </Typography>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
             Our Digital Banking tools are modern and powerful; giving users the power to bank from anywhere at anytime. USSD, Mobile Apps and Internet banking utilize high level AI tools and features to provide the best service to our valued customers.
           </Typography>
                    

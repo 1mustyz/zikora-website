@@ -30,14 +30,14 @@ const ZikoraSalary = () => {
             
             }}>
             <Typography sx={{
-                fontSize: '36px',
+                fontSize: '34px',
                 fontWeight: 'bold',
                 color: '#404040'
             }} >
                 Zikora Salary
             </Typography>
 
-            <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+            <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
             We provide accounts with unlimited access to our banking facilities tailored to employees.
             </Typography>
 
@@ -65,7 +65,7 @@ const GreenCard = () => {
               Lorem ipsum
           </Typography>
           <Typography  sx={{
-              fontSize: '1.78rem',
+              fontSize: '1.58rem',
               fontWeight: 'bold',
               color: '#404040'
   
@@ -94,7 +94,7 @@ const GreenCard = () => {
                 color: 'white'
                 }}>
                 <Typography sx={{
-                  fontSize: '36px',
+                  fontSize: '34px',
                   fontWeight: 'bold'
                 }} >
                     Requirements.

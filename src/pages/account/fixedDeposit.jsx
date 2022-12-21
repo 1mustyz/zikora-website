@@ -36,14 +36,14 @@ const FixedDeposit = () => {
          
           }}>
           <Typography sx={{
-            fontSize: '35px',
+            fontSize: '33px',
             fontWeight: 'bold',
             color: '#404040'
           }} >
               Fixed Deposit Accounts
           </Typography>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
               it all begins with an idea. Maybe you want to launch a business. Maybe you want to turn an hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
           </Typography>
 
@@ -57,14 +57,14 @@ const FixedDeposit = () => {
                     textTransform: 'none',
                     marginTop: '4rem',
                     width: '30%',
-                    fontSize: '16px',
+                    fontSize: '14px',
                     "&:hover": {
                       border:"1px solid #564345",
            
                     },
                     '@media (max-width: 639px)': {
                         with: '100%',
-                        fontSize: '16px',
+                        fontSize: '14px',
                         padding: '5% 28%',
 
                     },

@@ -16,7 +16,7 @@ const GreenCard = () => {
           Lorem ipsum
         </Typography>
         <Typography  sx={{
-            fontSize: '1.78rem',
+            fontSize: '1.58rem',
             fontWeight: 'bold',
             color: '#404040'
 
@@ -45,13 +45,13 @@ const GreenCard = () => {
               color: 'white'
               }}>
               <Typography sx={{
-                fontSize: '36px',
+                fontSize: '34px',
                 fontWeight: 'bold'
               }} >
                   USSD Banking
               </Typography>
 
-              <Typography  sx={{marginTop: '1rem', fontSize: '18px'}}>
+              <Typography  sx={{marginTop: '1rem', fontSize: '16px'}}>
                 You don’t a smartphone to make transactions.Just dial 614*677# to buy Airtime, Transfer Funds, Pay Bills, Check your Account Balance, and More.
               </Typography>
 
@@ -64,10 +64,10 @@ const GreenCard = () => {
                         textTransform: 'none',
                         marginTop: '4rem',
                         width: '70%',
-                        fontSize: '16px',
+                        fontSize: '14px',
                         '@media (max-width: 639px)': {
                             with: '100%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             padding: '5% 28%',
 
                         },

@@ -40,7 +40,7 @@ const Main = () => {
               }}>
 
                 <Typography  sx={{                                                                                                                                                           
-                    fontSize: '40px ',
+                    fontSize: '38px ',
                     fontWeight: 'bold',
                     color: '#404040'
 
@@ -48,7 +48,7 @@ const Main = () => {
                     Agency Banking
                 </Typography>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '18px', marginTop: '0.8rem'}}>                                                                                                                                                                         
+                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>                                                                                                                                                                         
                     Zikora mobile App is available from the Google Play Store and Apple Store. 
                 </Typography>
               </Box>

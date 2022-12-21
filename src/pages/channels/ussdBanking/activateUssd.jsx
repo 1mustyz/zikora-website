@@ -2,27 +2,28 @@ import React from 'react'
 import {Box, Typography, } from '@mui/material';
 import mobileBankingPic1 from '../../../images/mobile-banking-channels-bill.png'
 import mobileBankingPic2 from '../../../images/mobile-banking-channels-finance 1.png'
-import mobileBankingPic3 from '../../../images/mobile-banking-channels-transfer.png'
-import mobileBankingPic4 from '../../../images/mobile-banking-channels-wallet.png'
-import mobileBankingPic5 from '../../../images/mobile-banking-channnels-bank-statement.png'
+import mobileBankingPic3 from '../../../images/ussd-banking-celebrating 1.png'
+import mobileBankingPic4 from '../../../images/ussd-banking-dial-pad.png'
+import mobileBankingPic5 from '../../../images/ussd-banking-password 1.png'
+
 
 
 import Divider from '@mui/material/Divider'
 
 
-const Offers = () => {
+const ActivateUssd = () => {
   return (
     <Box className='h-full width-full pt-[7rem] mb-[6rem] flex flex-col items-center' >
+        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
+          How to
+        </Typography>
         <Typography  sx={{
             fontSize: '34px',
             fontWeight: 'bold',
             color: '#404040'
 
         }}>
-            What you can do
-        </Typography>
-        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
-          The app offers all the features of the mobile browser service
+             Activate USSD Banking
         </Typography>
 
         {/* board of directors */}
@@ -35,36 +36,22 @@ const Offers = () => {
             alignItems: 'center',
             marginTop: '4rem',
         }}>
-            <PreImageAndText pic={mobileBankingPic4} title="Check your account" post="balance"/>
+            <PreImageAndText pic={mobileBankingPic4} title="Dial *614*677#"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={mobileBankingPic5} title="Review recent account" post="activity"/>
+            <PreImageAndText pic={mobileBankingPic5} title="Set password"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={mobileBankingPic3} title="Transfer money between" post="accounts"/>
+            <PreImageAndText pic={mobileBankingPic3} title="Ready to use..." />
 
 
         </Box>
 
         {/* Team members */}
-        <Box className='flex flex-col items-center mt-[4rem] pb-[6rem]'>
+        <Box className='flex flex-col items-center border-1 mt-[4rem] pb-[6rem]'>
         
 
-        {/* board of directors */}
-        <Box sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'center',
-            gap: '5rem',
-            alignItems: 'center',
-            marginTop: '4rem'
-        }}>
-            <PreImageAndText pic={mobileBankingPic2} title="Airtime" post="vending"/>
-            <VerticalDivider />
-            <PreImageAndText pic={mobileBankingPic1} title="Manage & make bill" post="payments"/>
 
-        </Box>
         </Box>
         <Divider className="w-[90vw]"/>
 
@@ -115,4 +102,4 @@ const PreImageAndText = ({pic, title, post}) => {
     }}>{children}</Box>
   )
 }
-export default Offers
+export default ActivateUssd

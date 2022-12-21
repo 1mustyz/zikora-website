@@ -16,7 +16,7 @@ const ShowCase = () => {
             Lorem ipsum
         </Typography>
         <Typography  sx={{
-            fontSize: '1.78rem',
+            fontSize: '1.58rem',
             fontWeight: 'bold',
             color: '#404040'
 
@@ -46,14 +46,14 @@ const ShowCase = () => {
               color: 'white',
               }}>
               <Typography sx={{
-                fontSize: '30px',
+                fontSize: '28px',
                 fontWeight: 'bold',
                 fontStyle: 'italic'
               }} >
                   "Zikora was created to show people the possibilities of forward thinking banking..."
               </Typography>
 
-              <Typography  sx={{marginTop: '2rem', fontSize: '18px'}}>
+              <Typography  sx={{marginTop: '2rem', fontSize: '16px'}}>
                   - Bernadine Okeke
               </Typography>
 

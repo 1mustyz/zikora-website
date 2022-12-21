@@ -40,7 +40,7 @@ const Main = () => {
               }}>
 
                 <Typography  sx={{
-                    fontSize: '40px ',
+                    fontSize: '38px ',
                     fontWeight: 'bold',
                     color: '#404040'
 
@@ -48,7 +48,7 @@ const Main = () => {
                     Zikora Bank Loans
                 </Typography>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '18px', marginTop: '0.8rem'}}>
+                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>
                     Lorem ipsum dummy text are used on there so replace some.
                 </Typography>
               </Box>

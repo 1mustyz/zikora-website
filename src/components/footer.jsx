@@ -34,7 +34,7 @@ const Footer = () => {
             To get the updates
             </Typography>
             <Typography  sx={{
-                fontSize: '1.78rem',
+                fontSize: '1.58rem',
                 fontWeight: 'bold',
                 color: '#404040'
 
@@ -70,7 +70,7 @@ const Footer = () => {
                     color: 'white',
                     textTransform: 'none',
                     boxShahadow: `5px 10px #888888`,
-                    fontSize: '18px'
+                    fontSize: '16px'
                    
                 }}/>
             </Box>
@@ -99,7 +99,7 @@ const Footer = () => {
                         display: 'flex', 
                         flexDirection: 'row', 
                         gap: '1rem', 
-                        fontSize: '20px',
+                        fontSize: '18px',
                         marginTop: '2rem'
                         
                         }}>
@@ -169,7 +169,7 @@ const Footer = () => {
                 margin: 'auto', 
                 marginTop:'2rem', 
                 color:'#BDBDBD',
-                fontSize: '18px'
+                fontSize: '16px'
                 }}> &copy; 2023 Zikora. All rights reserved</Typography>
 
         </Box>
@@ -181,7 +181,7 @@ const Footer = () => {
 const CustomText = ({children}) => {
   return (
     <Typography  sx={{
-        fontSize: '1.6rem',
+        fontSize: '1.4rem',
         fontWeight: 'bold',
         color: '#404040',
         marginBottom: '2rem'
@@ -195,7 +195,7 @@ const CustomText = ({children}) => {
 
 const CustomP = ({children}) => {
   return (
-    <Typography sx={{marginBottom: '1.5rem', color: '#5E5E5E', fontSize: '18px'}}>{children}</Typography>
+    <Typography sx={{marginBottom: '1.5rem', color: '#5E5E5E', fontSize: '16px'}}>{children}</Typography>
 
   )
 }

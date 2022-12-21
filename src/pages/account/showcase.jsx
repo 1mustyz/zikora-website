@@ -16,7 +16,7 @@ const ShowCase = () => {
             Lorem ipsum 
         </Typography>
         <Typography  sx={{
-            fontSize: '1.78rem',
+            fontSize: '1.58rem',
             fontWeight: 'bold',
             color: '#404040'
 
@@ -45,13 +45,13 @@ const ShowCase = () => {
               color: 'white'
               }}>
               <Typography sx={{
-                fontSize: '36px',
+                fontSize: '34px',
                 fontWeight: 'bold'
               }} >
                   Savings Accounts
               </Typography>
 
-              <Typography  sx={{marginTop: '2rem', fontSize: '18px', lineHeight: '2rem'}}>
+              <Typography  sx={{marginTop: '2rem', fontSize: '16px', lineHeight: '2rem'}}>
                   Zikora provides accounts that enables our users meet there different saving and spending criteria. Our saving options are designed to make the most of your unused cash; we make it work for you.
               </Typography>
 
@@ -64,10 +64,10 @@ const ShowCase = () => {
                         textTransform: 'none',
                         marginTop: '3rem',
                         width: '45%',
-                        fontSize: '16px',
+                        fontSize: '14px',
                         '@media (max-width: 639px)': {
                             with: '100%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             padding: '5% 28%',
 
                         },

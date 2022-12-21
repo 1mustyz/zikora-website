@@ -18,7 +18,7 @@ const Channels = () => {
             Our Banking Channels
         </Typography>
         <Typography  sx={{
-            fontSize: '1.78rem',
+            fontSize: '1.58rem',
             fontWeight: 'bold',
             color: '#404040'
         }}>
@@ -48,13 +48,13 @@ const Channels = () => {
               paddingBottom: '4rem'
               }}>
               <Typography sx={{
-                fontSize: '36px',
+                fontSize: '34px',
                 fontWeight: 'bold'
               }} >
                   Banking Channels  
               </Typography>
 
-              <Typography  sx={{marginTop: '1rem', fontSize: '17px'}}>
+              <Typography  sx={{marginTop: '1rem', fontSize: '15px'}}>
                   Extra mile to provide many ways to bank with us easier than ever. 
               </Typography>
 
@@ -67,10 +67,10 @@ const Channels = () => {
                         textTransform: 'none',
                         marginTop: '4rem',
                         width: '70%',
-                        fontSize: '16px',
+                        fontSize: '14px',
                         '@media (max-width: 639px)': {
                             with: '100%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             padding: '5% 28%',
 
                         },

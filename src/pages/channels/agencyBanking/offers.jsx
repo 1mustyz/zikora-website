@@ -19,14 +19,14 @@ const Offers = () => {
   return (
     <Box className='h-full width-full pt-[7rem] mb-[6rem] flex flex-col items-center' >
         <Typography  sx={{
-            fontSize: '36px',
+            fontSize: '34px',
             fontWeight: 'bold',
             color: '#404040'
 
         }}>
             What you can do
         </Typography>
-        <Typography sx={{color: '#5E5E5E', fontSize: '18px'}}>
+        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
           The app offers all the features of the mobile browser service
         </Typography>
 
@@ -117,8 +117,8 @@ const PreImageAndText = ({pic, title, post}) => {
     }}>
       <CustomIconns color='white'> <img src={pic} alt="" /> </CustomIconns>
 
-      <Typography sx={{fontSize: '24px',fontWeight: '500', marginTop: '3rem', color: '#404040'}}>{title}</Typography>
-      <Typography sx={{fontSize: '24px', fontWeight: '500', color: '#404040'}}>{post}</Typography>
+      <Typography sx={{fontSize: '22px',fontWeight: '500', marginTop: '3rem', color: '#404040'}}>{title}</Typography>
+      <Typography sx={{fontSize: '22px', fontWeight: '500', color: '#404040'}}>{post}</Typography>
 
     </Box>
   )

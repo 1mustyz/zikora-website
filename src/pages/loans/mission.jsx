@@ -28,14 +28,14 @@ const Mission = () => {
          
           }}>
           <Typography sx={{
-            fontSize: '36px',
+            fontSize: '34px',
             fontWeight: 'bold',
             color: '#404040'
           }} >
               Replace heading here
           </Typography>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '18px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <Typography  sx={{marginTop: '2rem', fontSize: '16px', color:'#5E5E5E', lineHeight: '180%'}}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non rem pariatur sit libero assumenda quidem quod vero, dolor incidunt dolores doloribus hic exercitationem tempora placeat deserunt dolore harum fugiat.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non rem pariatur sit libero assumenda quidem quod vero, dolor incidunt dolores doloribus hic exercitationem tempora placeat deserunt dolore harum fugiat.
           </Typography>

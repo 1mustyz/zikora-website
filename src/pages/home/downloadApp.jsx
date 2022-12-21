@@ -34,7 +34,7 @@ const DownloadApp = () => {
                 
                 }}>
                 <Typography sx={{
-                fontSize: '35px',
+                fontSize: '33px',
                 fontWeight: 'bold',
                 width: '60% ',
                 color: '#404040'
@@ -42,7 +42,7 @@ const DownloadApp = () => {
                     Download our apps
                 </Typography>
 
-                <Typography  sx={{ fontSize: '18px', color:'#5E5E5E', lineHeight: '180%', width: '70%'}}>
+                <Typography  sx={{ fontSize: '16px', color:'#5E5E5E', lineHeight: '180%', width: '70%'}}>
                     We make your banking more easy in your hand with our supper apps! Try these now!
                 </Typography>
 
@@ -100,7 +100,7 @@ function CustomButton({children,color}) {
         color: 'white',
         fontWeight: 'bold',
         textTransform: 'none',
-        fontSize: '22px',
+        fontSize: '20px',
         width: '12rem',
         backgroundColor: color != undefined ? 'white':'#404040',
         "&:hover": {

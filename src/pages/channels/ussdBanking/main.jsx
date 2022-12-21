@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../../components/header'
-import contactMainPic from '../../images/contact-main-image1.png'
-import aboutPic1 from '../../images/about-image1.png'
-import CustomIconns from '../../components/customIconns'
+import Header from '../../../components/header'
+import contactMainPic from '../../../images/contact-main-image1.png'
+import ussdBankingPic1 from '../../../images/ussd-banking-dial-pad.png'
+import CustomIconns from '../../../components/customIconns'
 
 import {Box, Typography} from '@mui/material';
 
@@ -29,7 +29,7 @@ const Main = () => {
               marginTop: '6rem'
 
             }}>
-              <CustomIconns color='white'> <img src={aboutPic1} alt="" /> </CustomIconns>
+              <CustomIconns color='white'> <img src={ussdBankingPic1} alt="" /> </CustomIconns>
 
               <Box sx={{
                 display: 'flex',
@@ -39,17 +39,17 @@ const Main = () => {
 
               }}>
 
-                <Typography  sx={{
+                <Typography  sx={{                                                                                                                                                           
                     fontSize: '38px ',
                     fontWeight: 'bold',
                     color: '#404040'
 
                 }}>
-                    About Zikora Bank
+                    USSD Banking
                 </Typography>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>
-                    Zikora is a people-first bank, serving communities in Nigeria by providing access to reliable digital banking services.
+                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>                                                                                                                                                                         
+                *614*617# Banking made easy. No internet required! 
                 </Typography>
               </Box>
             </Box>

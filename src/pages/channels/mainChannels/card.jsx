@@ -42,14 +42,14 @@ const Card = () => {
                  
                   }}>
                   <Typography sx={{
-                    fontSize: '35px',
+                    fontSize: '33px',
                     fontWeight: 'bold',
                     color: '#404040'
                   }} >
                       Internet Banking
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                     Perform all normal bank transactions from any location.Our internet banking will guide you in every step you need to achieve your aims.
                   </Typography>
 
@@ -63,14 +63,14 @@ const Card = () => {
                             textTransform: 'none',
                             marginTop: '4rem',
                             width: '40%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             "&:hover": {
                               border:"1px solid #564345",
                    
                             },
                             '@media (max-width: 639px)': {
                                 with: '100%',
-                                fontSize: '16px',
+                                fontSize: '14px',
                                 padding: '5% 28%',
 
                             },
@@ -101,7 +101,7 @@ const Card = () => {
                       ATM Cards
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                     With our Verve card, you can perform a lot of transactions both online and offline.
                   </Typography>
 
@@ -115,14 +115,14 @@ const Card = () => {
                             textTransform: 'none',
                             marginTop: '4rem',
                             width: '40%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             "&:hover": {
                               border:"1px solid #564345",
                    
                             },
                             '@media (max-width: 639px)': {
                                 with: '100%',
-                                fontSize: '16px',
+                                fontSize: '14px',
                                 padding: '5% 28%',
 
                             },

@@ -67,7 +67,7 @@ const ContactMain = () => {
               }}>
 
                 <Typography  sx={{
-                    fontSize: '40px ',
+                    fontSize: '38px ',
                     fontWeight: 'bold',
                     color: '#404040'
 
@@ -75,7 +75,7 @@ const ContactMain = () => {
                     Contact us
                 </Typography>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '18px', marginTop: '0.8rem'}}>
+                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>
                     Zikora is a people-first bank, serving communities in Nigeria
                 </Typography>
               </Box>
@@ -93,7 +93,7 @@ const ContactMain = () => {
               color: 'white',
               marginTop: '12rem'
             }}>
-              <Typography sx={{fontSize: '24px', fontWeight: 'bold'}}>Get in touch</Typography>
+              <Typography sx={{fontSize: '22px', fontWeight: 'bold'}}>Get in touch</Typography>
                 <CustomTile>
                   <MdLocationPin />
                   <>
@@ -133,7 +133,7 @@ const ContactMain = () => {
           border: '1px solid #CCCCCC'
         }}>
           <Typography sx={{
-            fontSize: '24px ',
+            fontSize: '22px ',
             fontWeight: '500',
             color: '#404040'
 
@@ -151,7 +151,7 @@ const ContactMain = () => {
             color: 'white',
             textTransform: 'none',
             width: '80%',
-            fontSize: '18px'
+            fontSize: '16px'
             
         }}/>
         </Box>
@@ -206,7 +206,7 @@ const CustomTile = ({color, children}) => {
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
-        fontSize: '18px'
+        fontSize: '16px'
       }}>
         {children[1]}
 
@@ -231,7 +231,7 @@ const CustomTextField = ({title,children, multiline}) => {
      
 
   }}>
-      <Box sx={{fontSize: '30px', color: '#CCCCCC',}}>
+      <Box sx={{fontSize: '28px', color: '#CCCCCC',}}>
         {children}
       </Box>
       <TextField id="standard-basic" multiline={multiline} rows={6} placeholder={title} variant="standard" sx={{

@@ -20,14 +20,14 @@ const Directors = () => {
     }}
     >
         <Typography  sx={{
-            fontSize: '36px',
+            fontSize: '34px',
             fontWeight: 'bold',
             color: '#404040'
 
         }}>
             Board of Directors
         </Typography>
-        <Typography sx={{color: '#5E5E5E', fontSize: '18px'}}>
+        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
             The Zikora team is dedicated in building prosperity for our users
         </Typography>
 
@@ -57,14 +57,14 @@ const Directors = () => {
         {/* Team members */}
         <Box className='flex flex-col items-center mt-[14rem] border-b-1 pb-[6rem]'>
         <Typography  sx={{
-            fontSize: '36px',
+            fontSize: '34px',
             fontWeight: 'bold',
             color: '#404040'
 
         }}>
             Team members
         </Typography>
-        <Typography sx={{color: '#5E5E5E', fontSize: '18px'}}>
+        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
             The Zikora team is to building prosperity for our users
         </Typography>
 
@@ -114,8 +114,8 @@ const PreImageAndText = ({pic, title, post}) => {
         
       </Box>
 
-      <Typography sx={{fontSize: '24px', marginTop: '3rem'}}>{title}</Typography>
-      <Typography sx={{fontSize: '16px', color: '#BDBDBD', marginTop: '0.7rem'}}>{post}</Typography>
+      <Typography sx={{fontSize: '22px', marginTop: '3rem'}}>{title}</Typography>
+      <Typography sx={{fontSize: '14px', color: '#BDBDBD', marginTop: '0.7rem'}}>{post}</Typography>
 
     </Box>
   )

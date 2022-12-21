@@ -39,14 +39,14 @@ const MobileBanking = () => {
                  
                   }}>
                   <Typography sx={{
-                    fontSize: '35px',
+                    fontSize: '33px',
                     fontWeight: 'bold',
                     color: '#404040'
                   }} >
                       Mobile Banking
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                   Our Digital Banking tools are modern and powerful; giving users the power to bank from anywhere at anytime. USSD, Mobile Apps and Internet banking utilize high level AI tools and features to provide the best service to our valued customers.
                   </Typography>
 
@@ -60,14 +60,14 @@ const MobileBanking = () => {
                             textTransform: 'none',
                             marginTop: '4rem',
                             width: '40%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             "&:hover": {
                               border:"1px solid #564345",
                    
                             },
                             '@media (max-width: 639px)': {
                                 with: '100%',
-                                fontSize: '16px',
+                                fontSize: '14px',
                                 padding: '5% 28%',
 
                             },
@@ -90,7 +90,7 @@ const MobileBanking = () => {
                  
                   }}>
                   <Typography sx={{
-                    fontSize: '35px',
+                    fontSize: '33px',
                     fontWeight: 'bold',
                     width: '60% ',
                     color: '#404040'
@@ -98,7 +98,7 @@ const MobileBanking = () => {
                       Agency Banking
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '17px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
                   Zikora Pay is always near you to help you with day-to-day financial transactions without visiting the bank.
                   </Typography>
 
@@ -112,14 +112,14 @@ const MobileBanking = () => {
                             textTransform: 'none',
                             marginTop: '4rem',
                             width: '40%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             "&:hover": {
                               border:"1px solid #564345",
                    
                             },
                             '@media (max-width: 639px)': {
                                 with: '100%',
-                                fontSize: '16px',
+                                fontSize: '14px',
                                 padding: '5% 28%',
 
                             },

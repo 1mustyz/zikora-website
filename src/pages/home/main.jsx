@@ -29,7 +29,7 @@ const HomeMain = () => {
             <div className='mt-20 sm:mt-10 w-1/2 flex flex-col h-full sm:h-96 sm:w-full ' >
                 <Box sx={{
                     '@media (max-width: 639px)': {
-                        fontSize: '42px'
+                        fontSize: '40px'
                     },
                 }} className='text-7xl  font-bold  h-5/6 flex flex-col justify-between opacity-75'>
                     <p>Stress free</p>
@@ -38,7 +38,7 @@ const HomeMain = () => {
                 </Box>
                 <Box sx={{
                     '@media (max-width: 639px)': {
-                        fontSize: '18px'
+                        fontSize: '16px'
                     },
                 }}className='mt-10 leading-1 text-xl opacity-75'>Zikora is a people-first bank, serving communities in Nigeria by providing access to reliable digital banking services.</Box>
                 <div className='mt-10 sm:w-full sm:flex sm:justify-center ' >
@@ -51,7 +51,7 @@ const HomeMain = () => {
                         textTransform: 'none',
                         '@media (max-width: 639px)': {
                             with: '100%',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             padding: '5% 28%',
 
                         },
