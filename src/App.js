@@ -7,6 +7,8 @@ import IndexLoans from './pages/loans'
 import IndexAccount from './pages/account'
 import IndexSubAccount from './pages/subAccount';
 import IndexMainChannels from './pages/channels/mainChannels'
+import IndexMobileBankingChannels from './pages/channels/mobileBanking'
+
 import React from 'react'
 
 const App = () => {
@@ -22,8 +24,7 @@ const App = () => {
           <Route path='account' element={<IndexAccount /> }/>
           <Route path='sub-account' element={<IndexSubAccount /> }/>
           <Route path='main-channels' element={<IndexMainChannels /> }/>
-
-
+          <Route path='mobile-banking' element={<IndexMobileBankingChannels /> }/>
           
         </Routes>
       </div>

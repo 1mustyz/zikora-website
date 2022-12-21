@@ -90,6 +90,7 @@ const Header = () => {
               }}
             >
               <MenuItem onClick={handleCloseChannel}><NavLink to='/main-channels'>Banking Channel</NavLink></MenuItem>
+              <MenuItem onClick={handleCloseChannel}><NavLink to='/mobile-banking'>Mobile Banking</NavLink></MenuItem>
               
             </Menu> }
             
