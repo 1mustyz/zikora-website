@@ -13,7 +13,7 @@ import IndexUssdBankingChannels from './pages/channels/ussdBanking'
 import IndexPolicy from './pages/privacy/policy'
 import IndexTerms from './pages/privacy/termsOfService'
 import IndexBusinessBanking from './pages/businessBanking';
-
+import IndexBetaPage from './pages/betaPage';
 
 
 import React from 'react'
@@ -37,6 +37,7 @@ const App = () => {
           <Route path='privacy-policy' element={<IndexPolicy /> }/>
           <Route path='terms-service' element={<IndexTerms /> }/>
           <Route path='business-banking' element={<IndexBusinessBanking /> }/>
+          <Route path='beta-request' element={<IndexBetaPage /> }/>
           
         </Routes>
       </div>
