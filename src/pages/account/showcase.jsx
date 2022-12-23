@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Typography} from '@mui/material';
 import Button from '../../components/button';
-import greenCardPic from '../../images/green-card.png'
+import greenCardPic from '../../images/Accounts 2.png'
 
 
 

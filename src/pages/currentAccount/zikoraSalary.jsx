@@ -1,10 +1,9 @@
 import React from 'react'
 import {Box, Typography,} from '@mui/material';
-import loanPic1 from '../../images/loan-image1.png'
-import greenCardPic from '../../images/green-card.png'
+import loanPic1 from '../../images/Salary 1.png'
+import greenCardPic from '../../images/Salary 2.png'
 
-
-const CuurentAccount = () => {
+const ZikoraSalary = () => {
   return (
     <Box>
 
@@ -35,19 +34,16 @@ const CuurentAccount = () => {
                 fontWeight: 'bold',
                 color: '#404040'
             }} >
-                Zikora Personal
+                Zikora Salary
             </Typography>
 
             <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
-                Break down all your banking needs with a simple readily accesible account that gives you access to unlimited withdrawals, unlimited deposits and easy spending capabilities.
+            We provide accounts with unlimited access to our banking facilities tailored to employees.
             </Typography>
 
             <ul style={{listStyleType: 'disc'}} className='mt-[2rem] ml-[1rem] leading-[180%] text-[#242020]'>
-                <li>Access to 24/7, all year round banking services.</li>
-                <li>Personalized bank card with a flexible limit determined by you</li>
-                <li>Access to a chequebook to make transactions smoother</li>
-                <li>Unlimited access to the Zikora Digital Banking Suite</li>
-
+                <li>Access to unlimited withdrawals</li>
+                <li>Access to Zikora financial advisors</li>
             </ul>
 
                     
@@ -128,4 +124,4 @@ const GreenCard = () => {
     )
   }
 
-export default CuurentAccount
+export default ZikoraSalary

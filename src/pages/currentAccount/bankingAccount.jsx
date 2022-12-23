@@ -1,9 +1,10 @@
 import React from 'react'
 import {Box, Typography,} from '@mui/material';
-import loanPic1 from '../../images/loan-image1.png'
-import greenCardPic from '../../images/green-card.png'
+import loanPic1 from '../../images/business-banking1.png'
+import greenCardPic from '../../images/Business banking 2.png'
 
-const ZikoraSalary = () => {
+
+const BankingAccount = () => {
   return (
     <Box>
 
@@ -34,11 +35,11 @@ const ZikoraSalary = () => {
                 fontWeight: 'bold',
                 color: '#404040'
             }} >
-                Zikora Salary
+                Zikora Business Banking
             </Typography>
 
             <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
-            We provide accounts with unlimited access to our banking facilities tailored to employees.
+            Whether you are starting a business or have an operational business that is ready to expand, Zikora has a team of financial advisors and banking tools to help you achieve your goals.
             </Typography>
 
             <ul style={{listStyleType: 'disc'}} className='mt-[2rem] ml-[1rem] leading-[180%] text-[#242020]'>
@@ -101,7 +102,7 @@ const GreenCard = () => {
                 </Typography>
   
                 <ul style={{listStyleType: 'disc'}} className='mt-[2rem] ml-[1rem] leading-[180%] text-[white] font-[600] text-[17px]'>
-                    <li>Signed copy of Zikora account opening form</li>
+                    <li>Minimum opening balance of N5,000</li>
                     <li>Valid identification (Passport, Driving license etc)</li>
                     <li>Account opening form & One passport photograph</li>
                     <li>3 Months utility bill with current address</li>
@@ -124,4 +125,4 @@ const GreenCard = () => {
     )
   }
 
-export default ZikoraSalary
+export default BankingAccount

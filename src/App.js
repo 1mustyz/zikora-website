@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import IndexContact from './pages/contact';
 import IndexLoans from './pages/loans'
 import IndexAccount from './pages/account'
-import IndexSubAccount from './pages/subAccount';
+import IndexCurrentAccount from './pages/currentAccount';
+import IndexSavingAccount from './pages/savingsAccount';
 import IndexMainChannels from './pages/channels/mainChannels'
 import IndexMobileBankingChannels from './pages/channels/mobileBanking'
 import IndexAgencyBankingChannels from './pages/channels/agencyBanking'
@@ -29,7 +30,8 @@ const App = () => {
           <Route path='about' element={<IndexAbout /> }/>
           <Route path='loans' element={<IndexLoans /> }/>
           <Route path='account' element={<IndexAccount /> }/>
-          <Route path='sub-account' element={<IndexSubAccount /> }/>
+          <Route path='current-account' element={<IndexCurrentAccount /> }/>
+          <Route path='saving-account' element={<IndexSavingAccount /> }/>
           <Route path='main-channels' element={<IndexMainChannels /> }/>
           <Route path='mobile-banking' element={<IndexMobileBankingChannels /> }/>
           <Route path='agency-banking' element={<IndexAgencyBankingChannels /> }/>

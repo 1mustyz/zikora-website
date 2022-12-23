@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Typography,} from '@mui/material';
-import loanPic1 from '../../images/loan-image1.png'
+import loanPic1 from '../../images/About us page 1.png'
 
 
 const Mission = () => {

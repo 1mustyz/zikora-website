@@ -6,6 +6,7 @@ import { FiFacebook } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 import { RiLinkedinFill } from "react-icons/ri";
 import { FiTwitter } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 import Divider from './divider'
 import footerBottomImage1 from '../images/footer-bottom-image1.png'
@@ -88,9 +89,9 @@ const Footer = () => {
                     display: 'flex',
                     flexDirection: 'column'
                 }}>
-                    <Box sx={{marginBottom: '2rem'}}><img src={zikoraImg} alt="" /></Box>
+                    <Box sx={{marginBottom: '2rem'}}><NavLink to='/'><img src={zikoraImg} alt="" /></NavLink></Box>
                     <Box>
-                        <CustomP>Zikora House</CustomP>
+                        <CustomP> <NavLink to='/'>Zikora House</NavLink></CustomP>
                         <CustomP>Abatete Anambra</CustomP>
                         <CustomP>info@zikoramfb.com</CustomP>
 
@@ -116,11 +117,11 @@ const Footer = () => {
                     display: 'flex',
                     flexDirection: 'column'
                 }}>
-                   <CustomText>Accounts</CustomText>
+                   <CustomText><NavLink to='/account/'> Accounts </NavLink></CustomText>
                     <Box>
-                        <CustomP>Current Account</CustomP>
-                        <CustomP>Savings Account</CustomP>
-                        <CustomP>Fixed Deposit Account</CustomP>
+                        <CustomP><NavLink to='/current-account/'>Current Account</NavLink></CustomP>
+                        <CustomP><NavLink to='/saving-account/'>Savings Account</NavLink></CustomP>
+                        <CustomP><NavLink to='#'>Fixed Deposit Account</NavLink></CustomP>
 
                     </Box>
                 </Box>
@@ -133,11 +134,11 @@ const Footer = () => {
                 }}>
                    <CustomText>Channels</CustomText>
                     <Box>
-                        <CustomP>Mobile Banking</CustomP>
-                        <CustomP>Agency Banking</CustomP>
-                        <CustomP>USSD Banking</CustomP>
-                        <CustomP>Internet Banking</CustomP>
-                        <CustomP>ATM Cards</CustomP>
+                        <CustomP><NavLink to='/mobile-banking'>Mobile Banking</NavLink></CustomP>
+                        <CustomP><NavLink to='/agency-banking'>Agency Banking</NavLink></CustomP>
+                        <CustomP><NavLink to='/ussd-banking'>USSD Banking</NavLink></CustomP>
+                        <CustomP><NavLink to=''>Internet Banking</NavLink></CustomP>
+                        <CustomP><NavLink to=''>ATM Cards</NavLink></CustomP>
 
                     </Box>
                 </Box>
@@ -150,9 +151,10 @@ const Footer = () => {
                 }}>
                     <CustomText>Quick links</CustomText>
                     <Box>
-                        <CustomP>Business Banking</CustomP>
-                        <CustomP>Privacy Policy</CustomP>
-                        <CustomP>Terms & Conditions</CustomP>
+                        <CustomP><NavLink to='/business-banking'>Business Banking</NavLink></CustomP>
+                        <CustomP><NavLink to='/privacy-policy'>Privacy Policy</NavLink></CustomP>
+                        <CustomP><NavLink to='/terms-service'>Terms & Conditions</NavLink></CustomP>
+                        <CustomP><NavLink to='/beta-request'>Beta Request</NavLink></CustomP>
 
                     </Box>
                 </Box>
@@ -195,7 +197,7 @@ const CustomText = ({children}) => {
 
 const CustomP = ({children}) => {
   return (
-    <Typography sx={{marginBottom: '1.5rem', color: '#5E5E5E', fontSize: '16px'}}>{children}</Typography>
+    <Typography onClick={scrollToTop} sx={{marginBottom: '1.5rem', color: '#5E5E5E', fontSize: '16px'}}>{children}</Typography>
 
   )
 }
@@ -216,6 +218,8 @@ const CustomIcon = ({color, children}) => {
   )
 }
 
-
+const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
 
 export default Footer

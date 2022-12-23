@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Typography} from '@mui/material';
 import Button from '../../components/button';
-import loanPic1 from '../../images/loan-image1.png'
+import loanPic1 from '../../images/Accounts 1.png'
 
 const CurrentAccount = () => {
   return (

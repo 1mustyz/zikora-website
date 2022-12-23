@@ -1,10 +1,9 @@
 import React from 'react'
 import {Box, Typography,} from '@mui/material';
-import loanPic1 from '../../images/loan-image1.png'
-import greenCardPic from '../../images/green-card.png'
+import loanPic1 from '../../images/kids 1.png'
+import greenCardPic from '../../images/kids 2.png'
 
-
-const BankingAccount = () => {
+const ZikoraForKid = () => {
   return (
     <Box>
 
@@ -35,16 +34,17 @@ const BankingAccount = () => {
                 fontWeight: 'bold',
                 color: '#404040'
             }} >
-                Zikora Business Banking
+                Zikora For Kids
             </Typography>
 
             <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
-            Whether you are starting a business or have an operational business that is ready to expand, Zikora has a team of financial advisors and banking tools to help you achieve your goals.
+              Give your children a head start in life. This account will enable you save for school fees, child expenses and will help imbibe the saving habit in your child. 
             </Typography>
 
             <ul style={{listStyleType: 'disc'}} className='mt-[2rem] ml-[1rem] leading-[180%] text-[#242020]'>
-                <li>Access to unlimited withdrawals</li>
-                <li>Access to Zikora financial advisors</li>
+                <li>Account allows large lodgements toward future expenses for the child.</li>
+                <li>Interest earned on savings. </li>
+                <li>Ownership of the account can be transfered to the child when the child is 18.</li>
             </ul>
 
                     
@@ -102,11 +102,12 @@ const GreenCard = () => {
                 </Typography>
   
                 <ul style={{listStyleType: 'disc'}} className='mt-[2rem] ml-[1rem] leading-[180%] text-[white] font-[600] text-[17px]'>
-                    <li>Minimum opening balance of N5,000</li>
+                    <li>Minimum opening balance of N1,000</li>
+                    <li>Signed copy of Zikora account opening form</li>
                     <li>Valid identification (Passport, Driving license etc)</li>
-                    <li>Account opening form & One passport photograph</li>
+                    <li>One passport photograph</li>
                     <li>3 Months utility bill with current address</li>
-                    <li>2 duly signed & completed reference forms</li>
+                    <li>Copy of child’s birth certificate or age declaration</li>
 
 
                 </ul>
@@ -125,4 +126,4 @@ const GreenCard = () => {
     )
   }
 
-export default BankingAccount
+export default ZikoraForKid

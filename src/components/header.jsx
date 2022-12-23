@@ -5,7 +5,7 @@ import Divider from './divider'
 import {IoIosArrowDown} from 'react-icons/io'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {Box, Menu, MenuItem} from '@mui/material';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -52,20 +52,20 @@ const Header = () => {
 
       },
     }}>
-      <NavLink to='/'>
+      <Link to='/'>
         <img className='sm:w-10' src={zikoraImg} alt="" />
-      </NavLink>
+      </Link>
 
         <Box sx={{ '@media (max-width: 639px)': {
               display: 'none'
     
     
           },}}className='flex space-x-10 ml-20 '>
-            <div className='flex space-x-2 items-center'><NavLink onClick={handleClickChannel}>Channels</NavLink><Icon /></div>
-            <div className='flex space-x-2 items-center'><NavLink to='/loans/'>Loans</NavLink><Icon /></div>
-            <div className='flex space-x-2 items-center'><NavLink onClick={handleClick}>Accounts</NavLink><Icon /></div>
-            <NavLink to='/about/'>About</NavLink>
-            <NavLink  to='/contact'>Contacts</NavLink>
+            <div className='flex space-x-2 items-center'><Link onClick={handleClickChannel}>Channels</Link><Icon /></div>
+            <Link to='/loans/'>Loans</Link>
+            <div className='flex space-x-2 items-center'><Link onClick={handleClick}>Accounts</Link><Icon /></div>
+            <Link to='/about/'>About</Link>
+            <Link  to='/contact'>Contacts</Link>
             
             {openAccount && <Menu
               id="basic-menu"
@@ -76,7 +76,9 @@ const Header = () => {
                 'aria-labelledby': 'basic-button',
               }}
             >
-              <MenuItem onClick={handleClose}><NavLink to='/sub-account/'>Savings Account</NavLink></MenuItem>
+              <MenuItem onClick={handleClose}><Link to='/account/'>Account</Link></MenuItem>
+              <MenuItem onClick={handleClose}><Link to='/current-account/'>Current Account</Link></MenuItem>
+              <MenuItem onClick={handleClose}><Link to='/saving-account/'>Saving Account</Link></MenuItem>
               
             </Menu> }
 
@@ -89,10 +91,10 @@ const Header = () => {
                 'aria-labelledby': 'basic-button',
               }}
             >
-              <MenuItem onClick={handleCloseChannel}><NavLink to='/main-channels'>Banking Channel</NavLink></MenuItem>
-              <MenuItem onClick={handleCloseChannel}><NavLink to='/mobile-banking'>Mobile Banking</NavLink></MenuItem>
-              <MenuItem onClick={handleCloseChannel}><NavLink to='/agency-banking'>Agency Banking</NavLink></MenuItem>
-              <MenuItem onClick={handleCloseChannel}><NavLink to='/ussd-banking'>USSD Banking</NavLink></MenuItem>
+              <MenuItem onClick={handleCloseChannel}><Link to='/main-channels'>Banking Channel</Link></MenuItem>
+              <MenuItem onClick={handleCloseChannel}><Link to='/mobile-banking'>Mobile Banking</Link></MenuItem>
+              <MenuItem onClick={handleCloseChannel}><Link to='/agency-banking'>Agency Banking</Link></MenuItem>
+              <MenuItem onClick={handleCloseChannel}><Link to='/ussd-banking'>USSD Banking</Link></MenuItem>
               
             </Menu> }
             
