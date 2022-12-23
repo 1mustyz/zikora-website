@@ -3,6 +3,8 @@ import Header from '../../components/header'
 import Button from '../../components/button'
 import homeMainBg from '../../images/home-main-bg.png'
 import homeMainFrame from '../../images/image 1.png'
+import homeMainBgSmall from '../../small-images/sm:home-main.png'
+
 import Box from '@mui/material/Box';
 
 
@@ -18,8 +20,8 @@ const HomeMain = () => {
         backgroundImage: `url(${homeMainBg})`,
         '@media (max-width: 639px)': {
             padding: 0,
-            // backgroundImage: 'none',
-            
+            backgroundImage: `url(${homeMainBgSmall})`,
+                    
 
         },
 
@@ -56,7 +58,7 @@ const HomeMain = () => {
             </div>
 
             {/* right  */}
-            <div className='mt-10 sm:mt-[1rem] sm:mb-20 rounded w-5/12 sm:w-full ' >
+            <div className='mt-10 sm:mt-[1.5rem] sm:mb-[2rem] rounded w-5/12 sm:w-full ' >
                 <img className='' src={homeMainFrame} alt="main" />
             </div>
 

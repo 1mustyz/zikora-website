@@ -7,16 +7,16 @@ import greenCardPic from '../../images/green-card.png'
 
 const GreenCard = () => {
   return (
-    <Box className='h-full width-full pt-20 flex flex-col items-center'
+    <Box className='h-full width-full pt-20 sm:pt-[3rem] flex flex-col items-center'
     sx={{
       backgroundColor: '#F7F7F7'
     }}
     >
-        <Typography sx={{color: '#5E5E5E'}}>
+        <Typography className='sm:text-[14px]' sx={{color: '#5E5E5E', fontSize: '16px'}}>
             Easiest Way to Make Payments
         </Typography>
-        <Typography  sx={{
-            fontSize: '1.58rem',
+        <Typography className='sm:text-[22px]' sx={{
+            fontSize: '28px',
             fontWeight: 'bold',
             color: '#404040'
 
@@ -25,12 +25,15 @@ const GreenCard = () => {
         </Typography>
 
         {/* green card */}
-        <Box sx={{
+        <Box  sx={{
           width: '85%',
           height: '50%',
           marginTop: '2rem',
           display: 'flex',
           flexDirection: 'row',
+          '@media (max-width: 639px)': {
+            flexDirection: 'column'
+        },
         }}>
           {/* left */}
             <Box sx={{
@@ -42,18 +45,23 @@ const GreenCard = () => {
               paddingRight: '12rem',
               backgroundColor: '#66A681',
               borderTopLeftRadius: '1.2rem',
-              color: 'white'
-              }}>
-              <Typography sx={{
-                fontSize: '34px',
-                fontWeight: 'bold'
-              }} >
-                  More than Just a Debit Card.
-              </Typography>
+              color: 'white',
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderTopLeftRadius: '0.8rem',
+                borderTopRightRadius: '0.8rem',
+                padding: '2rem 1.5rem 0 1.5rem',
 
-              <Typography  sx={{marginTop: '1rem', fontSize: '16px'}}>
+
+            },
+              }}>
+              <p className='text-[34px] font-[700] sm:text-[24px] w-[75%]'  >
+                  More than Just a Debit Card.
+              </p>
+
+              <p className='text-[16px] sm:text-[14px] mt-[1rem]'>
                   Enjoy both Offline and Online Payment
-              </Typography>
+              </p>
 
               <Button title="Get Zikora Green Card" style={{
                         padding: '1rem 1.5rem',
@@ -66,9 +74,11 @@ const GreenCard = () => {
                         width: '70%',
                         fontSize: '14px',
                         '@media (max-width: 639px)': {
-                            with: '100%',
+                            width: '100%',
                             fontSize: '14px',
-                            padding: '5% 28%',
+                            padding: '0.8rem 2rem',
+                            marginTop: '1.5rem',
+                            marginBottom: '2.2rem'
 
                         },
                     }} />
@@ -77,7 +87,12 @@ const GreenCard = () => {
             <Box sx={{
               backgroundColor: '#404040',
               width: '50%',
-              borderTopRightRadius: '1.2rem'
+              borderTopRightRadius: '1.2rem',
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderRadius: '0',
+
+            },
 
             }}>
                     <img src={greenCardPic} alt="green card" />

@@ -25,17 +25,20 @@ const LoansEmpower = () => {
           justifySelf: 'center',
           display: 'flex',
           flexDirection: 'column',
-          rowGap: '8rem'
+          rowGap: '8rem',
+          
         }}>
             {/* first row */}
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
-                // border: '1px solid black',
+                '@media (max-width: 639px)': {
+                  flexDirection: 'column',
+                },
             }}>
                 {/* left */}
                 <Box >
-                  <Box sx={{width: '75%'}}>
+                  <Box className='w-[75%] sm:w-[100%]'>
                     <img src={loanPic1} alt="acquire loan" />
                   </Box>
                 </Box>

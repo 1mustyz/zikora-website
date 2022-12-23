@@ -46,9 +46,10 @@ const Header = () => {
         fontFamily: 'Circular Std',
         marginBottom: '2rem',
         '@media (max-width: 639px)': {
-          padding: '2rem 1.2rem 0 1.2rem',
+          padding: '1rem 1.2rem 0 1.2rem',
           width: '100vw',
-          alignItems: 'flex-end'
+          alignItems: 'flex-end',
+          marginBottom: '1.2rem'
 
       },
     }}>
@@ -107,9 +108,7 @@ const Header = () => {
             color: 'black',
             textTransform: 'none',
             '@media (max-width: 639px)': {
-              display: 'none'
-    
-    
+              display: 'none',
           },
 
         }}/>
