@@ -18,30 +18,24 @@ const HomeMain = () => {
         backgroundImage: `url(${homeMainBg})`,
         '@media (max-width: 639px)': {
             padding: 0,
-            backgroundImage: 'none',
+            // backgroundImage: 'none',
+            
+
         },
 
     }}>
         <Header />
 
-        <div className='flex flex-row mt-5  justify-between sm:flex-col sm:px-8 '>
+        <div className='flex flex-row mt-5  justify-between sm:flex-col sm:px-[1.2rem] '>
             {/* left */}
-            <div className='mt-20 sm:mt-10 w-1/2 flex flex-col h-full sm:h-96 sm:w-full ' >
-                <Box sx={{
-                    '@media (max-width: 639px)': {
-                        fontSize: '40px'
-                    },
-                }} className='text-6xl  font-bold  h-5/6 flex flex-col justify-between opacity-75'>
-                    <p>Stress free</p>
-                    <p className='pt-2'>Banking, at your</p>
-                    <p className='pt-2'>Fingertips</p>
+            <div className='mt-20 sm:mt-[1rem] w-1/2 flex flex-col h-full sm:w-full ' >
+                <Box  className='text-6xl sm:text-[34px] font-bold h-5/6 sm:h-[7rem]  flex flex-col justify-between  opacity-75'>
+                    <p className='sm:p-[0rem] sm:m-[0rem]'>Stress free</p>
+                    <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Banking, at your</p>
+                    <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Fingertips</p>
                 </Box>
-                <Box sx={{
-                    '@media (max-width: 639px)': {
-                        fontSize: '16px'
-                    },
-                }}className='mt-10 leading-1 text-xl opacity-75'>Zikora is a people-first bank, serving communities in Nigeria by providing access to reliable digital banking services.</Box>
-                <div className='mt-10 sm:w-full sm:flex sm:justify-center ' >
+                <Box className='mt-10 sm:mt-[1.2rem] leading-1 text-xl sm:text-[14px] opacity-75'>Zikora is a people-first bank, serving communities in Nigeria by providing access to reliable digital banking services.</Box>
+                <div className='mt-10 sm:mt-[1.2rem] sm:w-full sm:flex sm:justify-center ' >
                     <Button title="Start Online Banking" style={{
                         padding: '1.2rem 2rem',
                         background: '#66A681',
@@ -52,7 +46,8 @@ const HomeMain = () => {
                         '@media (max-width: 639px)': {
                             with: '100%',
                             fontSize: '14px',
-                            padding: '5% 28%',
+                            padding: '5% 27%',
+                            borderRadius: '0.3rem',
 
                         },
                     }} />
@@ -61,7 +56,7 @@ const HomeMain = () => {
             </div>
 
             {/* right  */}
-            <div className='mt-10 sm:mb-20 rounded w-5/12 sm:w-full ' >
+            <div className='mt-10 sm:mt-[1rem] sm:mb-20 rounded w-5/12 sm:w-full ' >
                 <img className='' src={homeMainFrame} alt="main" />
             </div>
 

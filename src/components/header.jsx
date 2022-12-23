@@ -46,7 +46,7 @@ const Header = () => {
         fontFamily: 'Circular Std',
         marginBottom: '2rem',
         '@media (max-width: 639px)': {
-          padding: '2rem 2rem 0 2rem',
+          padding: '2rem 1.2rem 0 1.2rem',
           width: '100vw',
           alignItems: 'flex-end'
 
