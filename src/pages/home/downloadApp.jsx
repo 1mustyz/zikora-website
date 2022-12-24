@@ -11,7 +11,7 @@ import {FaGooglePlay,FaAppStoreIos} from 'react-icons/fa'
 
 const DownloadApp = () => {
   return (
-    <Box className='h-full pb-28 width-full pt-20 flex flex-col items-center' >
+    <Box className='h-full pb-28 sm:pb-[3rem] width-full pt-20 sm:pt-[1rem] flex flex-col items-center' >
 
         {/* first row */}
         
@@ -21,7 +21,20 @@ const DownloadApp = () => {
             width: '85%',
             backgroundColor: '#E8ECE3',
             padding: '2rem 3rem',
-            borderRadius: '1.5rem'
+            borderRadius: '1.5rem',
+            marginLeft: '1.5rem',
+            '@media (max-width: 639px)': {
+              margin: '0',
+              width: '100%',
+              flexDirection: 'column-reverse',
+              padding: 0,
+              paddingBottom: '2rem',
+              borderRadius: '0',
+              borderTopLeftRadius: '1.2rem',
+              borderTopRightRadius: '1.2rem'
+
+
+          },
         }}>
             {/* left */}
             <Box sx={{
@@ -30,25 +43,27 @@ const DownloadApp = () => {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 marginLeft: '1.5rem',
-              
+                '@media (max-width: 639px)': {
+                    width: '100%',
+                    
+                },
                 
                 }}>
-                <Typography sx={{
-                fontSize: '33px',
-                fontWeight: 'bold',
-                width: '60% ',
-                color: '#404040'
-                }} >
+                <p className='text-[33px] text-[#404040] sm:mt-[2rem] font-[700] sm:text-[24px] w-[60%] sm:w-[100%]'>
                     Download our apps
-                </Typography>
+                </p>
 
-                <Typography  sx={{ fontSize: '16px', color:'#5E5E5E', lineHeight: '180%', width: '70%'}}>
+                <p className='text-[16px] sm:text-[14px] text-[#404040] leading-[180%] w-[70%] sm:w-[90%]' >
                     We make your banking more easy in your hand with our supper apps! Try these now!
-                </Typography>
+                </p>
 
                 <Box sx={{
                     display: 'flex',
-                    marginTop: '3rem'
+                    marginTop: '3rem',
+                    '@media (max-width: 639px)': {
+                       flexDirection: 'column',
+                        gap: '1rem',
+                    },
                     }}>
                     
                     <CustomButton>
@@ -60,7 +75,7 @@ const DownloadApp = () => {
                         </>
                     </CustomButton>
 
-                    <Box sx={{marginLeft: '1rem'}}>
+                    <Box className='ml-[1rem] sm:ml-[0]' >
 
                         <CustomButton color='white'>
                             <>
@@ -80,8 +95,14 @@ const DownloadApp = () => {
                 </Box>
             </Box>
             {/* right */}
-            <Box sx={{display: 'flex', justifyContent: 'flex-end'}}>
-                <Box sx={{width: '62%',}}>
+            <Box sx={{
+                display: 'flex', 
+                justifyContent: 'flex-end',
+                '@media (max-width: 639px)': {
+                    justifyContent: 'center',
+                },
+                }}>
+                <Box className='w-[62%] sm:w-[80%]'>
                 <img src={downloadAppPic1} alt="customer service" />
                 </Box>
             </Box>
@@ -102,11 +123,14 @@ function CustomButton({children,color}) {
         textTransform: 'none',
         fontSize: '20px',
         width: '12rem',
-        backgroundColor: color != undefined ? 'white':'#404040',
+        backgroundColor: color !== undefined ? 'white':'#404040',
         "&:hover": {
             backgroundColor: '#8c8c8c',
             
         },
+        '@media (max-width: 639px)': {
+           width: '85%',
+         },
     }}>
         {children}
     </Button>

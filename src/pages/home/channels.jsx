@@ -14,16 +14,12 @@ const Channels = () => {
     <Box className='h-full width-full pt-20 flex flex-col items-center'
     sx={{backgroundColor: '#F7F7F7'}}
     >
-        <Typography sx={{color: '#5E5E5E'}}>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px]'>
             Our Banking Channels
-        </Typography>
-        <Typography  sx={{
-            fontSize: '1.58rem',
-            fontWeight: 'bold',
-            color: '#404040'
-        }}>
+        </p>
+        <p className='text-[28px] sm:text-[22px] font-[700] text-[#404040] sm:w-[80%] text-center' >
             Several Channels to make your life easy
-        </Typography>
+        </p>
 
         {/* channels card */}
         <Box sx={{
@@ -32,6 +28,9 @@ const Channels = () => {
           marginTop: '2rem',
           display: 'flex',
           flexDirection: 'row',
+          '@media (max-width: 639px)': {
+            flexDirection: 'column'
+        },
         }}>
           {/* left */}
             <Box sx={{
@@ -45,18 +44,23 @@ const Channels = () => {
               borderTopLeftRadius: '1.2rem',
               color: 'white',
               paddingTop: '7rem',
-              paddingBottom: '4rem'
-              }}>
-              <Typography sx={{
-                fontSize: '34px',
-                fontWeight: 'bold'
-              }} >
-                  Banking Channels  
-              </Typography>
+              paddingBottom: '4rem',
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderTopLeftRadius: '0.8rem',
+                borderTopRightRadius: '0.8rem',
+                padding: '2rem 1.5rem 0 1.5rem',
 
-              <Typography  sx={{marginTop: '1rem', fontSize: '15px'}}>
+
+            },
+              }}>
+              <p className='text-[34px] font-[700]  sm:text-[24px] w-[80%]'>
+                  Banking Channels  
+              </p>
+
+              <p  className='text-[16px] sm:text-[14px] mt-[1rem]'>
                   Extra mile to provide many ways to bank with us easier than ever. 
-              </Typography>
+              </p>
 
               <Button title="Explore Banking Channels" style={{
                         padding: '1rem 1.5rem',
@@ -69,11 +73,13 @@ const Channels = () => {
                         width: '70%',
                         fontSize: '14px',
                         '@media (max-width: 639px)': {
-                            with: '100%',
-                            fontSize: '14px',
-                            padding: '5% 28%',
+                          width: '100%',
+                          fontSize: '14px',
+                          padding: '0.8rem 2rem',
+                          marginTop: '1.5rem',
+                          marginBottom: '2.2rem'
 
-                        },
+                      },
                     }} />
             </Box>
             {/* right */}
@@ -83,8 +89,13 @@ const Channels = () => {
               borderTopRightRadius: '1.2rem',
               display: 'flex',
               flexDirection: 'row',
-                justifyContent: 'space-between',
-                flexWrap: 'wrap'
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderTopRightRadius: '0',
+                borderBottomLeftRadius: '1.2rem',
+            },
 
             }}>
                     <Box sx={{
@@ -98,7 +109,15 @@ const Channels = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         backgroundPositionY: 'bottom',
-                        color: '#404040'
+                        color: '#404040',
+                        '@media (max-width: 639px)': {
+                        backgroundSize: '4rem 4rem',
+                        paddingLeft: '1rem',
+                        paddingTop: '1rem',
+                        paddingBottom: '4rem'
+
+                          
+                      },
 
                     }}>
                     <Typography>Internet Bankng...</Typography>
@@ -114,7 +133,15 @@ const Channels = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         backgroundPositionY: 'bottom',
-                        color: 'white'
+                        color: 'white',
+                        '@media (max-width: 639px)': {
+                          backgroundSize: '4rem 4rem',
+                          paddingLeft: '1rem',
+                          paddingTop: '1rem',
+                          paddingBottom: '4rem'
+  
+                            
+                        },
 
                     }}>
                     <Typography>Agency Bankng...</Typography>
@@ -130,7 +157,15 @@ const Channels = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         backgroundPositionY: 'bottom',
-                        color: 'white'
+                        color: 'white',
+                        '@media (max-width: 639px)': {
+                          backgroundSize: '4rem 4rem',
+                          paddingLeft: '1rem',
+                          paddingTop: '1rem',
+                          paddingBottom: '4rem'
+  
+                            
+                        },
                     }}>
                     <Typography>Mobile Bankng...</Typography>
                     </Box>
@@ -146,7 +181,15 @@ const Channels = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         backgroundPositionY: 'bottom',
-                        color: '#404040'
+                        color: '#404040',
+                        '@media (max-width: 639px)': {
+                          backgroundSize: '4rem 4rem',
+                          paddingLeft: '1rem',
+                          paddingTop: '1rem',
+                          paddingBottom: '4rem'
+  
+                            
+                        },
                     }}>
                     <Typography>ATM Cards...</Typography>
                     </Box>

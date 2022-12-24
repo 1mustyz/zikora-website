@@ -1,15 +1,15 @@
 import React from 'react'
-import {Box, Typography} from '@mui/material';
+import {Box} from '@mui/material';
 import Button from '../../components/button';
 import accountPic1 from '../../images/account-image1.png'
-import accountPic2 from '../../images/account-image2.png'
+import accountPic2 from '../../small-images/phone-view-bg-top.png'
 
 
 
 
 const Account = () => {
   return (
-    <Box className='h-full pb-28 width-full pt-40 flex flex-col items-center'
+    <Box className='h-full pb-28 sm:pb-[0] width-full pt-40 sm:pt-[3rem] flex flex-col items-center'
       sx={{backgroundImage: `url(${accountPic2})`,
       backgroundRepeat: 'no-repeat',
       backgroundPositionX: 'left', 
@@ -24,12 +24,15 @@ const Account = () => {
                 display: 'flex',
                 flexDirection: 'row',
                 width: '85%',
-         
-                // border: '1px solid black',
+                '@media (max-width: 639px)': {
+                  flexDirection: 'column',
+                  width: '90%',
+                  
+              },
             }}>
                 {/* left */}
                 <Box >
-                  <Box sx={{width: '75%'}}>
+                  <Box className='w-[75%] sm:w-[100%]'>
                     <img src={accountPic1} alt="acquire loan" />
                   </Box>
                 </Box>
@@ -39,20 +42,20 @@ const Account = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
-                  marginLeft: '1.5rem'
+                  marginLeft: '1.5rem',
+                  '@media (max-width: 639px)': {
+                    margin: '0',
+                    width: '100%'
+                },
                  
                   }}>
-                  <Typography sx={{
-                    fontSize: '33px',
-                    fontWeight: 'bold',
-                    color: '#404040'
-                  }} >
+                  <p className='text-[34px] font-[700] sm:mt-[2rem] sm:text-[24px] sm:w-[100%]'>
                       Accounts that's fit to you
-                  </Typography>
+                  </p>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <p className='mt-[2rem] text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[180%]'>
                       Replace accounts related text here. Zikora Offers Several Account Types to cater to your specific needs
-                  </Typography>
+                  </p>
 
                   <Button title="Explore Accounts"  outline={true}
                         style={{
@@ -70,11 +73,13 @@ const Account = () => {
                    
                             },
                             '@media (max-width: 639px)': {
-                                with: '100%',
-                                fontSize: '14px',
-                                padding: '5% 28%',
-
-                            },
+                              width: '100%',
+                              fontSize: '14px',
+                              padding: '0.8rem 2rem',
+                              marginTop: '1.5rem',
+                              marginBottom: '2.2rem'
+    
+                          },
                         }} />
                 </Box>
             </Box>

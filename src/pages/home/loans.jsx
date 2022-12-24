@@ -26,6 +26,10 @@ const LoansEmpower = () => {
           display: 'flex',
           flexDirection: 'column',
           rowGap: '8rem',
+          '@media (max-width: 639px)': {
+            rowGap: '4rem',
+            
+          },
           
         }}>
             {/* first row */}
@@ -48,18 +52,35 @@ const LoansEmpower = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
-                  marginLeft: '1.5rem'
-                 
+                  marginLeft: '1.5rem',
+                  '@media (max-width: 639px)': {
+                    width: '100%',
+                    margin: '0',
+                    marginTop: '2rem'
+                  },
                   }}>
                   <Typography sx={{
                     fontSize: '33px',
                     fontWeight: 'bold',
-                    color: '#404040'
+                    color: '#404040',
+                    '@media (max-width: 639px)': {
+                      fontSize: '24px',
+                      width: '100%'
+                    },
                   }} >
                       Loans-that Empower
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{
+                    marginTop: '2rem', 
+                    fontSize: '15px', 
+                    color:'#5E5E5E', 
+                    lineHeight: '180%',
+                    '@media (max-width: 639px)': {
+                      marginTop: '0.5rem',
+                      fontSize: '14px',
+                    },
+                    }}>
                       As a business owner or salary earner, we provide loans that will surely cater to your cash needs. Apply now to get the financial backing you have been waiting for.
                   </Typography>
 
@@ -81,7 +102,9 @@ const LoansEmpower = () => {
                             '@media (max-width: 639px)': {
                                 with: '100%',
                                 fontSize: '14px',
-                                padding: '5% 28%',
+                                width: '100%',
+                                marginTop: '1.5rem'
+                                // padding: '5% 28%',
 
                             },
                         }} />
@@ -92,6 +115,9 @@ const LoansEmpower = () => {
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
+                '@media (max-width: 639px)': {
+                  flexDirection: 'column-reverse'
+                },
             }}>
                 {/* left */}
                 <Box sx={{
@@ -99,19 +125,38 @@ const LoansEmpower = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
-                  marginLeft: '1.5rem'
+                  marginLeft: '1.5rem',
+                  '@media (max-width: 639px)': {
+                    margin: '0',
+                    width: '100%',
+                    marginTop: '2rem'
+                  },
                  
                   }}>
                   <Typography sx={{
                     fontSize: '33px',
                     fontWeight: 'bold',
                     width: '60% ',
-                    color: '#404040'
+                    color: '#404040',
+                    '@media (max-width: 639px)': {
+                      fontSize: '24px',
+                      width: '80%',
+
+                    },
                   }} >
                       World Class Customer Support
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{
+                    marginTop: '2rem', 
+                    fontSize: '15px', 
+                    color:'#5E5E5E', 
+                    lineHeight: '180%',
+                    '@media (max-width: 639px)': {
+                      marginTop: '0.5rem',
+                      fontSize: '14px',
+                    },
+                    }}>
                       Zikora is customer-centric. We have put together a strong team to provide support and guidance to all of our users
                   </Typography>
 
@@ -131,16 +176,23 @@ const LoansEmpower = () => {
                    
                             },
                             '@media (max-width: 639px)': {
-                                with: '100%',
-                                fontSize: '14px',
-                                padding: '5% 28%',
-
-                            },
+                              with: '100%',
+                              fontSize: '14px',
+                              width: '100%',
+                              marginTop: '1.5rem'
+                              // padding: '5% 28%',
+                          },
                         }} />
                 </Box>
                 {/* right */}
-                <Box sx={{display: 'flex', justifyContent: 'flex-end'}}>
-                  <Box sx={{width: '75%',}}>
+                <Box sx={{
+                  display: 'flex', 
+                  justifyContent: 'flex-end',
+                  '@media (max-width: 639px)': {
+                    justifyContent: 'center',
+                  },
+                  }}>
+                  <Box className='w-[75%] sm:w-[100%]'>
                     <img src={loanPic2} alt="customer service" />
                   </Box>
                 </Box>
