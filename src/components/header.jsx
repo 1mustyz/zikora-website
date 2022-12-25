@@ -6,6 +6,7 @@ import {IoIosArrowDown} from 'react-icons/io'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {Box, Menu, MenuItem} from '@mui/material';
 import { Link } from "react-router-dom";
+import MobileNav from './mobileNav'
 
 
 const Header = () => {
@@ -112,12 +113,13 @@ const Header = () => {
           },
 
         }}/>
-      <Box sx={{
+      {/* <Box sx={{
         display: 'none',
         '@media (max-width: 639px)': {
           display: 'block'
       },
-      }} className='sm:text-3xl'><RxHamburgerMenu/></Box>
+      }} className='sm:text-3xl'><RxHamburgerMenu/></Box> */}
+      <MobileNav/>
     </Box>
     <Divider/>
     </>
