@@ -1,28 +1,22 @@
 import React from 'react'
-import {Box, Typography} from '@mui/material';
-import Button from '../../components/button';
+import {Box} from '@mui/material';
 import aboutPic2 from '../../images/about-image2.png'
 
 
 
 const ShowCase = () => {
   return (
-    <Box className='h-full width-full pt-20 flex flex-col items-center'
+    <Box className='h-full width-full pt-20 sm:pt-[3rem] flex flex-col items-center'
     sx={{
       backgroundColor: '#F7F7F7'
     }}
     >
-        <Typography sx={{color: '#5E5E5E'}}>
+        <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]' >
             Lorem ipsum
-        </Typography>
-        <Typography  sx={{
-            fontSize: '1.58rem',
-            fontWeight: 'bold',
-            color: '#404040'
-
-        }}>
+        </p>
+        <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]'>
             Replace short heading
-        </Typography>
+        </p>
 
         {/* green card */}
         <Box sx={{
@@ -31,6 +25,9 @@ const ShowCase = () => {
           marginTop: '2rem',
           display: 'flex',
           flexDirection: 'row',
+          '@media (max-width: 639px)': {
+            flexDirection: 'column'
+        },
 
         }}>
           {/* left */}
@@ -44,18 +41,22 @@ const ShowCase = () => {
               backgroundColor: '#66A681',
               borderTopLeftRadius: '1.2rem',
               color: 'white',
-              }}>
-              <Typography sx={{
-                fontSize: '28px',
-                fontWeight: 'bold',
-                fontStyle: 'italic'
-              }} >
-                  "Zikora was created to show people the possibilities of forward thinking banking..."
-              </Typography>
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderTopLeftRadius: '0.8rem',
+                borderTopRightRadius: '0.8rem',
+                padding: '2rem 1.5rem 0 1.5rem',
 
-              <Typography  sx={{marginTop: '2rem', fontSize: '16px'}}>
+
+            },
+              }}>
+              <p className='text-[28px] sm:text-[24px] font-[700] italic'  >
+                  "Zikora was created to show people the possibilities of forward thinking banking..."
+              </p>
+
+              <p className='mt-[2rem] text-[16px] sm:text-[14px]'>
                   - Bernadine Okeke
-              </Typography>
+              </p>
 
              
             </Box>
@@ -64,10 +65,15 @@ const ShowCase = () => {
               backgroundColor: '#404040',
               width: '50%',
               borderTopRightRadius: '1.2rem',
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderRadius: '0',
+                
 
+            },
 
             }}>
-                    <img className='rounded-tr-[1.2rem]' src={aboutPic2} alt="green card" />
+                    <img className='rounded-tr-[1.2rem] sm:rounded-b-[1.2rem]' src={aboutPic2} alt="green card" />
             </Box>
         </Box>
     </Box>

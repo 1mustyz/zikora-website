@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Typography,} from '@mui/material';
+import {Box} from '@mui/material';
 import loanPic1 from '../../images/About us page 1.png'
 
 
@@ -10,11 +10,16 @@ const Mission = () => {
         flexDirection: 'row',
         marginTop: '8rem',
         marginLeft: '5rem',
-        marginRight: '5rem'
+        marginRight: '5rem',
+        '@media (max-width: 639px)': {
+          flexDirection: 'column',
+          margin: '3rem 1rem 0 1rem'
+           
+       }
     }}>
         {/* left */}
         <Box >
-          <Box sx={{width: '75%'}}>
+          <Box className='w-[75%] sm:w-[100%]'>
             <img src={loanPic1} alt="acquire loan" />
           </Box>
         </Box>
@@ -24,24 +29,25 @@ const Mission = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          marginLeft: '1.5rem'
+          marginLeft: '1.5rem',
+          '@media (max-width: 639px)': {
+            width: '100%',
+            margin: 0,
+            marginTop: '3rem'             
+         }
          
           }}>
-          <Typography sx={{
-            fontSize: '33px',
-            fontWeight: 'bold',
-            color: '#404040'
-          }} >
+          <p className='text-[34px] font-[700]  text-[#404040] sm:text-[24px]'  >
               Our Mission & Vission
-          </Typography>
+          </p>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <p  className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[2rem] sm:mt-[0.5rem] leading-[180%]'>
               To provide digital platform designed to modernize the banking and business orientation of an expanding customer base.
-          </Typography>
+          </p>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <p  className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[2rem] sm:mt-[0.5rem] leading-[180%]'>
               To be a Catalyst to the human and economic development of communities by providing financial solutions tailored to there need.
-          </Typography>
+          </p>
          
         </Box>
     </Box>

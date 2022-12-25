@@ -33,7 +33,8 @@ const Main = () => {
               marginTop: '6rem',
               '@media (max-width: 639px)': {
                 marginTop: '3rem',
-                margin: '3rem 1rem 0 1rem'
+                margin: '3rem 1rem 0 1rem',
+                alignItems: 'center'
              }
              
             }}>
@@ -58,7 +59,9 @@ const Main = () => {
                 width: '50%',
                 marginLeft: '3rem',
                 '@media (max-width: 639px)': {
-                 width: '70%'
+                 width: '70%',
+                 marginLeft: '1rem',
+
                   
               }
 

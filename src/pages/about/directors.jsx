@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, Typography, } from '@mui/material';
-import aboutPic2 from '../../images/about-image2.png'
+// import aboutPic2 from '../../images/about-image2.png'
 import aboutPic3 from '../../images/about-image3.png'
 import aboutPic4 from '../../images/about-image4.png'
 import aboutPic5 from '../../images/about-image5.png'
@@ -11,7 +11,7 @@ import Divider from '../../components/divider'
 
 const Directors = () => {
   return (
-    <Box className='h-full width-full pt-[7rem] mb-[6rem] flex flex-col items-center'
+    <Box className='h-full width-full pt-[7rem] sm:pt-[3rem] mb-[6rem] flex flex-col items-center'
     sx={{
       backgroundImage: `url(${aboutPic3})`,
       backgroundRepeat: 'no-repeat',
@@ -19,17 +19,12 @@ const Directors = () => {
       backgroundPositionY: 'bottom'
     }}
     >
-        <Typography  sx={{
-            fontSize: '34px',
-            fontWeight: 'bold',
-            color: '#404040'
-
-        }}>
+        <p className='text-[34px] sm:text-[22px] text-[#404040] font-[700]' >
             Board of Directors
-        </Typography>
-        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
+        </p>
+        <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] sm:w-[80%] sm:text-center sm:mt-[0.7rem]'>
             The Zikora team is dedicated in building prosperity for our users
-        </Typography>
+        </p>
 
         {/* board of directors */}
         <Box sx={{
@@ -39,7 +34,14 @@ const Directors = () => {
             justifyContent: 'center',
             gap: '5rem',
             alignItems: 'center',
-            marginTop: '4rem'
+            marginTop: '4rem',
+            '@media (max-width: 639px)': {
+              overflowX: 'auto',
+              overflowY: 'hidden',
+              whiteSpace: 'nowrap',
+              gap: '5rem',
+              justifyContent: 'flex-start'
+           }
         }}>
             <VerticalDivider />
             <PreImageAndText pic={aboutPic4} title="Tony Ifeacho" post="Director"/>
@@ -55,18 +57,13 @@ const Directors = () => {
         </Box>
 
         {/* Team members */}
-        <Box className='flex flex-col items-center mt-[14rem] border-b-1 pb-[6rem]'>
-        <Typography  sx={{
-            fontSize: '34px',
-            fontWeight: 'bold',
-            color: '#404040'
-
-        }}>
+        <Box className='flex flex-col items-center mt-[14rem] sm:mt-[5rem] border-b-1 pb-[6rem] sm:w-[100vw]'>
+        <p className='text-[34px] sm:text-[22px] text-[#404040] font-[700]' >
             Team members
-        </Typography>
-        <Typography sx={{color: '#5E5E5E', fontSize: '16px'}}>
+        </p>
+        <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] sm:w-[80%] sm:text-center sm:mt-[0.7rem]'>
             The Zikora team is to building prosperity for our users
-        </Typography>
+        </p>
 
         {/* board of directors */}
         <Box sx={{
@@ -76,7 +73,13 @@ const Directors = () => {
             justifyContent: 'center',
             gap: '5rem',
             alignItems: 'center',
-            marginTop: '4rem'
+            marginTop: '4rem',
+            '@media (max-width: 639px)': {
+              overflowX: 'auto',
+              overflowY: 'hidden',
+              whiteSpace: 'nowrap',
+              justifyContent: 'flex-start',
+           }
         }}>
             <VerticalDivider />
             <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Head IT"/>
