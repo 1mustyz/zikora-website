@@ -35,6 +35,9 @@ const ContactMain = () => {
       <Box sx={{
         paddingLeft: '5rem',
         paddingRight: '5rem',
+        '@media (max-width: 639px)': {
+          padding: 0,
+      },
       }}>
         <Header />
 
@@ -42,7 +45,10 @@ const ContactMain = () => {
       <Box sx={{
         display: 'flex',
         flexDirection: 'row',
-        marginTop: '4rem'
+        marginTop: '4rem',
+        '@media (max-width: 639px)': {
+          flexDirection: 'column',
+       }
       }}>
         {/* first column */}
         <Box sx={{
@@ -56,28 +62,41 @@ const ContactMain = () => {
               marginTop: '2rem'
 
             }}>
-              <CustomIconns color='white'> <img src={contactMainPic2} alt="" /> </CustomIconns>
+              <CustomIconns color='white'>
+                 <Box sx={{
+                  backgroundImage: `url(${contactMainPic2})`,
+                  backgroundRepeat: 'no-repeat',
+                  width: '100%',
+                  height: '100%',
+                  backgroundPosition: 'center',
+                  '@media (max-width: 639px)': {
+                    backgroundSize: '1.5rem'
+                 }
+                }}>
+
+                </Box>
+               </CustomIconns>
 
               <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 width: '50%',
-                marginLeft: '3rem'
+                marginLeft: '3rem',
+                '@media (max-width: 639px)': {
+                  width: '70%',
+                  marginLeft: '1rem',
+                   
+               }
 
               }}>
 
-                <Typography  sx={{
-                    fontSize: '38px ',
-                    fontWeight: 'bold',
-                    color: '#404040'
-
-                }}>
+                <p className='text-[38px] font-[700]  text-[#404040] sm:text-[24px]'>
                     Contact us
-                </Typography>
+                </p>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>
+                <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]' >
                     Zikora is a people-first bank, serving communities in Nigeria
-                </Typography>
+                </p>
               </Box>
             </Box>
 
@@ -91,29 +110,33 @@ const ContactMain = () => {
               borderRadius: '0.8rem',
               backgroundColor: '#404040',
               color: 'white',
-              marginTop: '12rem'
+              marginTop: '12rem',
+              '@media (max-width: 639px)': {
+                width: '100%'
+             }
+
             }}>
               <Typography sx={{fontSize: '22px', fontWeight: 'bold'}}>Get in touch</Typography>
                 <CustomTile>
                   <MdLocationPin />
                   <>
-                    <Typography>Zikora House Abatete,</Typography>
-                    <Typography>Anambra, Nigeria</Typography>
+                    <p className='text-[16px] sm:text-[14px]'>Zikora House Abatete,</p>
+                    <p className='text-[16px] sm:text-[14px]'>Anambra, Nigeria</p>
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <MdPhoneEnabled />
                   <>
-                    <Typography>+2349120363787</Typography>
-                    <Typography>+2349120363788</Typography>
+                    <p className='text-[16px] sm:text-[14px]'>+2349120363787</p>
+                    <p className='text-[16px] sm:text-[14px]'>+2349120363788</p>
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <FaEnvelope />
                   <>
-                    <Typography>info@zikoramfb.com</Typography>
+                    <p className='text-[16px] sm:text-[14px]'>info@zikoramfb.com</p>
                   </>
                 </CustomTile>
             </Box>
@@ -130,12 +153,20 @@ const ContactMain = () => {
           backgroundColor: 'white',
           borderRadius: '1rem',
           marginTop: '2rem',
-          border: '1px solid #CCCCCC'
+          border: '1px solid #CCCCCC',
+          '@media (max-width: 639px)': {
+            width: '100%',
+            borderRadius: '0',
+            border: 'none'
+         }
         }}>
           <Typography sx={{
             fontSize: '22px ',
             fontWeight: '500',
-            color: '#404040'
+            color: '#404040',
+            '@media (max-width: 639px)': {
+             display: 'none'
+           }
 
           }}>
             How Can We Help?
@@ -151,7 +182,12 @@ const ContactMain = () => {
             color: 'white',
             textTransform: 'none',
             width: '80%',
-            fontSize: '16px'
+            fontSize: '16px',
+            '@media (max-width: 639px)': {
+              width: '90%',
+              borderRadius: '0.2rem',
+
+            }
             
         }}/>
         </Box>
@@ -175,7 +211,13 @@ const CustomIconns = ({color, children}) => {
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '6rem',
-        color: 'white'
+        color: 'white',
+        '@media (max-width: 639px)': {
+          width: '60px', 
+          height: '60px',
+          borderRadius: '3rem',
+
+      }
     }}>{children}</Box>
   )
 }
@@ -227,17 +269,20 @@ const CustomTextField = ({title,children, multiline}) => {
       padding: '1rem 1rem',
       paddingBottom: '1rem',
       borderRadius: '0.5rem',
-      
+      '@media (max-width: 639px)': {
+        width: '90%',
+        borderRadius: '0.2rem',
+     }
      
 
   }}>
-      <Box sx={{fontSize: '28px', color: '#CCCCCC',}}>
+      <Box className='text-[28px] sm:text[16px] text-[#CCCCCC]'>
         {children}
       </Box>
       <TextField id="standard-basic" multiline={multiline} rows={6} placeholder={title} variant="standard" sx={{
           width: '87%',
           color: 'black',
-          borderColor: 'black'
+          borderColor: 'black',
           }} InputProps={{
               disableUnderline: true, // <== added this
           }}/>
