@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from '../../components/header'
 import contactMainPic from '../../images/contact-main-image1.png'
+import LoanMobileBg from '../../small-images/loan-mobile-bg.png'
+import loanMobilePic1 from '../../small-images/loan-mobile-main.png'
 import loanPic1 from '../../images/loan-page-image1.png'
 import CustomIconns from '../../components/customIconns'
 
-import {Box, Typography} from '@mui/material';
+import {Box} from '@mui/material';
 
 const Main = () => {
   return (
@@ -19,38 +21,56 @@ const Main = () => {
         backgroundRepeat: 'no-repeat',
         '@media (max-width: 639px)': {
             padding: 0,
-            backgroundImage: 'none',
+            backgroundImage: `url(${LoanMobileBg})`,
+            minHeight: '45vh',
+                      
         }
     }}>
         <Header />
         <Box sx={{
               display: 'flex',
               flexDirection: 'row',
-              marginTop: '6rem'
-
+              marginTop: '6rem',
+              '@media (max-width: 639px)': {
+                marginTop: '3rem',
+                margin: '3rem 1rem 0 1rem'
+             }
+             
             }}>
-              <CustomIconns color='white'> <img src={loanPic1} alt="" /> </CustomIconns>
+              <CustomIconns color='white'> 
+                <Box sx={{
+                  backgroundImage: `url(${loanPic1})`,
+                  backgroundRepeat: 'no-repeat',
+                  width: '100%',
+                  height: '100%',
+                  backgroundPosition: 'center',
+                  '@media (max-width: 639px)': {
+                    backgroundImage: `url(${loanMobilePic1})`,
+                 }
+                }}>
+
+                </Box>
+              </CustomIconns>
 
               <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 width: '50%',
-                marginLeft: '3rem'
+                marginLeft: '3rem',
+                '@media (max-width: 639px)': {
+                 width: '70%'
+                  
+              }
 
               }}>
 
-                <Typography  sx={{
-                    fontSize: '38px ',
-                    fontWeight: 'bold',
-                    color: '#404040'
-
-                }}>
+                <p className='text-[38px] font-[700]  text-[#404040] sm:text-[24px]'>
                     Zikora Bank Loans
-                </Typography>
+                </p>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>
+                <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>
                     Lorem ipsum dummy text are used on there so replace some.
-                </Typography>
+                </p>
               </Box>
             </Box>
 

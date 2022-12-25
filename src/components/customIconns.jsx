@@ -11,7 +11,13 @@ const CustomIconns = ({color, children}) => {
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: '6rem',
-          color: 'white'
+          color: 'white',
+          '@media (max-width: 639px)': {
+            width: '60px', 
+            height: '60px',
+            borderRadius: '3rem',
+
+        }
       }}>{children}</Box>
     )
   }
