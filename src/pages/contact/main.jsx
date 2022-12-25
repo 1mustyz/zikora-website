@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../components/header'
 import Button from '../../components/button'
 import contactMainPic from '../../images/contact-main-image1.png'
+import contactMobileMainPic from '../../small-images/contact-mobile-main-pic.png'
 import contactMainPic2 from '../../images/contact-image2.png'
 
 import {Box, Typography, TextField} from '@mui/material';
@@ -28,7 +29,8 @@ const ContactMain = () => {
         backgroundRepeat: 'no-repeat',
         '@media (max-width: 639px)': {
             padding: 0,
-            backgroundImage: 'none',
+            backgroundImage: `url(${contactMobileMainPic})`,
+
         },
 
     }}>
@@ -48,6 +50,8 @@ const ContactMain = () => {
         marginTop: '4rem',
         '@media (max-width: 639px)': {
           flexDirection: 'column',
+          marginTop: '0',
+          // 
        }
       }}>
         {/* first column */}
@@ -59,7 +63,8 @@ const ContactMain = () => {
             <Box sx={{
               display: 'flex',
               flexDirection: 'row',
-              marginTop: '2rem'
+              marginTop: '2rem',
+              padding: '0 1rem'
 
             }}>
               <CustomIconns color='white'>
@@ -112,7 +117,8 @@ const ContactMain = () => {
               color: 'white',
               marginTop: '12rem',
               '@media (max-width: 639px)': {
-                width: '100%'
+                width: '100%',
+                display: 'none'
              }
 
             }}>
@@ -157,7 +163,8 @@ const ContactMain = () => {
           '@media (max-width: 639px)': {
             width: '100%',
             borderRadius: '0',
-            border: 'none'
+            border: 'none',
+            marginTop: '6rem'
          }
         }}>
           <Typography sx={{
@@ -190,7 +197,50 @@ const ContactMain = () => {
             }
             
         }}/>
+          {/* second row */}
+          <Box sx={{
+            
+            display: 'none',
+              '@media (max-width: 639px)': {
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '2.2rem',
+                gap: '2rem',
+                borderRadius: '0.3rem',
+                backgroundColor: '#404040',
+                color: 'white',
+                marginTop: '3rem',
+                width: '90%',
+                marginBottom: '5rem'
+             }
+
+            }}>
+              <Typography sx={{fontSize: '22px', fontWeight: 'bold'}}>Get in touch</Typography>
+                <CustomTile>
+                  <MdLocationPin />
+                  <>
+                    <p className='text-[16px] sm:text-[14px]'>Zikora House Abatete,</p>
+                    <p className='text-[16px] sm:text-[14px]'>Anambra, Nigeria</p>
+                  </>
+                </CustomTile>
+
+                <CustomTile>
+                  <MdPhoneEnabled />
+                  <>
+                    <p className='text-[16px] sm:text-[14px]'>+2349120363787</p>
+                    <p className='text-[16px] sm:text-[14px]'>+2349120363788</p>
+                  </>
+                </CustomTile>
+
+                <CustomTile>
+                  <FaEnvelope />
+                  <>
+                    <p className='text-[16px] sm:text-[14px]'>info@zikoramfb.com</p>
+                  </>
+                </CustomTile>
+            </Box>
         </Box>
+      
       </Box>
 
       </Box>
