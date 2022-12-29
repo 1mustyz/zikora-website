@@ -50,8 +50,16 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
+  const tabsStyle = {
+    '@media (max-width: 639px)': {
+      padding: '0.2rem', minWidth: '50vw',
+      fontSize: '12px'
+  }
+   
+  }
+
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box className='w-[100%]'>
       <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" variant='fullWidth' 
           TabIndicatorProps={{
@@ -64,11 +72,18 @@ export default function BasicTabs() {
           paddingLeft: '6rem',
           paddingRight: '6rem',
           textTransform: 'none',
+          '@media (max-width: 639px)': {
+            padding: '0',
+            display: 'flex',
+            overflowX: 'auto',
+            overflowY: 'hidden',
+            whiteSpace: 'nowrap',
+        }
           }}>
 
-          <Tab label="Zikora Personal"  {...a11yProps(0)} />
-          <Tab label="Zikora Business Banking"  {...a11yProps(1)} />
-          <Tab label="Zikora Salary" {...a11yProps(2)} />
+          <Tab label="Zikora Personal" sx={{...tabsStyle}} {...a11yProps(0)} />
+          <Tab label="Zikora Business Banking" sx={{...tabsStyle}} {...a11yProps(1)} />
+          <Tab label="Zikora Salary" sx={{...tabsStyle}} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

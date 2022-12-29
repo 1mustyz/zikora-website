@@ -4,7 +4,7 @@ import contactMainPic from '../../images/contact-main-image1.png'
 import accountPic2 from '../../images/sub-account-image2.png'
 import CustomIconns from '../../components/customIconns'
 
-import {Box, Typography} from '@mui/material';
+import {Box} from '@mui/material';
 
 const Main = () => {
   return (
@@ -18,39 +18,58 @@ const Main = () => {
         backgroundImage: `url(${contactMainPic})`,
         backgroundRepeat: 'no-repeat',
         '@media (max-width: 639px)': {
-            padding: 0,
-            backgroundImage: 'none',
-        }
+          padding: 0,
+          backgroundImage: `url(${contactMainPic})`,
+          minHeight: '47vh',
+      }
     }}>
         <Header />
         <Box sx={{
               display: 'flex',
               flexDirection: 'row',
-              marginTop: '6rem'
+              marginTop: '6rem',
+              '@media (max-width: 639px)': {
+                marginTop: '3rem',
+                margin: '3rem 1rem 0 1rem',
+                alignItems: 'center'
+             }
 
             }}>
-              <CustomIconns color='white'> <img src={accountPic2} alt="" /> </CustomIconns>
+              <CustomIconns color='white'> 
+              <Box sx={{
+                  backgroundImage: `url(${accountPic2})`,
+                  backgroundRepeat: 'no-repeat',
+                  width: '100%',
+                  height: '100%',
+                  backgroundPosition: 'center',
+                  '@media (max-width: 639px)': {
+                    backgroundSize: '1.5rem'
+                 }
+                }}>
+
+                </Box>
+              </CustomIconns>
 
               <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 width: '50%',
-                marginLeft: '3rem'
+                marginLeft: '3rem',
+                '@media (max-width: 639px)': {
+                  width: '78%',
+                  marginLeft: '1rem',
+                   
+               }
 
               }}>
 
-                <Typography  sx={{                                                                                                                                                           
-                    fontSize: '38px ',
-                    fontWeight: 'bold',
-                    color: '#404040'
-
-                }}>
+                <p  className='text-[38px] font-[700]  text-[#404040] sm:text-[24px]'>
                     Current Accounts
-                </Typography>
+                </p>
 
-                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>                                                                                                                                                                         
+                <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>                                                                                                                                                                         
                     We provide different current accounts to give you access to overdraft facilities and customer finance for urgent business needs. 
-                </Typography>
+                </p>
               </Box>
             </Box>
 

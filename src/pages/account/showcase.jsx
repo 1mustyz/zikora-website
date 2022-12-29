@@ -46,8 +46,6 @@ const ShowCase = () => {
                 borderTopLeftRadius: '0.8rem',
                 borderTopRightRadius: '0.8rem',
                 padding: '2rem 1.5rem 0 1.5rem',
-
-
             },
               }}>
               <p className='text-[34px] font-[700] sm:text-[24px]'  >
