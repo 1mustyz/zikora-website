@@ -11,12 +11,18 @@ const CurrentAccount = () => {
         flexDirection: 'row',
         width: '90%', 
         margin: 'auto',
-        marginTop: '7rem'
+        marginTop: '7rem',
+        '@media (max-width: 639px)': {
+          flexDirection: 'column',
+          marginTop: '3rem',
+          paddingBottom: '3rem'
+
+        },
         // border: '1px solid black',
     }}>
         {/* left */}
         <Box >
-          <Box sx={{width: '75%'}}>
+          <Box className='w-[75%] sm:w-[100%]'>
             <img src={loanPic1} alt="acquire loan" />
           </Box>
         </Box>
@@ -26,18 +32,35 @@ const CurrentAccount = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          marginLeft: '1.5rem'
+          marginLeft: '1.5rem',
+          '@media (max-width: 639px)': {
+            width: '100%',
+            margin: '0',
+            marginTop: '2rem'
+          },
          
           }}>
           <Typography sx={{
             fontSize: '33px',
             fontWeight: 'bold',
-            color: '#404040'
+            color: '#404040',
+            '@media (max-width: 639px)': {
+              fontSize: '24px',
+              width: '100%'
+            },
           }} >
               Current Accounts
           </Typography>
 
-          <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+          <Typography  sx={{
+            marginTop: '2rem', 
+            fontSize: '15px', 
+            color:'#5E5E5E', 
+            '@media (max-width: 639px)': {
+              marginTop: '0.5rem',
+              fontSize: '14px',
+            },
+            }}>
               We provide multiple types of current accounts give overdraft facilities, regular transaction capabilities and customer financing for urgent business needs.
           </Typography>
 
@@ -57,9 +80,14 @@ const CurrentAccount = () => {
            
                     },
                     '@media (max-width: 639px)': {
+                      '@media (max-width: 639px)': {
                         with: '100%',
                         fontSize: '14px',
-                        padding: '5% 28%',
+                        width: '100%',
+                        marginTop: '1.5rem'
+                        // padding: '5% 28%',
+
+                    },
 
                     },
                 }} />

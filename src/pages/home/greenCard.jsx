@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Typography} from '@mui/material';
+import {Box} from '@mui/material';
 import Button from '../../components/button';
 import greenCardPic from '../../images/green-card.png'
 
@@ -12,17 +12,12 @@ const GreenCard = () => {
       backgroundColor: '#F7F7F7'
     }}
     >
-        <Typography className='sm:text-[14px]' sx={{color: '#5E5E5E', fontSize: '16px'}}>
+        <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
             Easiest Way to Make Payments
-        </Typography>
-        <Typography className='sm:text-[22px]' sx={{
-            fontSize: '28px',
-            fontWeight: 'bold',
-            color: '#404040'
-
-        }}>
+        </p>
+        <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]' >
             Zikora Green Card
-        </Typography>
+        </p>
 
         {/* green card */}
         <Box  sx={{
