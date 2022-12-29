@@ -134,7 +134,6 @@ const PreImageAndText = ({pic, title, post}) => {
       '@media (max-width: 639px)': {
         display: 'none'        
     }
-
      }}>
 
      </Box>
