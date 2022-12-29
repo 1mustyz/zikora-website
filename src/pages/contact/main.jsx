@@ -52,19 +52,23 @@ const ContactMain = () => {
           flexDirection: 'column',
           marginTop: '0',
           // 
-       }
+        }
       }}>
         {/* first column */}
         <Box sx={{
           display: 'flex',
-          flexDirection: 'column'
+          flexDirection: 'column',
         }}>
           {/* row 1 */}
             <Box sx={{
               display: 'flex',
               flexDirection: 'row',
               marginTop: '2rem',
-              padding: '0 1rem'
+              padding: '0 1rem',
+              '@media (max-width: 639px)': {
+                alignItems: 'center'
+                // 
+             }
 
             }}>
               <CustomIconns color='white'>
