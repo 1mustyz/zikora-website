@@ -61,7 +61,7 @@ export default function BasicTabs() {
   return (
     <Box className='w-[100%]'>
       <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" variant='fullWidth' 
+        <Tabs value={value} allowScrollButtonsMobile={true} variant="scrollable" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  
           TabIndicatorProps={{
             style: {
               backgroundColor: "#608E75",
@@ -74,11 +74,7 @@ export default function BasicTabs() {
           textTransform: 'none',
           '@media (max-width: 639px)': {
             padding: '0',
-            display: 'flex',
-            overflowX: 'auto',
-            overflowY: 'hidden',
-            whiteSpace: 'nowrap',
-        }
+           }
           }}>
 
           <Tab label="Zikora Personal" sx={{...tabsStyle}} {...a11yProps(0)} />

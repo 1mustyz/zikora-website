@@ -65,8 +65,7 @@ export default function BasicTabs() {
         borderBottom: 1,
         borderColor: 'divider'
         }}>
-        <Tabs value={value} allowScrollButtonsMobile={true} onChange={handleChange} aria-label="basic tabs example" variant='fullWidth' 
-          TabIndicatorProps={{
+        <Tabs value={value} allowScrollButtonsMobile={true} variant="scrollable" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  TabIndicatorProps={{
             style: {
               backgroundColor: "#608E75",
               textTransform: 'none',
@@ -79,7 +78,6 @@ export default function BasicTabs() {
           '@media (max-width: 639px)': {
             width: '100%',
             padding: '0',
-            paddingBottom: '1rem',
             // display: 'flex',
             // flexDirection: 'row',
             // overflow: 'auto',
