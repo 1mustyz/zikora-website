@@ -13,8 +13,8 @@ const Index = () => {
         <MobileBanking/>
         <GreenCard />
         <Card />
-        <Box className='flex  flex-row justify-center mb-[6rem]'>
-          <Divider className='w-[85%] ml-[1rem]'/>
+        <Box className='flex  flex-row justify-center mb-[6rem] sm:mb-[0]'>
+          <Divider className='w-[85%] ml-[1rem] sm:hidden'/>
         </Box>
           <Footer />
     </div>

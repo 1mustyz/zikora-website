@@ -1,16 +1,13 @@
 import React from 'react'
-import {Box, Typography, Divider} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import Button from '../../../components/button';
 import channel4Pic from '../../../images/Channels 4.png'
 import channel5Pic from '../../../images/Channels 5.png'
-import loanPic3 from '../../../images/loan-image3.png'
-
-
 
 
 const Card = () => {
   return (
-    <Box className='h-full pb-28 width-full pt-20 flex flex-col items-center'>
+    <Box className='h-full pb-28 sm:pb-[4rem] width-full pt-20 flex flex-col items-center'>
 
         {/* column */}
         <Box  sx={{
@@ -18,17 +15,21 @@ const Card = () => {
           justifySelf: 'center',
           display: 'flex',
           flexDirection: 'column',
-          rowGap: '8rem'
+          rowGap: '8rem',
+          '@media (max-width: 639px)': {
+            rowGap: '3rem',
+          },
         }}>
             {/* first row */}
             <Box sx={{
                 display: 'flex',
-                flexDirection: 'row',
-                // border: '1px solid black',
+                '@media (max-width: 639px)': {
+                  flexDirection: 'column',
+                },
             }}>
                 {/* left */}
                 <Box >
-                  <Box sx={{width: '75%'}}>
+                  <Box className='w-[75%] sm:w-[100%]'>
                     <img src={channel4Pic} alt="acquire loan" />
                   </Box>
                 </Box>
@@ -38,18 +39,35 @@ const Card = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
-                  marginLeft: '1.5rem'
-                 
+                  marginLeft: '1.5rem',
+                  '@media (max-width: 639px)': {
+                    width: '100%',
+                    margin: '0',
+                    marginTop: '2rem'
+                  },
                   }}>
                   <Typography sx={{
                     fontSize: '33px',
                     fontWeight: 'bold',
-                    color: '#404040'
+                    color: '#404040',
+                    '@media (max-width: 639px)': {
+                      fontSize: '24px',
+                      width: '100%'
+                    },
                   }} >
                       Internet Banking
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{
+                    marginTop: '2rem', 
+                    fontSize: '15px', 
+                    color:'#5E5E5E', 
+                    lineHeight: '180%',
+                    '@media (max-width: 639px)': {
+                      marginTop: '0.5rem',
+                      fontSize: '14px',
+                    },
+                    }}>
                     Perform all normal bank transactions from any location.Our internet banking will guide you in every step you need to achieve your aims.
                   </Typography>
 
@@ -69,11 +87,13 @@ const Card = () => {
                    
                             },
                             '@media (max-width: 639px)': {
-                                with: '100%',
-                                fontSize: '14px',
-                                padding: '5% 28%',
+                              with: '100%',
+                              fontSize: '14px',
+                              width: '100%',
+                              marginTop: '1.5rem'
+                              // padding: '5% 28%',
 
-                            },
+                          },
                         }} />
                 </Box>
             </Box>
@@ -82,6 +102,9 @@ const Card = () => {
             <Box  sx={{
                 display: 'flex',
                 flexDirection: 'row',
+                '@media (max-width: 639px)': {
+                  flexDirection: 'column-reverse'
+                },
             }}>
                 {/* left */}
                 <Box sx={{
@@ -89,19 +112,38 @@ const Card = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
-                  marginLeft: '1.5rem'
+                  marginLeft: '1.5rem',
+                  '@media (max-width: 639px)': {
+                    margin: '0',
+                    width: '100%',
+                    marginTop: '2rem'
+                  },
                  
                   }}>
                   <Typography sx={{
                     fontSize: '35px',
                     fontWeight: 'bold',
                     width: '60% ',
-                    color: '#404040'
+                    color: '#404040',
+                    '@media (max-width: 639px)': {
+                      fontSize: '24px',
+                      width: '80%',
+
+                    },
                   }} >
                       ATM Cards
                   </Typography>
 
-                  <Typography  sx={{marginTop: '2rem', fontSize: '15px', color:'#5E5E5E', lineHeight: '180%'}}>
+                  <Typography  sx={{
+                    marginTop: '2rem', 
+                    fontSize: '15px', 
+                    color:'#5E5E5E', 
+                    lineHeight: '180%',
+                    '@media (max-width: 639px)': {
+                      marginTop: '0.5rem',
+                      fontSize: '14px',
+                    },
+                    }}>
                     With our Verve card, you can perform a lot of transactions both online and offline.
                   </Typography>
 
@@ -121,16 +163,23 @@ const Card = () => {
                    
                             },
                             '@media (max-width: 639px)': {
-                                with: '100%',
-                                fontSize: '14px',
-                                padding: '5% 28%',
-
-                            },
+                              with: '100%',
+                              fontSize: '14px',
+                              width: '100%',
+                              marginTop: '1.5rem'
+                              // padding: '5% 28%',
+                          },
                         }} />
                 </Box>
                 {/* right */}
-                <Box sx={{display: 'flex', justifyContent: 'flex-end'}}>
-                  <Box sx={{width: '75%',}}>
+                <Box sx={{
+                  display: 'flex', 
+                  justifyContent: 'flex-end',
+                  '@media (max-width: 639px)': {
+                    justifyContent: 'center',
+                  },
+                  }}>
+                  <Box className='w-[75%] sm:w-[100%]'>
                     <img src={channel5Pic} alt="customer service" />
                   </Box>
                 </Box>

@@ -61,7 +61,7 @@ export default function BasicTabs() {
   return (
     <Box className='w-[100%]'>
       <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
-        <Tabs value={value} allowScrollButtonsMobile={true} variant="scrollable" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  
+        <Tabs value={value} allowScrollButtonsMobile={true} variant="fullWidth" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  
           TabIndicatorProps={{
             style: {
               backgroundColor: "#608E75",
@@ -74,6 +74,7 @@ export default function BasicTabs() {
           textTransform: 'none',
           '@media (max-width: 639px)': {
             padding: '0',
+            variant: 'scrollable'
            }
           }}>
 
