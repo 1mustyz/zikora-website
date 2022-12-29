@@ -3,7 +3,6 @@ import  zikoraImg from '../images/ZikoraLogoGreen 1.png'
 import  Button from './button'
 import Divider from './divider'
 import {IoIosArrowDown} from 'react-icons/io'
-import {RxHamburgerMenu} from 'react-icons/rx'
 import {Box, Menu, MenuItem} from '@mui/material';
 import { Link } from "react-router-dom";
 import MobileNav from './mobileNav'
@@ -113,12 +112,7 @@ const Header = () => {
           },
 
         }}/>
-      {/* <Box sx={{
-        display: 'none',
-        '@media (max-width: 639px)': {
-          display: 'block'
-      },
-      }} className='sm:text-3xl'><RxHamburgerMenu/></Box> */}
+      
       <MobileNav/>
     </Box>
     <Divider/>

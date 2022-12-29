@@ -51,10 +51,21 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
+  const tabsStyle = {
+    '@media (max-width: 639px)': {
+      padding: '0.2rem', minWidth: '50vw',
+      fontSize: '12px'
+  }
+   
+  }
+
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" variant='fullWidth' 
+      <Box sx={{ 
+        borderBottom: 1,
+        borderColor: 'divider'
+        }}>
+        <Tabs value={value} allowScrollButtonsMobile={true} onChange={handleChange} aria-label="basic tabs example" variant='fullWidth' 
           TabIndicatorProps={{
             style: {
               backgroundColor: "#608E75",
@@ -65,12 +76,20 @@ export default function BasicTabs() {
           paddingLeft: '6rem',
           paddingRight: '6rem',
           textTransform: 'none',
+          '@media (max-width: 639px)': {
+            width: '100%',
+            padding: '0',
+            paddingBottom: '1rem',
+            // display: 'flex',
+            // flexDirection: 'row',
+            // overflow: 'auto',
+        }
           }}>
 
-          <Tab label="Zikora Save"  {...a11yProps(0)} />
-          <Tab label="Zikora Target"  {...a11yProps(1)} />
-          <Tab label="Zikora For Kids" {...a11yProps(2)} />
-          <Tab label="Zikora Esusu" {...a11yProps(2)} />
+          <Tab label="Zikora Save" sx={{...tabsStyle}}   {...a11yProps(0)} />
+          <Tab label="Zikora Target" sx={{...tabsStyle}}  {...a11yProps(1)} />
+          <Tab label="Zikora For Kids" sx={{...tabsStyle}}  {...a11yProps(2)} />
+          <Tab label="Zikora Esusu" sx={{...tabsStyle}}  {...a11yProps(2)} />
 
         </Tabs>
       </Box>
