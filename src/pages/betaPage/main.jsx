@@ -8,6 +8,8 @@ import {Box, Typography, TextField} from '@mui/material';
 import { FaEnvelope } from "react-icons/fa";
 import { RxAvatar } from "react-icons/rx";
 import { BsCardText } from "react-icons/bs";
+import contactMobileMainPic from '../../small-images/contact-mobile-main-pic.png'
+
 
 const Main = () => {
   return (
@@ -21,42 +23,69 @@ const Main = () => {
         backgroundImage: `url(${demoBg})`,
         backgroundRepeat: 'no-repeat',
         '@media (max-width: 639px)': {
-            padding: 0,
-            backgroundImage: 'none',
-        }
-    }}>
-        <Header />
-        <Box sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              marginTop: '6rem'
+          padding: 0,
+          backgroundImage: `url(${contactMobileMainPic})`,
 
-            }}>
-              <CustomIconns color='white'> <img src={betaDemo} alt="" /> </CustomIconns>
+      },
+        }}>
+          <Header />
+          <Box sx={{
+            paddingLeft: '5rem',
+            paddingRight: '5rem',
+            display: 'flex',
+            flexDirection: 'row',
+            marginTop: '6rem',
+            height: '90vh',
+            '@media (max-width: 639px)': {
+              padding: '0 2rem',
+              flexDirection: 'column',
+              marginTop: '2rem'
+
+          },
+          }}>
+            <Box className='flex flex-row sm:mb-[6rem]'>
+
+              <CustomIconns color='white'>
+              <Box sx={{
+                  backgroundImage: `url(${betaDemo})`,
+                  backgroundRepeat: 'no-repeat',
+                  width: '100%',
+                  height: '100%',
+                  backgroundPosition: 'center',
+                  '@media (max-width: 639px)': {
+                    backgroundSize: '1.5rem'
+                 }
+                }}>
+
+                </Box>
+              </CustomIconns>
 
               <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 width: '50%',
-                marginLeft: '3rem'
+                marginLeft: '3rem',
+                '@media (max-width: 639px)': {
+                  width: '70%',
+                  marginLeft: '1rem',
+                   
+               }
 
               }}>
 
-                <Typography  sx={{
-                    fontSize: '38px ',
-                    fontWeight: 'bold',
-                    color: '#404040'
+                <p className='text-[38px] font-[700]  text-[#404040] sm:text-[24px]'>
+                  Join Beta
+                </p>
 
-                }}>
-                    Join Beta
-                </Typography>
-
-                <Typography sx={{color: '#5E5E5E', fontSize: '16px', marginTop: '0.8rem'}}>
+                <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]' >
                     Join our private beta group by requesting now
-                </Typography>
+                </p>
+                
+               
               </Box>
+            </Box>
 
-              <Box className='flex flex-col w-[30%] ml-[4rem] gap-[1rem] h-[60vh]'>
+              <Box className='flex flex-col w-[30%] sm:w-[100%] ml-[4rem] sm:ml-[0] gap-[1rem] h-[60vh]'>
                 <CustomTextField title="First name"><RxAvatar /></CustomTextField>
                 <CustomTextField title="Last name "><RxAvatar /></CustomTextField>
                 <CustomTextField title="Phone"><FaEnvelope /></CustomTextField>
