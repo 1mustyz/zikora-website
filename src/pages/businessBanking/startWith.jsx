@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Typography, } from '@mui/material';
+import {Box} from '@mui/material';
 import mobileBankingPic1 from '../../images/bussnes-s1.png'
 import mobileBankingPic2 from '../../images/bussnes-s2.png'
 import mobileBankingPic3 from '../../images/bussnes-s3.png'
@@ -7,23 +7,21 @@ import mobileBankingPic3 from '../../images/bussnes-s3.png'
 
 const StartWith = () => {
   return (
-    <Box className='h-full width-full pt-[7rem] mb-[6rem]'>
+    <Box className='h-full width-full pt-[7rem] sm:pt-[3rem] mb-[6rem]'>
 
-        <Box className='ml-[7rem]'>
+        <Box className='ml-[7rem] sm:ml-0 sm:flex sm:flex-col sm:items-center' >
 
-            <Typography  sx={{
-                fontSize: '34px',
-                fontWeight: 'bold',
-                color: '#404040'
 
-            }}>
-                Start with basics that just work
-            </Typography>
-            <Typography sx={{color: '#5E5E5E', fontSize: '16px',}}>
-                Lorem ipsum dummy text are used in this section so place your text.
-            </Typography>
+          <p className='text-[34px] sm:text-[24px] sm:w-[90%] sm:text-center text-[#404040] font-[700]' >
+            Start with basics that just work
+          </p>
+          <p className='text-[16px] sm:text-[14px] sm:w-[90%] sm:text-center sm:mt-[1rem] sm:leading-[180%] text-[#5E5E5E]'>
+            Lorem ipsum dummy text are used in this section so place your text.
+          </p>
+            
+           
         </Box>
-        <Box className='flex flex-col items-center w-[90%] m-[auto] ' >
+        <Box className='flex flex-col items-center w-[90%] m-[auto] sm:items-start sm:mr-[2rem] sm:ml-[1.2rem]' >
 
             {/* board of directors */}
             <Box sx={{
@@ -34,6 +32,12 @@ const StartWith = () => {
                 gap: '8rem',
                 alignItems: 'center',
                 marginTop: '4rem',
+                '@media (max-width: 639px)': {
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                  gap: '2rem',
+                  marginTop: '2rem',
+              }
             }}>
                 <PreImageAndText pic={mobileBankingPic1} title="Open FDIC-insured checking and savings accounts."/>
                 <VerticalDivider />
@@ -105,12 +109,43 @@ const PreImageAndText = ({pic, title, post}) => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        '@media (max-width: 639px)': {
+          flexDirection: 'row',
+          gap: '2rem'
+        }
     }}>
-      <CustomIconns color='white'> <img src={pic} alt="" /> </CustomIconns>
+      <Box className='sm:w-[40%]'>
 
-      <Typography sx={{fontSize: '18px', fontWeight: '500', marginTop: '3rem', color: '#404040'}}>{title}</Typography>
-      <Typography sx={{fontSize: '18px',  color: '#404040'}}>{post}</Typography>
+        <CustomIconns color='white'>
+          {/* <img src={pic} alt="" /> */}
+          <Box sx={{
+            backgroundImage: `url(${pic})`,
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            height: '100%',
+            backgroundPosition: 'center',
+            '@media (max-width: 639px)': {
+              backgroundSize: '2.5rem',
+            
+            }
+            
+          }}>
+
+          </Box>
+        </CustomIconns>
+      </Box>
+
+      <Box className='text-center sm:text-left'>
+        <p className='text-[22px] text-[#404040] font-[500] sm:text-[18px] mt-[3rem] sm:mt-[0]'>
+          {title}
+        </p>
+
+        {/* <p className='text-[22px] text-[#404040] font-[500] sm:text-[18px]'>
+          {post}
+        </p> */}
+
+      </Box>
 
     </Box>
   )
@@ -121,7 +156,9 @@ const PreImageAndText = ({pic, title, post}) => {
      <Box sx={{
       borderLeft: '1px solid #CCCCCC',
       height: '10rem',
-
+      '@media (max-width: 639px)': {
+        display: 'none'        
+    }
      }}>
 
      </Box>
@@ -138,7 +175,12 @@ const PreImageAndText = ({pic, title, post}) => {
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '6rem',
-        color: 'white'
+        color: 'white',
+        '@media (max-width: 639px)': {
+          width: '100px', 
+          height: '100px',
+          borderRadius: '3rem',
+        }  
     }}>{children}</Box>
   )
 }

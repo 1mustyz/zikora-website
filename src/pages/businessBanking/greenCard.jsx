@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Typography} from '@mui/material';
+import {Box} from '@mui/material';
 import Button from '../../components/button';
 import greenCardPic1 from '../../images/business-banking2.png'
 
@@ -8,22 +8,18 @@ import greenCardPic1 from '../../images/business-banking2.png'
 
 const GreenCard = () => {
   return (
-    <Box className='h-full width-full pt-20 flex flex-col items-center'
+    <Box className='h-full width-full pt-20 sm:pt-[3rem] flex flex-col items-center'
     sx={{
       backgroundColor: '#F7F7F7'
     }}
     >
-        <Typography sx={{color: '#5E5E5E'}}>
+        <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
           Advanced tools
-        </Typography>
-        <Typography  sx={{
-            fontSize: '1.58rem',
-            fontWeight: 'bold',
-            color: '#404040'
-
-        }}>
+        </p>
+        <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]' >
             Fearlessly scale to new heights
-        </Typography>
+        </p>
+             
 
         {/* green card */}
         <Box sx={{
@@ -32,6 +28,9 @@ const GreenCard = () => {
           marginTop: '2rem',
           display: 'flex',
           flexDirection: 'row',
+          '@media (max-width: 639px)': {
+            flexDirection: 'column'
+        },
         }}>
           {/* left */}
             <Box sx={{
@@ -40,23 +39,26 @@ const GreenCard = () => {
               flexDirection: 'column',
               justifyContent: 'center',
               paddingLeft: '4rem',
-              paddingRight: '5rem',
+              paddingRight: '12rem',
               backgroundColor: '#66A681',
               borderTopLeftRadius: '1.2rem',
               color: 'white',
-              paddingTop: '4rem',
-              paddingBottom: '4rem'
-              }}>
-              <Typography sx={{
-                fontSize: '34px',
-                fontWeight: 'bold'
-              }} >
-                  Earn upto 5% yield on your idel cash
-              </Typography>
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderTopLeftRadius: '0.8rem',
+                borderTopRightRadius: '0.8rem',
+                padding: '2rem 1.5rem 0 1.5rem',
 
-              <Typography  sx={{marginTop: '1rem', fontSize: '16px'}}>
-                Get access to money market funds form your dashboard with Zikora Business Banking.
-              </Typography>
+
+            },
+              }}>
+              <p className='text-[34px] font-[700] sm:text-[24px] w-[75%]'  >
+                  Earn upto 5% yield on your idel cash
+              </p>
+
+              <p className='text-[16px] sm:text-[14px] mt-[1rem]'>
+                  Get access to money market funds form your dashboard with Zikora Business Banking.
+              </p>
 
               <Button title="Get Started Banking" style={{
                         padding: '1rem 1.5rem',
@@ -69,11 +71,13 @@ const GreenCard = () => {
                         width: '70%',
                         fontSize: '14px',
                         '@media (max-width: 639px)': {
-                            with: '100%',
-                            fontSize: '14px',
-                            padding: '5% 28%',
+                          width: '100%',
+                          fontSize: '14px',
+                          padding: '0.8rem 2rem',
+                          marginTop: '1.5rem',
+                          marginBottom: '2.2rem'
 
-                        },
+                      },
                     }} />
             </Box>
             {/* right */}
@@ -88,10 +92,16 @@ const GreenCard = () => {
               paddingTop: '3rem',
               paddingLeft: '3rem',
               gap: '0.5rem',
+              '@media (max-width: 639px)': {
+                width: '100%',
+                borderRadius: '0',
+                paddingLeft: '1.5rem',
+                backgroundSize: '20rem'
+            },
 
             }}>
-              <p className='text-[#608E75]'>Earn 2% cashback</p>
-              <p className='text-[34px] w-[70%] font-[500] text-[#404040]'>Confidently scale your team with Credit cards</p>
+              <p className='text-[#608E75] text-[16px] sm:text-[14px]'>Earn 2% cashback</p>
+              <p className='text-[34px] sm:text-[24px] w-[70%] sm:w-[90%] font-[500] sm:font-[700] text-[#404040]'>Confidently scale your team with Credit cards</p>
               <Button title="Learn More"  style={{
                         padding: '1rem 1.5rem',
                         color: '#404040',
@@ -102,11 +112,14 @@ const GreenCard = () => {
                         width: '30%',
                         fontSize: '14px',
                         '@media (max-width: 639px)': {
-                            with: '100%',
-                            fontSize: '14px',
-                            padding: '5% 28%',
+                          width: '50%',
+                          fontSize: '14px',
+                          padding: '0 0',
+                          margin: 'auto',
+                          marginTop: '0.5rem',
+                          marginBottom: '2.2rem'
 
-                        } }}/>
+                      }, }}/>
             </Box>
         </Box>
     </Box>

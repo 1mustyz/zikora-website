@@ -7,7 +7,7 @@ import greenCardPic from '../../images/savings 2.png'
 const ZikoraSave = () => {
   return (
     <Box>
-<Box sx={{
+        <Box sx={{
             display: 'flex',
             flexDirection: 'row',
             marginTop: '8rem',
