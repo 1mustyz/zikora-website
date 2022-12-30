@@ -2,7 +2,7 @@ import React from 'react'
 
 const Paragraph = () => {
   return (
-    <div className='flex flex-col w-[90vw] m-[auto] mt-[6rem]'>
+    <div className='flex flex-col w-[90vw] m-[auto] mt-[6rem] sm:mt-[3rem]'>
         <HeadingAndText>
             <>Terms & conditions using the zikora MFB website</>
             <>Zikora MFB maintains this website (the “Website”) to provide you with information about products and services available through us, and information about Zikora MFB. Please read these Terms and Conditions carefully before accessing or using this Website.</>
@@ -78,14 +78,14 @@ const Paragraph = () => {
 const HeadingAndText = ({children}) => {
   return (
     <div className='flex flex-col gap-[0.4rem]'>
-        <p className='text-[#404040] text-[22px] leading-[30px]'>{children[0]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[1]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[2]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[3]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[4]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[5]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[6]}</p>
-        <p className='text-[#5E5E5E] text-[16px] leading-[30px]'>{children[7]}</p>
+        <p className='text-[#404040] text-[22px] sm:text-[18px] sm:font-[700] leading-[30px]'>{children[0]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[1]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[2]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[3]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[4]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[5]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[6]}</p>
+        <p className='text-[#5E5E5E] text-[16px] sm:text-[14px] leading-[30px]'>{children[7]}</p>
 
 
     </div>
