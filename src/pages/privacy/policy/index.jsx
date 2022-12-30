@@ -9,7 +9,7 @@ const index = () => {
     <div>
         <Main />
         <Paragraph />
-        <Box className='w-[90vw] m-[auto] mt-[6rem] mb-[6rem]'>
+        <Box className='w-[90vw] m-[auto] mt-[6rem] sm:mt-[2rem] mb-[6rem] sm:mb-[3rem]'>
         <Divider />
 
         </Box>
