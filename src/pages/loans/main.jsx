@@ -61,8 +61,6 @@ const Main = () => {
                 '@media (max-width: 639px)': {
                  width: '70%',
                  marginLeft: '1rem',
-
-                  
               }
 
               }}>
