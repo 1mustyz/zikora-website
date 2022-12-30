@@ -4,10 +4,9 @@ import demoBg from '../../images/demo-bg.png'
 import betaDemo from '../../images/beta-demo.png'
 import CustomIconns from '../../components/customIconns'
 import Button from '../../components/button'
-import {Box, Typography, TextField} from '@mui/material';
+import {Box,TextField} from '@mui/material';
 import { FaEnvelope } from "react-icons/fa";
 import { RxAvatar } from "react-icons/rx";
-import { BsCardText } from "react-icons/bs";
 import contactMobileMainPic from '../../small-images/contact-mobile-main-pic.png'
 
 

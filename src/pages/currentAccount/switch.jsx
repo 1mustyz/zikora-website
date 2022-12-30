@@ -60,8 +60,33 @@ export default function BasicTabs() {
 
   return (
     <Box className='w-[100%]'>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
-        <Tabs value={value} allowScrollButtonsMobile={true} variant="fullWidth" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  
+      <Box className='sm:hidden' sx={{ borderBottom: 1, borderColor: 'divider'}}>
+        <Tabs className='sm:hidden' value={value} allowScrollButtonsMobile={true} variant="fullWidth" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  
+          TabIndicatorProps={{
+            style: {
+              backgroundColor: "#608E75",
+              textTransform: 'none',
+            }
+          }}
+          sx={{
+          paddingLeft: '6rem',
+          paddingRight: '6rem',
+          textTransform: 'none',
+          '@media (max-width: 639px)': {
+            padding: '0',
+            variant: 'scrollable'
+           }
+          }}>
+
+          <Tab label="Zikora Personal" sx={{...tabsStyle}} {...a11yProps(0)} />
+          <Tab label="Zikora Business Banking" sx={{...tabsStyle}} {...a11yProps(1)} />
+          <Tab label="Zikora Salary" sx={{...tabsStyle}} {...a11yProps(2)} />
+        </Tabs>
+        
+      </Box>
+
+      <Box className='hidden sm:block' sx={{ borderBottom: 1, borderColor: 'divider'}}>
+        <Tabs  value={value} allowScrollButtonsMobile={true} variant="scrollable" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  
           TabIndicatorProps={{
             style: {
               backgroundColor: "#608E75",

@@ -61,7 +61,38 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ 
+      <Box className='sm:hidden' sx={{ 
+        borderBottom: 1,
+        borderColor: 'divider'
+        }}>
+        <Tabs value={value} allowScrollButtonsMobile={true} variant="fullWidth" orientation="horizontal" onChange={handleChange} aria-label="basic tabs example"  TabIndicatorProps={{
+            style: {
+              backgroundColor: "#608E75",
+              textTransform: 'none',
+            }
+          }}
+          sx={{
+          paddingLeft: '6rem',
+          paddingRight: '6rem',
+          textTransform: 'none',
+          '@media (max-width: 639px)': {
+            width: '100%',
+            padding: '0',
+            // display: 'flex',
+            // flexDirection: 'row',
+            // overflow: 'auto',
+        }
+          }}>
+
+          <Tab label="Zikora Save" sx={{...tabsStyle}}   {...a11yProps(0)} />
+          <Tab label="Zikora Target" sx={{...tabsStyle}}  {...a11yProps(1)} />
+          <Tab label="Zikora For Kids" sx={{...tabsStyle}}  {...a11yProps(2)} />
+          <Tab label="Zikora Esusu" sx={{...tabsStyle}}  {...a11yProps(2)} />
+
+        </Tabs>
+      </Box>
+
+      <Box className='hidden sm:block' sx={{ 
         borderBottom: 1,
         borderColor: 'divider'
         }}>
@@ -91,6 +122,7 @@ export default function BasicTabs() {
 
         </Tabs>
       </Box>
+
       <TabPanel value={value} index={0}>
         <ZikoraSave />
       </TabPanel>
