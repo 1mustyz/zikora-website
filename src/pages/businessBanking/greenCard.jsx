@@ -38,8 +38,8 @@ const GreenCard = () => {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              paddingLeft: '4rem',
-              paddingRight: '12rem',
+              padding: '3rem 8rem 3rem 4rem',
+              
               backgroundColor: '#66A681',
               borderTopLeftRadius: '1.2rem',
               color: 'white',
@@ -52,7 +52,7 @@ const GreenCard = () => {
 
             },
               }}>
-              <p className='text-[34px] font-[700] sm:text-[24px] w-[75%]'  >
+              <p className='text-[34px] font-[700] sm:text-[24px] w-[75%] sm:w-[100%]'  >
                   Earn upto 5% yield on your idel cash
               </p>
 

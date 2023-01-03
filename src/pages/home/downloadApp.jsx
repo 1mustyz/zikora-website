@@ -5,10 +5,6 @@ import Button from '@mui/material/Button';
 import downloadAppPic1 from '../../images/download-app-image1.png'
 import {FaGooglePlay,FaAppStoreIos} from 'react-icons/fa'
 
-
-
-
-
 const DownloadApp = () => {
   return (
     <Box className='h-full pb-28 sm:pb-[3rem] width-full pt-20 sm:pt-[1rem] flex flex-col items-center' >
@@ -44,12 +40,12 @@ const DownloadApp = () => {
                 justifyContent: 'center',
                 marginLeft: '1.5rem',
                 '@media (max-width: 639px)': {
-                    width: '100%',
+                    width: '90%',
                     
                 },
                 
                 }}>
-                <p className='text-[33px] text-[#404040] sm:mt-[2rem] font-[700] sm:text-[24px] w-[60%] sm:w-[100%]'>
+                <p className='text-[33px] text-[#404040] sm:mt-[2rem] font-[700] sm:text-[24px] w-[60%] sm:w-[80%]'>
                     Download our apps
                 </p>
 
@@ -66,7 +62,7 @@ const DownloadApp = () => {
                     },
                     }}>
                     
-                    <CustomButton>
+                    <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
                         <>
                         <FaGooglePlay/> 
                             <Typography sx={{
@@ -77,7 +73,7 @@ const DownloadApp = () => {
 
                     <Box className='ml-[1rem] sm:ml-[0]' >
 
-                        <CustomButton color='white'>
+                        <CustomButton color='white' linkTo='#'>
                             <>
                             <Box sx={{color: 'blue'}}>
                                 <FaAppStoreIos /> 
@@ -114,7 +110,7 @@ const DownloadApp = () => {
 }
 
 
-function CustomButton({children,color}) {
+function CustomButton({children,color,linkTo}) {
   return (
     <Button variant='contained' sx={{
         padding: '1rem 0',
@@ -131,7 +127,7 @@ function CustomButton({children,color}) {
         '@media (max-width: 639px)': {
            width: '85%',
          },
-    }}>
+    }} onClick={()=>{window.location = linkTo}}>
         {children}
     </Button>
   )

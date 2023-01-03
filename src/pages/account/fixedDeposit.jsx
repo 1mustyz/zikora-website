@@ -98,7 +98,7 @@ const FixedDeposit = () => {
                       marginTop: '1.5rem'
                       // padding: '5% 28%',
                   },
-                }} />
+                }} linkTo={'/saving-account/'}/>
         </Box>
     </Box>
     </Box>

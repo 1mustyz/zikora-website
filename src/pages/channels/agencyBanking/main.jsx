@@ -68,7 +68,7 @@ const Main = () => {
                 </p>
 
                 <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>                                                                                                                                                                         
-                  Zikora mobile App is available from the Google Play Store and Apple Store. 
+                Zikora Pay is always near you to help you with day-to-day financial transactions without visiting the bank. 
                 </p>
                 
               </Box>

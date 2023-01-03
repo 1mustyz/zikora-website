@@ -87,10 +87,10 @@ const GreenCard = () => {
       }}
       >
           <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
-              Lorem ipsum
+              How To
           </p>
           <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]'>
-              Lorem ipsum dummy text
+              Get Started
           </p>
   
           {/* green card */}

@@ -90,7 +90,7 @@ const CurrentAccount = () => {
                     },
 
                     },
-                }} />
+                }} linkTo={'/current-account/'}/>
         </Box>
     </Box>
     </Box>

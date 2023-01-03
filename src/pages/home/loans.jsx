@@ -107,7 +107,7 @@ const LoansEmpower = () => {
                                 // padding: '5% 28%',
 
                             },
-                        }} />
+                        }} linkTo={'/loans/'}/>
                 </Box>
             </Box>
 
@@ -182,7 +182,7 @@ const LoansEmpower = () => {
                               marginTop: '1.5rem'
                               // padding: '5% 28%',
                           },
-                        }} />
+                        }} linkTo={'/contact/'}/>
                 </Box>
                 {/* right */}
                 <Box sx={{

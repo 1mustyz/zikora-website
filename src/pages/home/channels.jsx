@@ -80,7 +80,7 @@ const Channels = () => {
                           marginBottom: '2.2rem'
 
                       },
-                    }} />
+                    }} linkTo={'/main-channels/'}/>
             </Box>
             {/* right */}
             <Box sx={{

@@ -12,10 +12,10 @@ const ShowCase = () => {
     }}
     >
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]' >
-            Lorem ipsum
+            We Believe In Our Mission
         </p>
         <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]'>
-            Replace short heading
+            To Reach Possibilities
         </p>
 
         {/* green card */}

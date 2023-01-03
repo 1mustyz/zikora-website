@@ -4,8 +4,8 @@ import Button from '../../../components/button';
 import greenCardPic from '../../../images/Agency Banking 2.png'
 
 
-
 const GreenCard = () => {
+
   return (
     <Box className='h-full width-full pt-20 sm:pt-[3rem] flex flex-col items-center'
     sx={{
@@ -13,10 +13,10 @@ const GreenCard = () => {
     }}
     >
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
-          Lorem ipsum
+          Agency Banking
         </p>
         <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]' >
-            Replace short heading
+            Requirements
         </p>
        
 
@@ -68,7 +68,7 @@ const GreenCard = () => {
                         fontWeight: 'bold',
                         textTransform: 'none',
                         marginTop: '4rem',
-                        width: '30%',
+                        width: '40%',
                         '@media (max-width: 639px)': {
                           width: '100%',
                           fontSize: '14px',
@@ -77,7 +77,9 @@ const GreenCard = () => {
                           marginBottom: '2.2rem'
 
                       },
-                    }} />
+                    }} 
+                    linkTo="/contact/"
+                    />
             </Box>
             {/* right */}
             <Box sx={{

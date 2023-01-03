@@ -46,7 +46,7 @@ const CompleteBanking = () => {
               width: '90%'
             },
           }} >
-              Replace Heading Here
+              Zikora Agent
           </Typography>
 
           <Typography  sx={{
@@ -59,7 +59,7 @@ const CompleteBanking = () => {
               fontSize: '14px',
             },
             }}>
-            Lorem ipsum digital Banking tools are modern and powerful; giving users the power to bank from anywhere at anytime. USSD, Mobile Apps and Internet banking utilize high level AI tools and features to provide the best service to our valued customers. Our Digital Banking tools are modern and powerful; giving users the power to bank from anywhere at anytime. 
+            As a Zikora Agent, You are part of a family with the sole mission of building prosperity. 
           </Typography>
                    
         </Box>

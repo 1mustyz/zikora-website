@@ -55,7 +55,7 @@ const Offers = () => {
         </Box>
 
         {/* Team members */}
-        <Box className='flex flex-col items-center sm:items-start mt-[4rem] sm:mt-[0] pb-[6rem] sm:pb-[0]'>
+        <Box className='flex flex-col items-center sm:items-start mt-[4rem] sm:mt-[0] pb-[0] sm:pb-[0]'>
         
 
         {/* board of directors */}

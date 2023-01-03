@@ -12,7 +12,7 @@ import {MdOutlineArrowForward} from 'react-icons/md'
 
 const AccountBalance = () => {
   return (
-    <Box className='h-full width-full pt-[7rem] mb-[40rem] sm:mt-[25rem] flex flex-col items-center sm:items-start' >
+    <Box className='h-full width-full pt-[7rem] mb-[8rem] sm:mb-[40rem] sm:mt-[25rem] flex flex-col items-center sm:items-start' >
         
         <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] sm:text-center sm:leading-[180%] sm:mt-[0.8rem] sm:w-[70%] sm:mx-[auto]'>
           How to

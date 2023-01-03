@@ -92,7 +92,7 @@ const MobileBanking = () => {
                               // padding: '5% 28%',
 
                           },
-                        }} />
+                        }} linkTo={'/mobile-banking/'}/>
                 </Box>
             </Box>
 
@@ -167,7 +167,7 @@ const MobileBanking = () => {
                               marginTop: '1.5rem'
                               // padding: '5% 28%',
                           },
-                        }} />
+                        }} linkTo={'/agency-banking/'}/>
                 </Box>
                 {/* right */}
                 <Box sx={{

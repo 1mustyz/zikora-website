@@ -13,10 +13,10 @@ const ShowCase = () => {
     }}
     >
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
-            Lorem ipsum 
+            Get To 
         </p>
         <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]'>
-            Replace short heading
+            Save More
         </p>
 
         {/* green card */}
@@ -73,7 +73,7 @@ const ShowCase = () => {
                             marginBottom: '2.2rem'
 
                         },
-                    }} />
+                    }} linkTo={'/saving-account/'}/>
             </Box>
             {/* right */}
             <Box sx={{

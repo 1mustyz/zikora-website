@@ -80,7 +80,7 @@ const Account = () => {
                               marginBottom: '2.2rem'
     
                           },
-                        }} />
+                        }} linkTo={'/account/'}/>
                 </Box>
             </Box>
 

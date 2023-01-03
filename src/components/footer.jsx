@@ -97,7 +97,9 @@ const Footer = () => {
                     boxShahadow: `5px 10px #888888`,
                     fontSize: '16px',
                     '@media (max-width: 639px)': {
-                        marginTop: '1rem'
+                        marginTop: '1rem',
+                        padding: '1rem 7.4rem',
+
                     },
                    
                 }}/>

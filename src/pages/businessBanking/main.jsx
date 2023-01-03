@@ -29,15 +29,12 @@ const Main = () => {
 
         <div className='flex flex-row mt-5  justify-between sm:flex-col sm:px-[1.5rem] '>
             {/* left */}
-            <div className='mt-20 sm:mt-[0] w-1/2 flex flex-col h-full  sm:w-full ' >
-                <Box sx={{
-                    '@media (max-width: 639px)': {
-                        // fontSize: '40px'
-                    },
-                }} className='text-6xl sm:text-[34px] font-bold  h-5/6 sm:h-[7rem] flex flex-col justify-between opacity-75'>
-                    <p>Zikora Bank for</p>
-                    <p className='pt-2'>Business &</p>
-                    <p className='pt-2'>Entrepreneurs</p>
+            <div className='mt-20 sm:mt-[1rem] w-1/2 flex flex-col h-full  sm:w-full ' >
+                
+                <Box  className='text-6xl sm:text-[34px] font-bold h-5/6 sm:h-[7rem]  flex flex-col justify-between  opacity-75'>
+                    <p className='sm:p-[0rem] sm:m-[0rem]'>Zikora Bank for</p>
+                    <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Business &</p>
+                    <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Entrepreneurs</p>
                 </Box>
                 <Box className='mt-10 leading-1 sm:leading-[180%] sm:text-[16px] text-xl opacity-75'>Zikora is a people-first bank, serving communities in Nigeria by
                 providing access to reliable digital banking services.</Box>
@@ -52,7 +49,7 @@ const Main = () => {
                         '@media (max-width: 639px)': {
                             with: '100%',
                             fontSize: '14px',
-                            padding: '5% 24%',
+                            padding: '1.2rem 4.3rem',
 
                         },
                     }} />

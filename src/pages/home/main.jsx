@@ -48,7 +48,7 @@ const HomeMain = () => {
                         '@media (max-width: 639px)': {
                             with: '100%',
                             fontSize: '14px',
-                            padding: '5% 27%',
+                            padding: '1.2rem 5.3rem',
                             borderRadius: '0.3rem',
 
                         },

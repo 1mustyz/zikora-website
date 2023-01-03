@@ -13,10 +13,10 @@ const GreenCard = () => {
     }}
     >
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
-          Lorem ipsum
+          How to
         </p>
         <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]' >
-          Replace short heading
+          Activate USSD Banking
         </p>
 
         
@@ -56,7 +56,7 @@ const GreenCard = () => {
               </p>
 
               <p className='text-[16px] sm:text-[14px] mt-[1rem]'>
-                You don’t a smartphone to make transactions.Just dial 614*677# to buy Airtime, Transfer Funds, Pay Bills, Check your Account Balance, and More.
+                You don’t have a smartphone to make transactions.Just dial 614*677# to buy Airtime, Transfer Funds, Pay Bills, Check your Account Balance, and More.
               </p>
               
               <Button title="Get to Know More" style={{
@@ -77,7 +77,7 @@ const GreenCard = () => {
                           marginBottom: '2.2rem'
 
                       },
-                    }} />
+                    }} linkTo={'/ussd-banking/'}/>
             </Box>
             {/* right */}
             <Box sx={{

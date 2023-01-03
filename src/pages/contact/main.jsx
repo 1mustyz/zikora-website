@@ -186,17 +186,18 @@ const ContactMain = () => {
           <CustomTextField title="Email address..."><FaEnvelope /></CustomTextField>
           <CustomTextField title="Write here..." multiline={true}><BsCardText /></CustomTextField>
           <Button title='Submit Message' style={{
-            padding: '10px 18px',
-            borderRadius: '0.5rem',
+            padding: '10px 150px',
+            borderRadius: '0.2rem',
             fontWeight: 'bold',
             backgroundColor: '#66A681',
             color: 'white',
             textTransform: 'none',
-            width: '80%',
+            width: '100%',
             fontSize: '16px',
             '@media (max-width: 639px)': {
-              width: '90%',
+              width: '100%',
               borderRadius: '0.2rem',
+              padding: '10px 93px',
 
             }
             
