@@ -1,10 +1,13 @@
 import React from 'react'
 import {Box, Typography, } from '@mui/material';
-// import aboutPic2 from '../../images/about-image2.png'
-import aboutPic3 from '../../images/about-image3.png'
-import aboutPic4 from '../../images/about-image4.png'
-import aboutPic5 from '../../images/about-image5.png'
-import aboutPic6 from '../../images/about-image6.png'
+import aboutPic1 from '../../board-images/Ifeacho.png'
+import aboutPic2 from '../../board-images/BernadineOkeke_low.png'
+import aboutPic3 from '../../board-images/Okeke_low.png'
+import aboutPic4 from '../../board-images/Pius_low.png'
+import aboutPic5 from '../../board-images/emmanuel_low.png'
+import aboutPic6 from '../../board-images/Peter_low.png'
+import aboutPicBg from '../../images/about-image3.png'
+
 
 import Divider from '../../components/divider'
 
@@ -13,7 +16,7 @@ const Directors = () => {
   return (
     <Box className='h-full width-full pt-[7rem] sm:pt-[3rem] mb-[6rem] flex flex-col items-center'
     sx={{
-      backgroundImage: `url(${aboutPic3})`,
+      backgroundImage: `url(${aboutPicBg})`,
       backgroundRepeat: 'no-repeat',
       backgroundPositionX: 'left',
       backgroundPositionY: 'bottom'
@@ -44,20 +47,20 @@ const Directors = () => {
            }
         }}>
             <VerticalDivider />
-            <PreImageAndText pic={aboutPic4} title="Tony Ifeacho" post="Director"/>
+            <PreImageAndText pic={aboutPic1} title="Tony Ifeacho" post="Director"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic5} title="Bernadine Okeke" post="Director"/>
+            <PreImageAndText pic={aboutPic2} title="Bernadine Okeke" post="Director"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic6} title="Peter Eze" post="Managing Director"/>
+            <PreImageAndText pic={aboutPic3} title="Olisa Okeke" post="Managing Director"/>
             <VerticalDivider />
 
 
         </Box>
 
         {/* Team members */}
-        <Box className='flex flex-col items-center mt-[14rem] sm:mt-[5rem] border-b-1 pb-[6rem] sm:w-[100vw]'>
+        <Box className='flex flex-col items-center mt-[8rem] sm:mt-[5rem] border-b-1 pb-[6rem] sm:w-[100vw]'>
         <p className='text-[34px] sm:text-[22px] text-[#404040] font-[700]' >
             Team members
         </p>
@@ -88,7 +91,7 @@ const Directors = () => {
             <PreImageAndText pic={aboutPic5} title="Emmanuel Ikogho" post="Head Operations"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic6} title="May You" post="Send Us Your Cv"/>
+            <PreImageAndText pic={aboutPic6} title="Peter Eze" post="Send Us Your Cv"/>
             <VerticalDivider />
 
 
@@ -110,8 +113,11 @@ const PreImageAndText = ({pic, title, post}) => {
     }}>
       <Box sx={{
         backgroundImage: `url(${pic})`,
-        width: '10rem',
-        height: '10rem',
+        backgroundSize: '10rem',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        width: '12rem',
+        height: '12rem',
         borderRadius: '5rem'
       }}>
         
