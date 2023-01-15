@@ -7,12 +7,146 @@ import aboutPic4 from '../../board-images/Pius_low.png'
 import aboutPic5 from '../../board-images/emmanuel_low.png'
 import aboutPic6 from '../../board-images/Peter_low.png'
 import aboutPicBg from '../../images/about-image3.png'
-
-
+import aboutPicAvatar from '../../board-images/avatar.webp'
 import Divider from '../../components/divider'
+import Carousel from './carousel';
 
 
 const Directors = () => {
+  const images1 = [
+    <Box sx={{
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: '5rem',
+      alignItems: 'center',
+      marginTop: '4rem',
+      '@media (max-width: 639px)': {
+        overflowX: 'auto',
+        overflowY: 'hidden',
+        whiteSpace: 'nowrap',
+        gap: '5rem',
+        justifyContent: 'flex-start'
+     }
+  }}>
+    <VerticalDivider />
+    <PreImageAndText pic={aboutPic3} title="Olisa Okeke" post="Chairman"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPic1} title="Tony Ifeacho" post="Director"/>
+    <VerticalDivider />
+    </Box>,
+
+    <Box sx={{
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: '5rem',
+    alignItems: 'center',
+    marginTop: '4rem',
+    '@media (max-width: 639px)': {
+      overflowX: 'auto',
+      overflowY: 'hidden',
+      whiteSpace: 'nowrap',
+      gap: '5rem',
+      justifyContent: 'flex-start'
+  }
+  }}>
+    <VerticalDivider />
+    <PreImageAndText pic={aboutPic2} title="Bernadine Okeke" post="Director"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPicAvatar} title="Chidozie Agbapu" post="Director"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPicAvatar} title="Sir. Ike Onyechi" post="Director"/>
+    <VerticalDivider />
+    </Box>,
+
+    <Box sx={{
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: '5rem',
+      alignItems: 'center',
+      marginTop: '4rem',
+      '@media (max-width: 639px)': {
+        overflowX: 'auto',
+        overflowY: 'hidden',
+        whiteSpace: 'nowrap',
+        gap: '5rem',
+        justifyContent: 'flex-start'
+      }
+  }}>
+    <VerticalDivider />
+    <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
+    <VerticalDivider />
+    </Box>
+
+  ]
+
+  const images2 = [
+    <Box sx={{
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: '5rem',
+      alignItems: 'center',
+      marginTop: '4rem',
+      '@media (max-width: 639px)': {
+        overflowX: 'auto',
+        overflowY: 'hidden',
+        whiteSpace: 'nowrap',
+        gap: '5rem',
+        justifyContent: 'flex-start'
+     }
+  }}>
+   <VerticalDivider />
+    <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPic5} title="Mathew Eze" post="Head Credit & Marketing"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
+    <VerticalDivider />
+    </Box>,
+
+    <Box sx={{
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: '5rem',
+    alignItems: 'center',
+    marginTop: '4rem',
+    '@media (max-width: 639px)': {
+      overflowX: 'auto',
+      overflowY: 'hidden',
+      whiteSpace: 'nowrap',
+      gap: '5rem',
+      justifyContent: 'flex-start'
+  }
+  }}>
+      <VerticalDivider />
+     <PreImageAndText pic={aboutPicAvatar} title="Emmanuel Ikogho" post="Head of Operations"/>
+      <VerticalDivider />
+
+      <PreImageAndText pic={aboutPicAvatar} title="Chioma Onuoha" post="Head Digital Marketing"/>
+      <VerticalDivider />
+
+      <PreImageAndText pic={aboutPicAvatar} title="Josemaria Ebisi" post="Chief Financial Controller"/>
+      <VerticalDivider />
+    </Box>,
+  ]
+
   return (
     <Box className='h-full width-full pt-[7rem] sm:pt-[3rem] mb-[6rem] flex flex-col items-center'
     sx={{
@@ -38,26 +172,44 @@ const Directors = () => {
             gap: '5rem',
             alignItems: 'center',
             marginTop: '4rem',
+            display: 'none',
             '@media (max-width: 639px)': {
+              display: 'flex',
               overflowX: 'auto',
               overflowY: 'hidden',
               whiteSpace: 'nowrap',
-              gap: '5rem',
-              justifyContent: 'flex-start'
+              justifyContent: 'flex-start',
+
            }
         }}>
             <VerticalDivider />
+            <PreImageAndText pic={aboutPic3} title="Olisa Okeke" post="Chairman"/>
+            <VerticalDivider />
+
+            <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
+            <VerticalDivider />
+
             <PreImageAndText pic={aboutPic1} title="Tony Ifeacho" post="Director"/>
             <VerticalDivider />
 
             <PreImageAndText pic={aboutPic2} title="Bernadine Okeke" post="Director"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic3} title="Olisa Okeke" post="Managing Director"/>
+            <PreImageAndText pic={aboutPicAvatar} title="Chidozie Agbapu" post="Director"/>
+            <VerticalDivider />
+
+            <PreImageAndText pic={aboutPicAvatar} title="Sir. Ike Onyechi" post="Director"/>
+            <VerticalDivider />
+
+            <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
             <VerticalDivider />
 
 
         </Box>
+        <div className='sm:hidden'>
+          <Carousel images1={images1}/>
+        </div>
+       
 
         {/* Team members */}
         <Box className='flex flex-col items-center mt-[8rem] sm:mt-[5rem] border-b-1 pb-[6rem] sm:w-[100vw]'>
@@ -77,25 +229,40 @@ const Directors = () => {
             gap: '5rem',
             alignItems: 'center',
             marginTop: '4rem',
+            display: 'none',
             '@media (max-width: 639px)': {
+              display: 'flex',
               overflowX: 'auto',
               overflowY: 'hidden',
               whiteSpace: 'nowrap',
               justifyContent: 'flex-start',
+
            }
         }}>
             <VerticalDivider />
-            <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Head IT"/>
+            <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic5} title="Emmanuel Ikogho" post="Head Operations"/>
+            <PreImageAndText pic={aboutPic5} title="Mathew Eze" post="Head Credit & Marketing"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic6} title="Peter Eze" post="Send Us Your Cv"/>
+            <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
+            <VerticalDivider />
+
+            <PreImageAndText pic={aboutPicAvatar} title="Emmanuel Ikogho" post="Head of Operations"/>
+            <VerticalDivider />
+
+            <PreImageAndText pic={aboutPicAvatar} title="Chioma Onuoha" post="Head Digital Marketing"/>
+            <VerticalDivider />
+
+            <PreImageAndText pic={aboutPicAvatar} title="Josemaria Ebisi" post="Chief Financial Controller"/>
             <VerticalDivider />
 
 
         </Box>
+        <div className='sm:hidden'>
+          <Carousel images1={images2}/>
+        </div>
         <Divider />
         </Box>
 
