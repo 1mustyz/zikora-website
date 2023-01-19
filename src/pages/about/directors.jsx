@@ -203,7 +203,7 @@ const Directors = () => {
 
             <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
             <VerticalDivider />
-
+{/* <h1>kdkdk</h1> */}
 
         </Box>
         <div className='sm:hidden'>
