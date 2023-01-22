@@ -11,7 +11,20 @@ import bg from '../../images/about-image3.png'
 import {Box} from '@mui/material'
 const Index = () => {
   return (
-    <div>
+    <Box  sx={{
+      '@media (min-width: 1700px)': {
+          backgroundSize: '100%',
+          maxWidth: '70vw',
+          margin: 'auto',
+        },
+        '@media (min-width: 1600px) and (max-width: 1800px)': {
+          backgroundSize: '100%',
+          maxWidth: '90vw',
+          margin: 'auto',
+          // maxWidth: '1500px'
+
+        },
+   }}>
         <Main />
         <GreenCard />
         <ShowCase />
@@ -23,7 +36,7 @@ const Index = () => {
 
         </Box>
         <Footer />
-    </div>
+    </Box>
   )
 }
 

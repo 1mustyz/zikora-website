@@ -2,7 +2,7 @@ import React from 'react'
 
 const Paragraph = () => {
   return (
-    <div className='flex flex-col w-[90vw] m-[auto] mt-[6rem] sm:mt-[3rem]'>
+    <div className='flex flex-col w-[90vw] max-w-[100%] m-[auto] mt-[6rem] sm:mt-[3rem]'>
         <HeadingAndText>
             <>Terms & conditions using the zikora MFB website</>
             <>Zikora MFB maintains this website (the “Website”) to provide you with information about products and services available through us, and information about Zikora MFB. Please read these Terms and Conditions carefully before accessing or using this Website.</>

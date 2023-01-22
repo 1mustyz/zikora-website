@@ -13,7 +13,7 @@ import contactMobileMainPic from '../../small-images/contact-mobile-main-pic.png
 const Main = () => {
   return (
     <Box sx={{
-        minHeight: '100vh',
+        maxHeight: '100vh',
         background: 'rgba(232, 236, 227, 0.33)',
         paddingTop: '2rem',
         paddingLeft: '5rem',
@@ -21,6 +21,7 @@ const Main = () => {
         fontFamily: 'Circular Std',
         backgroundImage: `url(${demoBg})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: '100%',
         '@media (max-width: 639px)': {
           padding: 0,
           backgroundImage: `url(${contactMobileMainPic})`,

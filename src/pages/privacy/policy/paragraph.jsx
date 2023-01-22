@@ -2,7 +2,7 @@ import React from 'react'
 
 const Paragraph = () => {
   return (
-    <div className='flex flex-col w-[90vw] m-[auto] mt-[6rem] sm:mt-[3rem]'>
+    <div className='flex flex-col w-[90vw] max-w-[100%] m-[auto] mt-[6rem] sm:mt-[3rem]'>
         <HeadingAndText>
             <>We Value Your Privacy.</>
             <>This Privacy Policy is designed to help you understand what information we gather about you, what we use that information for, and with whom we share that information. It also sets out your rights in relation to your information and who you may contact for more information or queries. Please read the following carefully to understand our processes and practices regarding your personal data and how we will treat it.</>

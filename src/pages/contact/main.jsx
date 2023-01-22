@@ -27,6 +27,7 @@ const ContactMain = () => {
         fontFamily: 'Circular Std',
         backgroundImage: `url(${contactMainPic})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: '100%',
         '@media (max-width: 639px)': {
             padding: 0,
             backgroundImage: `url(${contactMobileMainPic})`,

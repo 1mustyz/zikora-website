@@ -10,13 +10,14 @@ import Box from '@mui/material/Box';
 const Main = () => {
   return (
     <Box sx={{
-        minHeight: '130vh',
+        maxHeight: '130vh',
         background: 'rgba(232, 236, 227, 0.33)',
         paddingTop: '2rem',
         paddingLeft: '5rem',
         paddingRight: '5rem',
         fontFamily: 'Circular Std',
         backgroundImage: `url(${homeMainBg})`,
+        backgroundSize: '100%',
         '@media (max-width: 639px)': {
             padding: 0,
             backgroundImage: `url(${homeMobileMainBg})`,

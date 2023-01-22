@@ -6,10 +6,24 @@ import Channels from './channels'
 import Account from './accounts'
 import DownloadApp from './downloadApp'
 import Footer from '../../components/footer'
+import Box from '@mui/material/Box'
 
 const IndexHome = () => {
   return (
-    <div>
+    <Box sx={{
+       '@media (min-width: 1700px)': {
+           backgroundSize: '100%',
+           maxWidth: '70vw',
+           margin: 'auto'
+
+        },
+        '@media (min-width: 1600px) and (max-width: 1800px)': {
+            backgroundSize: '100%',
+            maxWidth: '90vw',
+            margin: 'auto'
+ 
+         },
+    }}>
         <HomeMain />
         <GreenCard />
         <LoansEmpower />
@@ -17,7 +31,7 @@ const IndexHome = () => {
         <Account />
         <DownloadApp />
         <Footer />
-    </div>
+    </Box>
   )
 }
 

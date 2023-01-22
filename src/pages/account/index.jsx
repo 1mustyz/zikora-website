@@ -8,7 +8,20 @@ import Footer from '../../components/footer'
 
 const Index = () => {
   return (
-    <Box>
+    <Box sx={{
+      '@media (min-width: 1700px)': {
+          backgroundSize: '100%',
+          maxWidth: '70vw',
+          margin: 'auto'
+
+       },
+       '@media (min-width: 1600px) and (max-width: 1800px)': {
+           backgroundSize: '100%',
+           maxWidth: '90vw',
+           margin: 'auto'
+
+        },
+   }}>
         <Main />
         <CurrentAccount />
         <ShowCase />

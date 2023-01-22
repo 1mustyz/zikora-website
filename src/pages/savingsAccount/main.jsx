@@ -9,14 +9,16 @@ import {Box} from '@mui/material';
 const Main = () => {
   return (
     <Box sx={{
-        minHeight: '60vh',
+        maxHeight: '60vh',
         background: 'rgba(232, 236, 227, 0.33)',
+        paddingBottom: '6rem',
         paddingTop: '2rem',
         paddingLeft: '5rem',
         paddingRight: '5rem',
         fontFamily: 'Circular Std',
         backgroundImage: `url(${contactMainPic})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: '100%',
         '@media (max-width: 639px)': {
           padding: 0,
           backgroundImage: `url(${contactMainPic})`,

@@ -5,7 +5,7 @@ import avatar from '../../images/Avatar.png'
 
 const Customers = () => {
   return (
-    <Box className='flex flex-col w-[100vw] items-center mt-[6rem] sm:mb-[5rem] gap-[2rem]'>
+    <Box className='flex flex-col w-[100vw] max-w-[100%] items-center mt-[6rem] sm:mb-[5rem] gap-[2rem]'>
         <Box className='flex flex-row gap-[1rem] items-center'>
             <p className='text-[28px] sm:text-[18px] text-[#C0C6CD]'>CUSTOMERS</p>
             <Box className='p-[1rem] rounded-[2rem] text-[28px] sm:text-[18px]  bg-[#404040] text-[white]'>

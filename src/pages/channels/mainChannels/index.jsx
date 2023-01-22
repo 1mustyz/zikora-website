@@ -8,7 +8,20 @@ import {Box, Divider} from '@mui/material'
 
 const Index = () => {
   return (
-    <div>
+    <Box  sx={{
+      '@media (min-width: 1700px)': {
+          backgroundSize: '100%',
+          maxWidth: '70vw',
+          margin: 'auto'
+
+       },
+       '@media (min-width: 1600px) and (max-width: 1800px)': {
+           backgroundSize: '100%',
+           maxWidth: '90vw',
+           margin: 'auto'
+
+        },
+   }}>
         <Main />
         <MobileBanking/>
         <GreenCard />
@@ -17,7 +30,7 @@ const Index = () => {
           <Divider className='w-[85%] ml-[1rem] sm:hidden'/>
         </Box>
           <Footer />
-    </div>
+    </Box>
   )
 }
 
