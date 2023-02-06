@@ -38,12 +38,11 @@ const Mission = () => {
          
           }}>
           <p className='text-[34px] font-[700]  text-[#404040] sm:text-[24px]'  >
-              Loan Options
+            All Loans
           </p>
 
           <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[2rem] sm:mt-[0.5rem] leading-[180%]' >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non rem pariatur sit libero assumenda quidem quod vero, dolor incidunt dolores doloribus hic exercitationem tempora placeat deserunt dolore harum fugiat.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non rem pariatur sit libero assumenda quidem quod vero, dolor incidunt dolores doloribus hic exercitationem tempora placeat deserunt dolore harum fugiat.
+          Choose from a variety of loans to meet your financial needs.
           </p>
 
                   

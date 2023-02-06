@@ -72,7 +72,7 @@ const Main = () => {
                 </p>
 
                 <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>
-                    Lorem ipsum dummy text are used on there so replace some.
+                  With Zikora Loans, you can always meet your set target.
                 </p>
               </Box>
             </Box>

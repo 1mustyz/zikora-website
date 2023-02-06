@@ -66,7 +66,7 @@ const Header = () => {
             <Link to='/loans/'>Loans</Link>
             <div className='flex space-x-2 items-center'><Link onClick={handleClick}>Accounts</Link><Icon /></div>
             <Link to='/about/'>About</Link>
-            <Link  to='/contact'>Contacts</Link>
+            <Link  to='/contact'>Contact Us</Link>
             
             {openAccount && <Menu
               id="basic-menu"

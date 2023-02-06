@@ -59,7 +59,7 @@ const Channels = () => {
               </p>
 
               <p  className='text-[16px] sm:text-[14px] mt-[1rem]'>
-                  Extra mile to provide many ways to bank with us easier than ever. 
+                We've gone the extra mile to make the many ways to bank with us easier than ever. 
               </p>
 
               <Button title="Explore Banking Channels" style={{

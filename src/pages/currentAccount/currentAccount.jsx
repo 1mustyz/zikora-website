@@ -136,8 +136,7 @@ const GreenCard = () => {
                     <li>Account opening form & One passport photograph</li>
                     <li>3 Months utility bill with current address</li>
                     <li>2 duly signed & completed reference forms</li>
-
-
+                    <li>Tin Number</li>
                 </ul>
               </Box>
               {/* right */}

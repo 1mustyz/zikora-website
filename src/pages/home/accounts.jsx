@@ -50,11 +50,11 @@ const Account = () => {
                  
                   }}>
                   <p className='text-[34px] font-[700] sm:mt-[2rem] sm:text-[24px] sm:w-[100%]'>
-                      Accounts that's fit to you
+                      Accounts that fit to you
                   </p>
 
-                  <p className='mt-[2rem] text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[180%]'>
-                      Replace accounts related text here. Zikora Offers Several Account Types to cater to your specific needs
+                  <p className='mt-[1rem] text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[180%]'>
+                    Zikora Offers Several Account Types to cater to your specific needs
                   </p>
 
                   <Button title="Explore Accounts"  outline={true}

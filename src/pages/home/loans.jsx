@@ -68,7 +68,7 @@ const LoansEmpower = () => {
                       width: '100%'
                     },
                   }} >
-                      Loans-that Empower
+                      Loans that Empower
                   </Typography>
 
                   <Typography  sx={{
@@ -81,7 +81,7 @@ const LoansEmpower = () => {
                       fontSize: '14px',
                     },
                     }}>
-                      As a business owner or salary earner, we provide loans that will surely cater to your cash needs. Apply now to get the financial backing you have been waiting for.
+                     Business owner or salary earner, we provide loans to meet your needs and support your goals. Apply now to get the financial backing you have been waiting for
                   </Typography>
 
                   <Button title="Explore Our Loans"  outline={true}

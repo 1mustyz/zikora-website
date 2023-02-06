@@ -39,7 +39,7 @@ const HomeMain = () => {
                     <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Banking, at your</p>
                     <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Fingertips</p>
                 </Box>
-                <Box className='mt-10 sm:mt-[1.2rem] leading-1 text-xl sm:text-[14px] opacity-75'>Zikora is a people-first bank, serving communities in Nigeria by providing access to reliable digital banking services.</Box>
+                <Box className='mt-10 sm:mt-[1.2rem] leading-1 text-xl sm:text-[14px] opacity-75'>Zikora is a people-first, digital-led bank, serving communities in Nigeria by providing access to reliable banking services</Box>
                 <div className='mt-10 sm:mt-[1.2rem] sm:w-full sm:flex sm:justify-center ' >
                     <Button title="Start Online Banking" style={{
                         padding: '1.2rem 2rem',

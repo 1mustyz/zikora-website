@@ -72,7 +72,7 @@ const Main = () => {
                 </p>
 
                 <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>                                                                                                                                                                         
-                  Zikora has designed different types of savings accounts to help you spend and save according to your liking. 
+                  We've deployed different banking channels to make banking with us easier than ever 
                 </p>
                
               </Box>

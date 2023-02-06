@@ -56,10 +56,10 @@ const GreenCard = () => {
               </p>
 
               <p className='text-[16px] sm:text-[14px] mt-[1rem]'>
-                You don’t have a smartphone to make transactions.Just dial 614*677# to buy Airtime, Transfer Funds, Pay Bills, Check your Account Balance, and More.
+                To activate USSD banking, dial 614*677# to buy Airtime, Transfer Funds, Pay Bills, Check your Account Balance, and More.
               </p>
               
-              <Button title="Get to Know More" style={{
+              <Button title="Learn More" style={{
                         padding: '1rem 1.5rem',
                         background: '#404040',
                         color: 'white',

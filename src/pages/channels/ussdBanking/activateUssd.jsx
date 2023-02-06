@@ -66,7 +66,7 @@ const ActivateUssd = () => {
               }
             }}
           >
-            <p className='text-[18px] text-[#404040]'>For you</p>
+            <p className='text-[18px] text-[#404040]'>For yourself</p>
             <Box className='flex flex-col gap-[1rem]'>
               <TextAndArrow text="Dial *614*677* Amount# (e.g: *614*100#)" arrowColor="#CCCCCC" textColor="#404040"/>
               <TextAndArrow text="Wait for the success message" arrowColor="#CCCCCC" textColor="#404040"/>
@@ -87,7 +87,7 @@ const ActivateUssd = () => {
                }
             }}
           >
-            <p className='text-[#FFFFFF]'>To Others Number</p>
+            <p className='text-[#FFFFFF]'>For someone else</p>
             <Box className='flex flex-col gap-[1rem]'>
               <TextAndArrow text="Dial *614*677* Amount* Phone Number #" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
               <TextAndArrow text="Wait for the success message" arrowColor="#5E5E5E" textColor="#FFFFFF"/>

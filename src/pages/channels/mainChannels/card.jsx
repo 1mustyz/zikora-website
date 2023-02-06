@@ -68,7 +68,7 @@ const Card = () => {
                       fontSize: '14px',
                     },
                     }}>
-                    Perform all normal bank transactions from any location.Our internet banking will guide you in every step you need to achieve your aims.
+                    Perform transactions from any location. Our internet banking platform is easy and reliable
                   </Typography>
 
                   <Button title="Learn More"  outline={true}
@@ -144,7 +144,7 @@ const Card = () => {
                       fontSize: '14px',
                     },
                     }}>
-                    With our Verve card, you can perform a lot of transactions both online and offline.
+                    With our Verve card, you can perform transactions both online and offline.
                   </Typography>
 
                   <Button title="Learn More"  outline={true}

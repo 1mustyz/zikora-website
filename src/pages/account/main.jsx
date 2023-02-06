@@ -67,7 +67,7 @@ const Main = () => {
               }}>
 
                 <p className='text-[38px] font-[700]  text-[#404040] sm:text-[24px]' >
-                    Our Several Accounts
+                    Our Accounts
                 </p>
 
                 <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>

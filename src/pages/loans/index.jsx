@@ -24,7 +24,7 @@ const Index = () => {
         },
    }}>
         <Main />
-        <Mission />
+        {/* <Mission /> */}
         <ShowCase />
         <DownloadApp />
         <Footer/>

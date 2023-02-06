@@ -24,43 +24,6 @@ const buttonMobileView = {
       // backgroundColor: '#F7F7F7'
     }}
     >
-       
-        <CustomPlate leftPic={loanPic2}
-        rightPic={loanPic6} leftBg="#E8ECE3" rightBg="#404040">
-          <>
-            <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Zikora Overdraft</p>
-              <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[2rem]' >
-              Short on cash? No problem. Zikora provides a short time credit line to users, allowing payback period of up to 30 days. No hassle
-              </p>
-              <Button sx={{
-                 textTransform: 'none',
-                 width: '30%',
-                 color: '#66A681',
-                 gap: '1rem',
-                 fontSize: '16px',
-                 '@media (max-width: 639px)': {
-                  ...buttonMobileView
-               }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
-          </>
-          <>
-            <p className='text-[22px] sm:text-[18px] text-[white] font-[500]' >Corporate Cash Advance</p>
-              <p className='text-[16px] sm:text-[14px] text-[white] leading-[2rem]' >
-                We provide cash loans to help solve the urgent working capital needs of our user's businesses.
-              </p>
-              <Button sx={{
-                 textTransform: 'none',
-                 width: '30%',
-                 color: '#66A681',
-                 gap: '1rem',
-                 fontSize: '16px',
-                 '@media (max-width: 639px)': {
-                  ...buttonMobileView
-               }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
-          </>
-        </CustomPlate>
-
         
         <CustomPlate leftPic={loanPic3}
                 rightPic={loanPic4} leftBg="#F7F7F7" rightBg="#E8ECE3">
@@ -98,7 +61,6 @@ const buttonMobileView = {
           </>
         </CustomPlate>
 
-
         <CustomPlate leftPic={loanPic5}
                 rightPic={loanPic7} leftBg="#404040" rightBg="#F7F7F7">
           <>
@@ -135,7 +97,42 @@ const buttonMobileView = {
           </>
         </CustomPlate>
         
-
+        <CustomPlate rightPic=''
+        leftPic={loanPic6} leftBg="#E8ECE3" rightBg="">
+            <>
+            <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Corporate Cash Advance</p>
+              <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[2rem]' >
+                We provide cash loans to help solve the urgent working capital needs of our user's businesses.
+              </p>
+              <Button sx={{
+                 textTransform: 'none',
+                 width: '30%',
+                 color: '#66A681',
+                 gap: '1rem',
+                 fontSize: '16px',
+                 '@media (max-width: 639px)': {
+                  ...buttonMobileView
+               }
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
+          </>
+          <>
+            {/* <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Zikora Overdraft</p>
+              <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[2rem]' >
+              Short on cash? No problem. Zikora provides a short time credit line to users, allowing payback period of up to 30 days. No hassle
+              </p>
+              <Button sx={{
+                 textTransform: 'none',
+                 width: '30%',
+                 color: '#66A681',
+                 gap: '1rem',
+                 fontSize: '16px',
+                 '@media (max-width: 639px)': {
+                  ...buttonMobileView
+               }
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button> */}
+          </>
+        
+        </CustomPlate>
       
     </Box>
   )

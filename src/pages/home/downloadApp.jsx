@@ -46,11 +46,11 @@ const DownloadApp = () => {
                 
                 }}>
                 <p className='text-[33px] text-[#404040] sm:mt-[2rem] font-[700] sm:text-[24px] w-[60%] sm:w-[80%]'>
-                    Download our apps
+                    Download our App
                 </p>
 
-                <p className='text-[16px] sm:text-[14px] text-[#404040] leading-[180%] w-[70%] sm:w-[90%]' >
-                    We make your banking more easy in your hand with our supper apps! Try these now!
+                <p className='text-[16px] sm:text-[14px] text-[#404040] leading-[180%] w-[100%] sm:w-[90%]' >
+                    We've made powerful banking easy and placed it in the palm of your hand. Download our App now!
                 </p>
 
                 <Box sx={{

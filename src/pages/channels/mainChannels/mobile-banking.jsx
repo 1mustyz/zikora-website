@@ -142,7 +142,7 @@ const MobileBanking = () => {
                       fontSize: '14px',
                     },
                     }}>
-                    Zikora Pay is always near you to help you with day-to-day financial transactions without visiting the bank.
+                    Your nearest agent bank office is only 5 mins away
                   </Typography>
 
                   <Button title="Learn More"  outline={true}

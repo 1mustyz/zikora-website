@@ -88,7 +88,7 @@ const AccountBalance = () => {
                }
             }}
           >
-            <p className='text-[#FFFFFF]'>To Others Bank</p>
+            <p className='text-[#FFFFFF]'>To other Banks</p>
             <Box className='flex flex-col gap-[1rem]'>
               <TextAndArrow text="Dial *614*677* Amount* Account number # (e.g: *614*677*1000* 1234512345#)" arrowColor="#5E5E5E" textColor="#FFFFFF"/>
               <TextAndArrow text="Authanticate with 4 digit" arrowColor="#5E5E5E" textColor="#FFFFFF"/>

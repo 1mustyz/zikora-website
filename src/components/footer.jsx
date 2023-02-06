@@ -132,6 +132,7 @@ const Footer = () => {
                         <CustomP> <NavLink to='/'>Zikora House</NavLink></CustomP>
                         <CustomP>Abatete Anambra</CustomP>
                         <CustomP>info@zikoramfb.com</CustomP>
+                        <CustomP>customer.service@zikoramfb.com</CustomP>
 
                     </Box>
                     <Box sx={{
