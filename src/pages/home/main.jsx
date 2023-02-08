@@ -53,7 +53,7 @@ const HomeMain = () => {
                         </>
                     </CustomButton>
 
-                    <CustomButton color='white' linkTo='#'>
+                    <CustomButton color='white' linkTo='https://apps.apple.com/us/app/zikora/id6444196255'>
                         <>
                         <Box sx={{color: 'blue'}}>
                             <FaAppStoreIos /> 
