@@ -108,7 +108,7 @@ export default function MobileNav() {
           </>
         ))}
       </List>
-        <Button title='Join Now' style={{
+        {/* <Button title='Join Now' style={{
                display: 'none',
              
              '@media (max-width: 639px)': {
@@ -124,7 +124,7 @@ export default function MobileNav() {
                 marginTop: '7rem'
            },
  
-         }}/>
+         }}/> */}
     </Box>
   );
 

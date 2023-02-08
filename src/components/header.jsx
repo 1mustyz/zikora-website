@@ -61,7 +61,7 @@ const Header = () => {
               display: 'none'
     
     
-          },}}className='flex space-x-10 ml-20 '>
+          },}}className='flex space-x-20 ml-20 '>
             <div className='flex space-x-2 items-center'><Link onClick={handleClickChannel}>Channels</Link><Icon /></div>
             <Link to='/loans/'>Loans</Link>
             <div className='flex space-x-2 items-center'><Link onClick={handleClick}>Accounts</Link><Icon /></div>
@@ -100,7 +100,7 @@ const Header = () => {
             </Menu> }
             
         </Box>
-        <Button title='Join Now' style={{
+        {/* <Button title='Join Now' style={{
             padding: '10px 18px',
             borderRadius: '0.5rem',
             fontWeight: 'bold',
@@ -111,7 +111,7 @@ const Header = () => {
               display: 'none',
           },
 
-        }}/>
+        }}/> */}
       
       <MobileNav/>
     </Box>

@@ -4,6 +4,9 @@ import Button from '../../components/button'
 import homeMainBg from '../../images/home-main-bg.png'
 import homeMainFrame from '../../images/image 1.png'
 import homeMainBgSmall from '../../small-images/sm:home-main.png'
+import {FaAppStoreIos,FaGooglePlay} from 'react-icons/fa'
+import { Typography } from '@mui/material'
+import ButtonM from '@mui/material/Button'
 
 import Box from '@mui/material/Box';
 
@@ -40,23 +43,29 @@ const HomeMain = () => {
                     <p className='pt-2 sm:p-[0rem] sm:m-[0rem]'>Fingertips</p>
                 </Box>
                 <Box className='mt-10 sm:mt-[1.2rem] leading-1 text-xl sm:text-[14px] opacity-75'>Zikora is a people-first, digital-led bank, serving communities in Nigeria by providing access to reliable banking services</Box>
-                <div className='mt-10 sm:mt-[1.2rem] sm:w-full sm:flex sm:justify-center ' >
-                    <Button title="Start Online Banking" style={{
-                        padding: '1.2rem 2rem',
-                        background: '#66A681',
-                        color: 'white',
-                        borderRadius: '0.5rem',
-                        fontWeight: 'bold',
-                        textTransform: 'none',
-                        '@media (max-width: 639px)': {
-                            with: '100%',
-                            fontSize: '14px',
-                            padding: '1.2rem 5.3rem',
-                            borderRadius: '0.3rem',
+                <div className='mt-10 sm:mt-[1.2rem] sm:w-full flex sm:justify-center gap-[1rem]' >
+                    <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
+                        <>
+                        <FaGooglePlay/> 
+                            <Typography sx={{
+                                paddingLeft: '15px'
+                            }}>Play Store</Typography>
+                        </>
+                    </CustomButton>
 
-                        },
-                    }} />
+                    <CustomButton color='white' linkTo='#'>
+                        <>
+                        <Box sx={{color: 'blue'}}>
+                            <FaAppStoreIos /> 
 
+                        </Box>
+                            <Typography sx={{
+                                paddingLeft: '15px',
+                                color: '#404040'
+                            }}>App Store</Typography>
+                        </>
+                    </CustomButton>
+                    
                 </div>
             </div>
 
@@ -71,3 +80,26 @@ const HomeMain = () => {
 }
 
 export default HomeMain
+
+function CustomButton({children,color,linkTo}) {
+    return (
+      <ButtonM variant='contained' sx={{
+          padding: '1rem 0',
+          color: 'white',
+          fontWeight: 'bold',
+          textTransform: 'none',
+          fontSize: '20px',
+          width: '12rem',
+          backgroundColor: color !== undefined ? 'white':'#404040',
+          "&:hover": {
+              backgroundColor: '#8c8c8c',
+              
+          },
+          '@media (max-width: 639px)': {
+             width: '85%',
+           },
+      }} onClick={()=>{window.location = linkTo}}>
+          {children}
+      </ButtonM>
+    )
+  }
