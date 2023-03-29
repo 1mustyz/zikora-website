@@ -37,11 +37,12 @@ const Directors = () => {
     <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
     <VerticalDivider />
 
-    <PreImageAndText pic={aboutPic1} title="Tony Ifeacho" post="Director"/>
+    <PreImageAndText pic={aboutPic2} title="Bernadine Okeke" post="Director"/>
     <VerticalDivider />
     </Box>,
 
-    <Box sx={{
+    <Box 
+    sx={{
     width: '100%',
     display: 'flex',
     flexDirection: 'row',
@@ -58,17 +59,19 @@ const Directors = () => {
   }
   }}>
     <VerticalDivider />
-    <PreImageAndText pic={aboutPic2} title="Bernadine Okeke" post="Director"/>
-    <VerticalDivider />
-
     <PreImageAndText pic={aboutPicAvatar} title="Chidozie Agbapu" post="Director"/>
     <VerticalDivider />
 
+
     <PreImageAndText pic={aboutPicAvatar} title="Sir. Ike Onyechi" post="Director"/>
+    <VerticalDivider />
+
+    <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
     <VerticalDivider />
     </Box>,
 
-    <Box sx={{
+    <Box 
+    sx={{
       width: '100%',
       display: 'flex',
       flexDirection: 'row',
@@ -83,9 +86,9 @@ const Directors = () => {
         gap: '5rem',
         justifyContent: 'flex-start'
       }
-  }}>
+    }}>
     <VerticalDivider />
-    <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
+    <PreImageAndText pic={aboutPic1} title="Tony Ifeacho" post="Director"/>
     <VerticalDivider />
     </Box>
 
