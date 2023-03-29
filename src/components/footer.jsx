@@ -131,8 +131,8 @@ const Footer = () => {
                     <Box >
                         <CustomP> <NavLink to='/'>Zikora House</NavLink></CustomP>
                         <CustomP>Abatete Anambra</CustomP>
-                        <CustomP>info@zikoramfb.com</CustomP>
-                        <CustomP>customer.service@zikoramfb.com</CustomP>
+                        <CustomP click={false}> <a href="mailto:info@zikoramfb.com">info@zikoramfb.com</a> </CustomP>
+                        <CustomP click={false}> <a href="mailto:customer.service@zikoramfb.com">customer.service@zikoramfb.com</a> </CustomP>
 
                     </Box>
                     <Box sx={{
@@ -265,9 +265,9 @@ const CustomText = ({children}) => {
 }
 
 
-const CustomP = ({children}) => {
+const CustomP = ({children, click=true}) => {
   return (
-    <p className='mb-[1.5rem] text-[#5E5E5E] text-[16px] sm:text-[14px]' onClick={scrollToTop} >{children}</p>
+    <p className='mb-[1.5rem] text-[#5E5E5E] text-[16px] sm:text-[14px]' onClick={click ? scrollToTop : ''} >{children}</p>
 
   )
 }
