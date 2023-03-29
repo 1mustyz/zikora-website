@@ -7,6 +7,8 @@ import aboutPic4 from '../../board-images/Pius_low.png'
 import aboutPic5 from '../../board-images/emmanuel_low.png'
 import aboutPic6 from '../../board-images/Peter_low.png'
 import aboutPicBg from '../../images/about-image3.png'
+import chiomaPic from '../../board-images/chioma.png'
+import mathewEzePic from '../../board-images/matthew-eze.png'
 import aboutPicAvatar from '../../board-images/avatar.webp'
 import Divider from '../../components/divider'
 import Carousel from './carousel';
@@ -95,7 +97,8 @@ const Directors = () => {
   ]
 
   const images2 = [
-    <Box sx={{
+    <Box 
+    sx={{
       width: '100%',
       display: 'flex',
       flexDirection: 'row',
@@ -115,14 +118,15 @@ const Directors = () => {
     <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
     <VerticalDivider />
 
-    <PreImageAndText pic={aboutPic5} title="Mathew Eze" post="Head Credit & Marketing"/>
+    <PreImageAndText pic={mathewEzePic} title="Mathew Eze" post="Head Credit & Marketing"/>
     <VerticalDivider />
 
     <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
     <VerticalDivider />
     </Box>,
 
-    <Box sx={{
+    <Box 
+    sx={{
     width: '100%',
     display: 'flex',
     flexDirection: 'row',
@@ -142,7 +146,7 @@ const Directors = () => {
      <PreImageAndText pic={aboutPicAvatar} title="Emmanuel Ikogho" post="Head of Operations"/>
       <VerticalDivider />
 
-      <PreImageAndText pic={aboutPicAvatar} title="Chioma Onuoha" post="Head Digital Marketing"/>
+      <PreImageAndText pic={chiomaPic} title="Chioma Onuoha" post="Head Digital Marketing"/>
       <VerticalDivider />
 
       <PreImageAndText pic={aboutPicAvatar} title="Josemaria Ebisi" post="Chief Financial Controller"/>
