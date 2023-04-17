@@ -102,8 +102,10 @@ const Card = () => {
             <Box  sx={{
                 display: 'flex',
                 flexDirection: 'row',
+                gap: '100px',
                 '@media (max-width: 639px)': {
-                  flexDirection: 'column-reverse'
+                  flexDirection: 'column-reverse',
+                  gap: 0
                 },
             }}>
                 {/* left */}
@@ -179,7 +181,7 @@ const Card = () => {
                     justifyContent: 'center',
                   },
                   }}>
-                  <Box className='w-[75%] sm:w-[100%]'>
+                  <Box className='sm:w-[100%]'>
                     <img src={channel5Pic} alt="customer service" />
                   </Box>
                 </Box>

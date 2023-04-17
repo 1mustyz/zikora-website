@@ -24,16 +24,18 @@ const Account = () => {
                 display: 'flex',
                 flexDirection: 'row',
                 width: '85%',
+                gap: '100px',
                 '@media (max-width: 639px)': {
                   flexDirection: 'column',
                   width: '90%',
+                  gap:0
                   
               },
             }}>
                 {/* left */}
                 <Box >
-                  <Box className='w-[75%] sm:w-[100%]'>
-                    <img src={accountPic1} alt="acquire loan" />
+                  <Box className='sm:w-[100%]'>
+                    <img className='' src={accountPic1} alt="acquire loan" />
                   </Box>
                 </Box>
                 {/* right */}

@@ -11,15 +11,17 @@ const Mission = () => {
         marginTop: '8rem',
         marginLeft: '5rem',
         marginRight: '5rem',
+        gap: '100px',
         '@media (max-width: 639px)': {
           flexDirection: 'column',
-          margin: '3rem 1rem 0 1rem'
+          margin: '3rem 1rem 0 1rem',
+          gap:0
            
        }
     }}>
         {/* left */}
         <Box >
-          <Box className='w-[75%] sm:w-[100%]'>
+          <Box className='sm:w-[100%]'>
             <img src={loanPic1} alt="acquire loan" />
           </Box>
         </Box>

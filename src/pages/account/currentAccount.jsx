@@ -12,17 +12,19 @@ const CurrentAccount = () => {
         width: '90%', 
         margin: 'auto',
         marginTop: '7rem',
+        gap: '100px',
         '@media (max-width: 639px)': {
           flexDirection: 'column',
           marginTop: '3rem',
-          paddingBottom: '3rem'
+          paddingBottom: '3rem',
+          gap: 0
 
         },
         // border: '1px solid black',
     }}>
         {/* left */}
         <Box >
-          <Box className='w-[75%] sm:w-[100%]'>
+          <Box className='sm:w-[100%]'>
             <img src={loanPic1} alt="acquire loan" />
           </Box>
         </Box>
@@ -36,7 +38,7 @@ const CurrentAccount = () => {
           '@media (max-width: 639px)': {
             width: '100%',
             margin: '0',
-            marginTop: '2rem'
+            marginTop: '2rem',
           },
          
           }}>
