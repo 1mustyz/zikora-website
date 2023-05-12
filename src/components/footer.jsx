@@ -146,10 +146,10 @@ const Footer = () => {
                         },
                         
                         }}>
-                        <CustomIcon color='#3B5998'> <FiFacebook/> </CustomIcon>
-                        <CustomIcon color='#D0358E'> <BsInstagram/> </CustomIcon>
-                        <CustomIcon color='#0077B5'> <RiLinkedinFill/> </CustomIcon>
-                        <CustomIcon color='#55ACEE'> <FiTwitter/> </CustomIcon>
+                        <CustomIcon color='#3B5998'> <a target='blanck' href="https://www.facebook.com/zikorabanks"><FiFacebook/></a> </CustomIcon>
+                        <CustomIcon color='#D0358E'> <a target='blanck' href="https://instagram.com/zikora_bank"><BsInstagram/></a></CustomIcon>
+                        <CustomIcon color='#0077B5'> <a target='blanck' href="https://www.linkedin.com/company/zikorabank"><RiLinkedinFill/></a>  </CustomIcon>
+                        <CustomIcon color='#55ACEE'> <a target='blanck' href="https://twitter.com/zikorabank"><FiTwitter/></a> </CustomIcon>
                                                 
                     </Box>
                 </Box>
@@ -222,10 +222,11 @@ const Footer = () => {
                         },
                         
                         }}>
-                        <CustomIcon color='#3B5998'> <FiFacebook/> </CustomIcon>
-                        <CustomIcon color='#D0358E'> <BsInstagram/> </CustomIcon>
-                        <CustomIcon color='#0077B5'> <RiLinkedinFill/> </CustomIcon>
-                        <CustomIcon color='#55ACEE'> <FiTwitter/> </CustomIcon>
+                        <CustomIcon color='#3B5998'> <a target='blanck' href="https://www.facebook.com/zikorabanks"><FiFacebook/></a> </CustomIcon>
+                        <CustomIcon color='#D0358E'> <a target='blanck' href="https://instagram.com/zikora_bank"><BsInstagram/></a></CustomIcon>
+                        <CustomIcon color='#0077B5'> <a target='blanck' href="https://www.linkedin.com/company/zikorabank"><RiLinkedinFill/></a>  </CustomIcon>
+                        <CustomIcon color='#55ACEE'> <a target='blanck' href="https://twitter.com/zikorabank"><FiTwitter/></a> </CustomIcon>
+                                                
                                                 
                     </Box>
             <Typography sx={{
