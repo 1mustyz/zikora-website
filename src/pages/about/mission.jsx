@@ -40,7 +40,7 @@ const Mission = () => {
          
           }}>
           <p className='text-[34px] font-[700]  text-[#404040] sm:text-[24px]'  >
-              Our Mission & Vission
+              Our Mission & Vision
           </p>
 
           <p  className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[2rem] sm:mt-[0.5rem] leading-[180%]'>

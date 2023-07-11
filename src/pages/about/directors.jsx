@@ -121,7 +121,10 @@ const Directors = () => {
     <PreImageAndText pic={mathewEzePic} title="Mathew Eze" post="Head Credit & Marketing"/>
     <VerticalDivider />
 
-    <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
+    {/* <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
+    <VerticalDivider /> */}
+
+    <PreImageAndText pic={chiomaPic} title="Chioma Onuoha" post="Head Digital Marketing"/>
     <VerticalDivider />
     </Box>,
 
@@ -146,8 +149,7 @@ const Directors = () => {
      <PreImageAndText pic={aboutPicAvatar} title="Emmanuel Ikogho" post="Head of Operations"/>
       <VerticalDivider />
 
-      <PreImageAndText pic={chiomaPic} title="Chioma Onuoha" post="Head Digital Marketing"/>
-      <VerticalDivider />
+      
 
       <PreImageAndText pic={aboutPicAvatar} title="Josemaria Ebisi" post="Chief Financial Controller"/>
       <VerticalDivider />
