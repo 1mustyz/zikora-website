@@ -139,15 +139,17 @@ const ContactMain = () => {
                 <CustomTile>
                   <MdPhoneEnabled />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>+2349120363787</p>
-                    <p className='text-[16px] sm:text-[14px]'>+2349120363788</p>
+                    <p className='text-[16px] sm:text-[14px]'> <a href="tel:+2349120363787">+2349120363787</a> </p>
+                    <p className='text-[16px] sm:text-[14px]'> <a href="tel:+2349120363788">+2349120363788</a></p>
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <FaEnvelope />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>info@zikoramfb.com</p>
+                    <p className='text-[16px] sm:text-[14px]'>
+                     <a href="mailto:info@zikoramfb.com">info@zikoramfb.com </a>  
+                    </p>
                   </>
                 </CustomTile>
             </Box>
