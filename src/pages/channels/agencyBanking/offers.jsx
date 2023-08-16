@@ -80,7 +80,7 @@ const Offers = () => {
               <PreImageAndText pic={mobileBankingPic1} title="Bank statment"/>
               <VerticalDivider />
 
-              <PreImageAndText pic={mobileBankingPic6} title="Airtim purchase"/>
+              <PreImageAndText pic={mobileBankingPic6} title="Airtime purchase"/>
 
 
           </Box>
@@ -108,7 +108,7 @@ const Offers = () => {
               <PreImageAndText pic={mobileBankingPic7} title="Bill payments"/>
               <VerticalDivider />
               
-              <PreImageAndText pic={mobileBankingPic8} title="Fund transfer"/>
+              <PreImageAndText pic={mobileBankingPic8} title="Funds transfer"/>
               <VerticalDivider />
 
               <PreImageAndText pic={mobileBankingPic9} title="Future features"/>

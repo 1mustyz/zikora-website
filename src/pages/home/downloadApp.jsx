@@ -62,30 +62,31 @@ const DownloadApp = () => {
                     },
                     }}>
                     
-                    <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
+                    <CustomButton color='white' linkTo='#'>
                         <>
-                        <FaGooglePlay/> 
+                        <Box sx={{color: 'blue'}}>
+                            <FaAppStoreIos /> 
+
+                        </Box>
                             <Typography sx={{
-                                paddingLeft: '15px'
-                            }}>Play Store</Typography>
+                                paddingLeft: '15px',
+                                color: '#404040'
+                            }}>App Store</Typography>
                         </>
                     </CustomButton>
-
+                    
                     <Box className='ml-[1rem] sm:ml-[0]' >
 
-                        <CustomButton color='white' linkTo='#'>
+                        <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
                             <>
-                            <Box sx={{color: 'blue'}}>
-                                <FaAppStoreIos /> 
-
-                            </Box>
+                            <FaGooglePlay/> 
                                 <Typography sx={{
-                                    paddingLeft: '15px',
-                                    color: '#404040'
-                                }}>App Store</Typography>
+                                    paddingLeft: '15px'
+                                }}>Play Store</Typography>
                             </>
                         </CustomButton>
                     </Box>
+
 
 
                 </Box>

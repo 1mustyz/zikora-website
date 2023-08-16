@@ -52,7 +52,7 @@ const GreenCard = () => {
             },
               }}>
               <p className='text-[34px] font-[700] sm:text-[24px]'  >
-                Requirments
+                Requirements
               </p>
 
               <p className='text-[16px] sm:text-[14px] mt-[1rem] leading-[2rem]'>

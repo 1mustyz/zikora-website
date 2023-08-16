@@ -44,15 +44,6 @@ const HomeMain = () => {
                 </Box>
                 <Box className='mt-10 sm:mt-[1.2rem] leading-1 text-xl sm:text-[14px] opacity-75'>Zikora is a people-first, digital-led bank, serving communities in Nigeria by providing access to reliable banking services</Box>
                 <div className='mt-10 sm:mt-[1.2rem] sm:w-full flex sm:justify-center gap-[1rem]' >
-                    <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
-                        <>
-                        <FaGooglePlay/> 
-                            <Typography sx={{
-                                paddingLeft: '15px'
-                            }}>Play Store</Typography>
-                        </>
-                    </CustomButton>
-
                     <CustomButton color='white' linkTo='https://apps.apple.com/us/app/zikora/id6444196255'>
                         <>
                         <Box sx={{color: 'blue'}}>
@@ -65,6 +56,15 @@ const HomeMain = () => {
                             }}>App Store</Typography>
                         </>
                     </CustomButton>
+                    <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
+                        <>
+                        <FaGooglePlay/> 
+                            <Typography sx={{
+                                paddingLeft: '15px'
+                            }}>Play Store</Typography>
+                        </>
+                    </CustomButton>
+
                     
                 </div>
             </div>

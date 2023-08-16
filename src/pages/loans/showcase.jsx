@@ -44,7 +44,7 @@ const buttonMobileView = {
                  }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
           </>
           <>
-            <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Asset Acquisation Financing</p>
+            <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Asset Acquisition Financing</p>
               <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[2rem]'>
               Zikora will provide financial credit to worthy users and businesses looking to purchase tangible assets for personal and/or operational use.
               </p>

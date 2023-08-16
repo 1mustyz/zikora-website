@@ -72,7 +72,7 @@ const Main = () => {
                 </p>
 
                 <p className='text-[16px] text-[#5E5E5E] sm:text-[14px] mt-[0.8rem]'>                                                                                                                                                                         
-                  *614*617# Banking made easy. No internet required! 
+                  *614*677# Banking made easy. No internet required! 
                 </p>
                
               </Box>
