@@ -220,7 +220,7 @@ const ContactMain = () => {
                 color: 'white',
                 marginTop: '3rem',
                 width: '90%',
-                marginBottom: '5rem'
+                marginBottom: '5rem'//
              }
 
             }}>
