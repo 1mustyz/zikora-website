@@ -131,23 +131,24 @@ const ContactMain = () => {
                 <CustomTile>
                   <MdLocationPin />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>Zikora House Abatete,</p>
-                    <p className='text-[16px] sm:text-[14px]'>Anambra, Nigeria</p>
+                    <p className='text-[14px] sm:text-[12px]'>Zikora House, Abatete-Oraukwu Road,</p>
+                    <p className='text-[14px] sm:text-[12px]'>Abatete, Ekeagu Roundabout,</p>
+                    <p className='text-[14px] sm:text-[12px]'>Anambra State, Nigeria</p>    
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <MdPhoneEnabled />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'> <a href="tel:+2349120363787">+2349120363787</a> </p>
-                    <p className='text-[16px] sm:text-[14px]'> <a href="tel:+2349120363788">+2349120363788</a></p>
+                    <p className='text-[14px] sm:text-[12px]'> <a href="tel:+2349120363787">+2349120363787</a> </p>
+                    <p className='text-[14px] sm:text-[12px]'> <a href="tel:+2349120363788">+2349120363788</a></p>
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <FaEnvelope />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>
+                    <p className='text-[14px] sm:text-[12px]'>
                      <a href="mailto:info@zikoramfb.com">info@zikoramfb.com </a>  
                     </p>
                   </>
@@ -212,7 +213,7 @@ const ContactMain = () => {
               '@media (max-width: 639px)': {
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '2.2rem',
+                padding: '0.5rem',
                 gap: '2rem',
                 borderRadius: '0.3rem',
                 backgroundColor: '#404040',
@@ -227,23 +228,26 @@ const ContactMain = () => {
                 <CustomTile>
                   <MdLocationPin />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>Zikora House Abatete,</p>
-                    <p className='text-[16px] sm:text-[14px]'>Anambra, Nigeria</p>
+                    <p className='text-[14px] sm:text-[12px]'>Zikora House, Abatete-Oraukwu Road,</p>
+                    <p className='text-[14px] sm:text-[12px]'>Abatete, Ekeagu Roundabout,</p>
+                    <p className='text-[14px] sm:text-[12px]'>Anambra State, Nigeria</p>  
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <MdPhoneEnabled />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>+2349120363787</p>
-                    <p className='text-[16px] sm:text-[14px]'>+2349120363788</p>
+                  <p className='text-[14px] sm:text-[12px]'> <a href="tel:+2349120363787">+2349120363787</a> </p>
+                    <p className='text-[14px] sm:text-[12px]'> <a href="tel:+2349120363788">+2349120363788</a></p>
                   </>
                 </CustomTile>
 
                 <CustomTile>
                   <FaEnvelope />
                   <>
-                    <p className='text-[16px] sm:text-[14px]'>info@zikoramfb.com</p>
+                    <p className='text-[14px] sm:text-[12px]'>
+                     <a href="mailto:info@zikoramfb.com">info@zikoramfb.com </a>  
+                    </p>
                   </>
                 </CustomTile>
             </Box>

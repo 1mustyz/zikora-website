@@ -68,7 +68,7 @@ const Directors = () => {
     <PreImageAndText pic={aboutPicAvatar} title="Sir. Ike Onyechi" post="Director"/>
     <VerticalDivider />
 
-    <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
+    <PreImageAndText pic={aboutPicAvatar} title="Oliver Obi" post="Director"/>
     <VerticalDivider />
     </Box>,
 
