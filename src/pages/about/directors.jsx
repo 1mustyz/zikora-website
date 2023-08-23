@@ -10,6 +10,9 @@ import aboutPicBg from '../../images/about-image3.png'
 import chiomaPic from '../../board-images/chioma.png'
 import mathewEzePic from '../../board-images/matthew-eze.png'
 import aboutPicAvatar from '../../board-images/avatar.webp'
+import oliverObiPic from '../../board-images/Oliver_Obi-cr.png'
+import ikeOyenchPic from '../../board-images/Sir._Ike_Onyechi-cr.png'
+import chidoziePic from '../../board-images/Chidozie_Agbapu-cr.png'
 import Divider from '../../components/divider'
 import Carousel from './carousel';
 
@@ -61,14 +64,14 @@ const Directors = () => {
   }
   }}>
     <VerticalDivider />
-    <PreImageAndText pic={aboutPicAvatar} title="Chidozie Agbapu" post="Director"/>
+    <PreImageAndText pic={chidoziePic} title="Chidozie Agbapu" post="Director"/>
     <VerticalDivider />
 
 
-    <PreImageAndText pic={aboutPicAvatar} title="Sir. Ike Onyechi" post="Director"/>
+    <PreImageAndText pic={ikeOyenchPic} title="Sir. Ike Onyechi" post="Director"/>
     <VerticalDivider />
 
-    <PreImageAndText pic={aboutPicAvatar} title="Oliver Obi" post="Director"/>
+    <PreImageAndText pic={oliverObiPic} title="Oliver Obi" post="Director"/>
     <VerticalDivider />
     </Box>,
 
@@ -204,13 +207,13 @@ const Directors = () => {
             <PreImageAndText pic={aboutPic2} title="Bernadine Okeke" post="Director"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPicAvatar} title="Chidozie Agbapu" post="Director"/>
+            <PreImageAndText pic={chidoziePic} title="Chidozie Agbapu" post="Director"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPicAvatar} title="Sir. Ike Onyechi" post="Director"/>
+            <PreImageAndText pic={ikeOyenchPic} title="Sir. Ike Onyechi" post="Director"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPicAvatar} title="Charles Ezekwe" post="Director"/>
+            <PreImageAndText pic={oliverObiPic} title="Oliver Obi" post="Director"/>
             <VerticalDivider />
 {/* <h1>kdkdk</h1> */}
 
