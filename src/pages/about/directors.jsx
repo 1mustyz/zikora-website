@@ -13,13 +13,17 @@ import aboutPicAvatar from '../../board-images/avatar.webp'
 import oliverObiPic from '../../board-images/Oliver_Obi-cr.png'
 import ikeOyenchPic from '../../board-images/Sir._Ike_Onyechi-cr.png'
 import chidoziePic from '../../board-images/Chidozie_Agbapu-cr.png'
+import emmanuelIkoghoPic from '../../board-images/Emmanuel_Ikogho_pic.png'
+import josemariaPic from '../../board-images/Josemaria_Ebisi_pic.png'
+import chigozieIjaraPic from '../../board-images/Chigozie_Ijara_pic.png'
 import Divider from '../../components/divider'
 import Carousel from './carousel';
 
 
 const Directors = () => {
   const images1 = [
-    <Box sx={{
+    <Box 
+    sx={{
       width: '100%',
       display: 'flex',
       flexDirection: 'row',
@@ -121,13 +125,13 @@ const Directors = () => {
     <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
     <VerticalDivider />
 
-    <PreImageAndText pic={mathewEzePic} title="Mathew Eze" post="Head Credit & Marketing"/>
+    <PreImageAndText pic={mathewEzePic} title="Matthew Eze" post="Head, Credit and Marketing"/>
     <VerticalDivider />
 
     {/* <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
     <VerticalDivider /> */}
 
-    <PreImageAndText pic={chiomaPic} title="Chioma Onuoha" post="Head Digital Marketing"/>
+    <PreImageAndText pic={chiomaPic} title="Chioma Onuoha" post="Head, Digital Banking"/>
     <VerticalDivider />
     </Box>,
 
@@ -149,12 +153,15 @@ const Directors = () => {
   }
   }}>
       <VerticalDivider />
-     <PreImageAndText pic={aboutPicAvatar} title="Emmanuel Ikogho" post="Head of Operations"/>
+     <PreImageAndText pic={emmanuelIkoghoPic} title="Emmanuel Ikogho" post="Head, Banking Operations"/>
       <VerticalDivider />
 
       
 
-      <PreImageAndText pic={aboutPicAvatar} title="Josemaria Ebisi" post="Chief Financial Controller"/>
+      <PreImageAndText pic={josemariaPic} title="Josemaria Ebisi" post="Financial Controller"/>
+      <VerticalDivider />
+
+      <PreImageAndText pic={chigozieIjaraPic} title="Chigozie Ijara" post="Head, Information Technology"/>
       <VerticalDivider />
     </Box>,
   ]
@@ -226,7 +233,7 @@ const Directors = () => {
         {/* Team members */}
         <Box className='flex flex-col items-center mt-[8rem] sm:mt-[5rem] border-b-1 pb-[6rem] sm:w-[100vw]'>
         <p className='text-[34px] sm:text-[22px] text-[#404040] font-[700]' >
-            Team members
+        Management Team
         </p>
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] sm:w-[80%] sm:text-center sm:mt-[0.7rem]'>
             The Zikora team is to building prosperity for our users
@@ -255,19 +262,19 @@ const Directors = () => {
             <PreImageAndText pic={aboutPic6} title="Peter Eze" post="MD/CEO"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic5} title="Mathew Eze" post="Head Credit & Marketing"/>
+            <PreImageAndText pic={mathewEzePic} title="Matthew Eze" post="Head, Credit and Marketing"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPic4} title="Pius Ugochukwu" post="Chief Information Officer"/>
+            <PreImageAndText pic={emmanuelIkoghoPic} title="Emmanuel Ikogho" post="Head, Banking Operations"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPicAvatar} title="Emmanuel Ikogho" post="Head of Operations"/>
+            <PreImageAndText pic={chiomaPic} title="Chioma Onuoha" post="Head, Digital Banking"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPicAvatar} title="Chioma Onuoha" post="Head Digital Marketing"/>
+            <PreImageAndText pic={josemariaPic} title="Josemaria Ebisi" post="Financial Controller"/>
             <VerticalDivider />
 
-            <PreImageAndText pic={aboutPicAvatar} title="Josemaria Ebisi" post="Chief Financial Controller"/>
+            <PreImageAndText pic={chigozieIjaraPic} title="Chigozie Ijara" post="Head, Information Technology"/>
             <VerticalDivider />
 
 
