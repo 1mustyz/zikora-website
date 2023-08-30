@@ -236,7 +236,7 @@ const Directors = () => {
         Management Team
         </p>
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] sm:w-[80%] sm:text-center sm:mt-[0.7rem]'>
-            The Zikora team is to building prosperity for our users
+        The Zikora team is dedicated to building prosperity for our users
         </p>
 
         {/* board of directors */}
