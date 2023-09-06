@@ -7,6 +7,8 @@ import homeMainBgSmall from '../../small-images/sm:home-main.png'
 import {FaAppStoreIos,FaGooglePlay} from 'react-icons/fa'
 import { Typography } from '@mui/material'
 import ButtonM from '@mui/material/Button'
+import AppStoreImage from '../../images/apple-store.png'
+import GooglePlay from '../../images/google-play.png'
 
 import Box from '@mui/material/Box';
 
@@ -44,27 +46,15 @@ const HomeMain = () => {
                 </Box>
                 <Box className='mt-10 sm:mt-[1.2rem] leading-1 text-xl sm:text-[14px] opacity-75'>Zikora is a people-first, digital-led bank, serving communities in Nigeria by providing access to reliable banking services</Box>
                 <div className='mt-10 sm:mt-[1.2rem] sm:w-full flex sm:justify-center gap-[1rem]' >
-                    <CustomButton color='white' linkTo='https://apps.apple.com/us/app/zikora/id6444196255'>
-                        <>
-                        <Box sx={{color: 'blue'}}>
-                            <FaAppStoreIos /> 
-
-                        </Box>
-                            <Typography sx={{
-                                paddingLeft: '15px',
-                                color: '#404040'
-                            }}>App Store</Typography>
-                        </>
-                    </CustomButton>
-                    <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
-                        <>
-                        <FaGooglePlay/> 
-                            <Typography sx={{
-                                paddingLeft: '15px'
-                            }}>Play Store</Typography>
-                        </>
-                    </CustomButton>
-
+                    <CustomButton 
+                        backgroundImageUrl={AppStoreImage} 
+                        linkTo='https://apps.apple.com/us/app/zikora/id6444196255' 
+                    />
+                    
+                    <CustomButton 
+                        backgroundImageUrl={GooglePlay} 
+                        linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora' 
+                    />
                     
                 </div>
             </div>
@@ -81,7 +71,7 @@ const HomeMain = () => {
 
 export default HomeMain
 
-function CustomButton({children,color,linkTo}) {
+function CustomButton({children,color,linkTo,backgroundImageUrl}) {
     return (
       <ButtonM variant='contained' sx={{
           padding: '1rem 0',
@@ -90,6 +80,10 @@ function CustomButton({children,color,linkTo}) {
           textTransform: 'none',
           fontSize: '20px',
           width: '12rem',
+          height: '3rem',
+          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundSize: 'cover', // You can customize the background properties here
+          backgroundPosition: 'center center',
           backgroundColor: color !== undefined ? 'white':'#404040',
           "&:hover": {
               backgroundColor: '#8c8c8c',

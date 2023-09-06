@@ -4,6 +4,8 @@ import {Box, Typography} from '@mui/material';
 import Button from '@mui/material/Button';
 import downloadAppPic1 from '../../images/download-app-image1.png'
 import {FaGooglePlay,FaAppStoreIos} from 'react-icons/fa'
+import AppStoreImage from '../../images/apple-store.png'
+import GooglePlay from '../../images/google-play.png'
 
 const DownloadApp = () => {
   return (
@@ -61,30 +63,25 @@ const DownloadApp = () => {
                         gap: '1rem',
                     },
                     }}>
-                    
-                    <CustomButton color='white' linkTo='#'>
-                        <>
-                        <Box sx={{color: 'blue'}}>
-                            <FaAppStoreIos /> 
-
-                        </Box>
-                            <Typography sx={{
-                                paddingLeft: '15px',
-                                color: '#404040'
-                            }}>App Store</Typography>
-                        </>
-                    </CustomButton>
+                    <CustomButton 
+                        backgroundImageUrl={AppStoreImage} 
+                        linkTo='https://apps.apple.com/us/app/zikora/id6444196255' 
+                    />
                     
                     <Box className='ml-[1rem] sm:ml-[0]' >
 
-                        <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
+                        <CustomButton 
+                            backgroundImageUrl={GooglePlay} 
+                            linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora' 
+                        />
+                        {/* <CustomButton linkTo='https://play.google.com/store/apps/details?id=com.clive.zikora'>
                             <>
                             <FaGooglePlay/> 
                                 <Typography sx={{
                                     paddingLeft: '15px'
                                 }}>Play Store</Typography>
                             </>
-                        </CustomButton>
+                        </CustomButton> */}
                     </Box>
 
 
@@ -111,28 +108,35 @@ const DownloadApp = () => {
 }
 
 
-function CustomButton({children,color,linkTo}) {
-  return (
-    <Button variant='contained' sx={{
-        padding: '1rem 0',
-        color: 'white',
-        fontWeight: 'bold',
-        textTransform: 'none',
-        fontSize: '20px',
-        width: '12rem',
-        backgroundColor: color !== undefined ? 'white':'#404040',
-        "&:hover": {
-            backgroundColor: '#8c8c8c',
-            
-        },
-        '@media (max-width: 639px)': {
-           width: '85%',
-         },
-    }} onClick={()=>{window.location = linkTo}}>
-        {children}
-    </Button>
-  )
-}
+                    
+                    
+function CustomButton({children,color,linkTo,backgroundImageUrl}) {
+    return (
+      <Button variant='contained' sx={{
+          padding: '1rem 0',
+          color: 'white',
+          fontWeight: 'bold',
+          textTransform: 'none',
+          fontSize: '20px',
+          width: '12rem',
+          height: '3rem',
+          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundSize: 'cover', // You can customize the background properties here
+          backgroundPosition: 'center center',
+          backgroundColor: color !== undefined ? 'white':'#404040',
+          "&:hover": {
+              backgroundColor: '#8c8c8c',
+              
+          },
+          '@media (max-width: 639px)': {
+             width: '85%',
+             height: '4rem'
+           },
+      }} onClick={()=>{window.location = linkTo}}>
+          {children}
+      </Button>
+    )
+  }
 
 
 export default DownloadApp

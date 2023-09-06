@@ -147,7 +147,7 @@ const Footer = () => {
                         
                         }}>
                         <CustomIcon color='#3B5998'> <a target='blanck' href="https://www.facebook.com/zikorabanks"><FiFacebook/></a> </CustomIcon>
-                        <CustomIcon color='#D0358E'> <a target='blanck' href="https://instagram.com/zikora_bank"><BsInstagram/></a></CustomIcon>
+                        <CustomIcon color='#D0358E'> <a target='blanck' href="https://www.instagram.com/zikorabank"><BsInstagram/></a></CustomIcon>
                         <CustomIcon color='#0077B5'> <a target='blanck' href="https://www.linkedin.com/company/zikorabank"><RiLinkedinFill/></a>  </CustomIcon>
                         <CustomIcon color='#55ACEE'> <a target='blanck' href="https://twitter.com/zikorabank"><FiTwitter/></a> </CustomIcon>
                                                 
@@ -223,7 +223,7 @@ const Footer = () => {
                         
                         }}>
                         <CustomIcon color='#3B5998'> <a target='blanck' href="https://www.facebook.com/zikorabanks"><FiFacebook/></a> </CustomIcon>
-                        <CustomIcon color='#D0358E'> <a target='blanck' href="https://instagram.com/zikora_bank"><BsInstagram/></a></CustomIcon>
+                        <CustomIcon color='#D0358E'> <a target='blanck' href="https://www.instagram.com/zikorabank"><BsInstagram/></a></CustomIcon>
                         <CustomIcon color='#0077B5'> <a target='blanck' href="https://www.linkedin.com/company/zikorabank"><RiLinkedinFill/></a>  </CustomIcon>
                         <CustomIcon color='#55ACEE'> <a target='blanck' href="https://twitter.com/zikorabank"><FiTwitter/></a> </CustomIcon>
                                                 
