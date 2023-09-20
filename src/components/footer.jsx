@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Box, Typography, TextField} from '@mui/material';
 import Button from './button';
 import  zikoraImg from '../images/ZikoraLogoGreen 1.png'
@@ -11,12 +11,46 @@ import { NavLink } from "react-router-dom";
 import Divider from './divider'
 import footerBottomImage1 from '../images/footer-bottom-image1.png'
 import footerBottomImage1Mobile from '../small-images/footer-image-mobile.png'
-
-
-
+import { useFormik } from 'formik';
+import { InputField } from './formsField';
+import { sendEmail } from '../NetworkServices/services';
+import {CircularProgress} from '@mui/material';
+import { toast } from 'react-toastify';
 
 
 const Footer = () => {
+    const [isLoading, setIsLoading] = useState(false)
+
+    const formik = useFormik({
+        initialValues: {
+          email: '',
+        },
+        onSubmit: (values) => {
+            const data = {
+                userEmail: values.email,
+                zikoraEmail: 'customer.service@zikoramfb.com',
+                subject: `Subscribe to zikora newsletter`,
+                body: `I will like to subscribe to zikora newsletter, Email: ${values.email}`
+            }
+            setIsLoading(true)
+            sendEmail(data)
+            .then(val => {
+                setIsLoading(false)
+                if(val.status === 200) {
+                toast.success(val.data?.message)
+                }
+                else toast.error(val.data?.message)
+                
+            })
+        },
+        validate: (values) => {
+          const errors = {};
+          if (!values.email){
+            errors.email = 'Email is required';
+          }
+          return errors;
+        }
+      });
   return (
     <Box sx={{
         backgroundImage: `url(${footerBottomImage1})`,
@@ -53,6 +87,8 @@ const Footer = () => {
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
+                gap: '10px',
+                alignItems: 'center',
                 padding: '1rem 1rem',
                 borderRadius: '0.5rem',
                 boxShadow: '3px 20px 30px #dbdbd6',
@@ -67,42 +103,25 @@ const Footer = () => {
                 },
 
             }}>
-                <Box sx={{
-                     width: '70%',
-                     '@media (max-width: 639px)': {
-                            width: '100%',
-                            border: '1px solid #dbdbd6',
-                            padding: '0.5rem 1rem',
-                            borderRadius: '0.5rem',
-                        },
+                <div className='sm:border-1 sm:border-[#dbdbd6] w-full sm:rounded-md sm:py-3'>
+                    <InputField 
+                        name={'email'} 
+                        title={'Type Your Email Address'} 
+                        formik={formik} 
+                        className='bg-transparent bg-opacity-50'
+                    />    
 
-                     }}>
+                </div>
 
-                    <TextField  id="standard-basic" label="Type Your Email Address" variant="standard" sx={{
-                        width: '100%',
-                        color: 'black',
-                        borderColor: 'black',
-                       
-                        }} InputProps={{
-                            disableUnderline: true, // <== added this
-                        }}/>
-                </Box>
-                <Button title='Subscribe' style={{
-                    padding: '1rem 2rem',
-                    // borderRadius: '0.2rem',
-                    fontWeight: 'bold',
-                    backgroundColor: '#66A681',
-                    color: 'white',
-                    textTransform: 'none',
-                    boxShahadow: `5px 10px #888888`,
-                    fontSize: '16px',
-                    '@media (max-width: 639px)': {
-                        marginTop: '1rem',
-                        padding: '1rem 7.4rem',
-
-                    },
-                   
-                }}/>
+                <button
+                    disabled ={isLoading} 
+                    className={`rounded-sm text-[white] text-[18px] font-semibold w-[35%] sm:w-[90%] py-4 ${isLoading ? 'bg-slate-300' : 'bg-[#66A681]'} `} onClick={formik.handleSubmit}>
+                    {!isLoading ? "Subscribe"
+                    :
+                    <CircularProgress size={20}/>}
+                </button>
+               
+              
             </Box>
                 {/* row */}
             <Box sx={{

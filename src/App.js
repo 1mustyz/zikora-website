@@ -15,6 +15,7 @@ import IndexPolicy from './pages/privacy/policy'
 import IndexTerms from './pages/privacy/termsOfService'
 import IndexBusinessBanking from './pages/businessBanking';
 import IndexBetaPage from './pages/betaPage';
+import AppToast from './AppToast';
 
 
 import React from 'react'
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div >
+      <AppToast/>
         <Routes>
           <Route path='/' index element={<IndexHome />}/>
           <Route path='contact' element={<IndexContact /> }/>

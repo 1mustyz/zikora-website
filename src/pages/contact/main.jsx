@@ -1,6 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from '../../components/header'
-import Button from '../../components/button'
 import contactMainPic from '../../images/contact-main-image1.png'
 import contactMobileMainPic from '../../small-images/contact-mobile-main-pic.png'
 import contactMainPic2 from '../../images/contact-image2.png'
@@ -13,11 +12,61 @@ import { RxAvatar } from "react-icons/rx";
 import { BsCardText } from "react-icons/bs";
 import DownloadApp from "../home/downloadApp"
 import Footer from "../../components/footer"
+import { useFormik } from 'formik';
+import { toast } from 'react-toastify'
+import {CircularProgress} from '@mui/material'
+import { sendEmail } from '../../NetworkServices/services'
+import { InputField } from '../../components/formsField'
 
 
 
 
 const ContactMain = () => {
+
+  const [isLoading, setIsLoading] = useState(false)
+
+
+  const formik = useFormik({
+    initialValues: {
+      name: '', 
+      email: '',
+      body: ''
+    },
+    onSubmit: (values) => {
+      setIsLoading(true)
+      const data = {
+        userEmail: values.email,
+        zikoraEmail: 'customer.service@zikoramfb.com',
+        subject: `Contact Support`,
+        body: `Name: ${values.name}, Content: ${values.body}`
+      }
+      sendEmail(data)
+      .then(val => {
+        setIsLoading(false)
+        if(val.status === 200) {
+          toast.success(val.data?.message)
+        }
+        else toast.error(val.data?.message)
+        
+      })
+    },
+    validate: (values) => {
+      const errors = {};
+  
+      
+      if (!values.name) {
+        errors.name = 'Name is required';
+      }else if (!values.email){
+        errors.email = 'Email is required';
+      }else if (!values.body) {
+        errors.body = 'Body is required';
+      }
+  
+      return errors;
+    }
+  });
+
+
   return (
     <Box sx={{
         minHeight: '130vh',
@@ -186,26 +235,20 @@ const ContactMain = () => {
           }}>
             How Can We Help?
           </Typography>
-          <CustomTextField title="Full name here..."><RxAvatar /></CustomTextField>
-          <CustomTextField title="Email address..."><FaEnvelope /></CustomTextField>
-          <CustomTextField title="Write here..." multiline={true}><BsCardText /></CustomTextField>
-          <Button title='Submit Message' style={{
-            padding: '10px 150px',
-            borderRadius: '0.2rem',
-            fontWeight: 'bold',
-            backgroundColor: '#66A681',
-            color: 'white',
-            textTransform: 'none',
-            width: '100%',
-            fontSize: '16px',
-            '@media (max-width: 639px)': {
-              width: '100%',
-              borderRadius: '0.2rem',
-              padding: '10px 93px',
 
-            }
-            
-        }}/>
+           
+          <CustomTextField title="Full name here..." formik={formik} name={'name'}><RxAvatar /></CustomTextField>
+          <CustomTextField title="Email address..." formik={formik} name={'email'}><FaEnvelope /></CustomTextField>
+          <CustomTextField title="Write here..." multiline={true} formik={formik} name={'body'}><BsCardText /></CustomTextField>
+
+          <button 
+            disabled ={isLoading}
+            className={`rounded-sm text-[white] text-[18px] font-semibold w-[80%] sm:w-[90%] py-2 ${isLoading ? 'bg-slate-300' : 'bg-[#66A681]'} `} onClick={formik.handleSubmit}>
+            {!isLoading ? 'Submit Message'
+            :
+            <CircularProgress size={22}/>}
+          </button>
+        
           {/* second row */}
           <Box sx={{
             
@@ -320,14 +363,14 @@ const CustomTile = ({color, children}) => {
 }
 
 
-const CustomTextField = ({title,children, multiline}) => {
+const CustomTextField = ({title,children, multiline, name, formik}) => {
   return (
     <Box sx={{
-      border: '1px solid #66A681',
+      border: (formik.touched[name] && formik.errors[name]) ? '1px solid red' : '1px solid #66A681',
       width: '80%',
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-between',
+      gap: '0.5rem',
       padding: '1rem 1rem',
       paddingBottom: '1rem',
       borderRadius: '0.5rem',
@@ -341,13 +384,10 @@ const CustomTextField = ({title,children, multiline}) => {
       <Box className='text-[28px] sm:text[16px] text-[#CCCCCC]'>
         {children}
       </Box>
-      <TextField id="standard-basic" multiline={multiline} rows={6} placeholder={title} variant="standard" sx={{
-          width: '87%',
-          color: 'black',
-          borderColor: 'black',
-          }} InputProps={{
-              disableUnderline: true, // <== added this
-          }}/>
+
+      <InputField multiline={multiline} name={name} formik={formik} title={title}/>     
+
+      
   </Box>
   )
 }

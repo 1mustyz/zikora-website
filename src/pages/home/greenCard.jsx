@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Box} from '@mui/material';
 import Button from '../../components/button';
 import greenCardPic from '../../images/green-card.png'
-
+import FormModal from '../../components/Animation/FormModal';
 
 
 const GreenCard = () => {
@@ -12,6 +12,7 @@ const GreenCard = () => {
       backgroundColor: '#F7F7F7'
     }}
     >
+       
         <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
             Easiest Way to Make Payments
         </p>
