@@ -334,7 +334,7 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
   return (
     <div className='flex sm:flex-col gap-5 sm:gap-1 w-[70%] sm:w-[100%] items-center sm:items-start'>
 
-      <div  className='w-[50%] sm:w-[100%]  flex flex-col'>
+      <div  className='w-[70%] sm:w-[100%]  flex flex-col'>
         <img
           className='h-[400px] sm:h-[300px]'
           src={pic}
