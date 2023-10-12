@@ -334,12 +334,16 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
   return (
     <div className='flex sm:flex-col gap-5 sm:gap-1 w-[70%] sm:w-[100%] items-center sm:items-start'>
 
-      <div  className='w-[70%] sm:w-[100%]  flex flex-col'>
-        <img
-          className='h-[400px] sm:h-[300px]'
-          src={pic}
-          alt="staff picture" 
-        />
+      <div  className='w-[60%] sm:w-[100%]  flex flex-col'>
+
+        <div className='w-full aspect-ratio-16/9 flex justify-center'>
+
+          <img
+            className='h-[400px] sm:h-[300px] inset-0 object-cover'
+            src={pic}
+            alt="staff picture" 
+          />
+        </div>
         <p className='border-1 text-center py-1 text-[22px] sm:text-[18px] border-b-0'>{title}</p>
         <p className='border-1 text-center py-1 text-[14px] sm:text-[12px] text-[#BDBDBD]'>{post}</p>
 
