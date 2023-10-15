@@ -10,7 +10,7 @@ import oliverObiPic from '../../board-images/oliverObi.jpeg'
 import tonyIfeachoPic from '../../board-images/Ifeacho.png'
 import matthewEzePic from '../../board-images/matthew-eze.png'
 import chiomaPic from '../../board-images/chioma.png'
-import emmanuelPic from '../../board-images/Emmanuel.jpg'
+import emmanuelPic from '../../board-images/Emmanuel.png'
 import josemariaPic from '../../board-images/josemariaEbisi.jpeg'
 import ijaraPic from '../../board-images/chigozieIjara.jpeg'
 
@@ -339,9 +339,10 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
         <div className='w-full aspect-ratio-16/9 flex justify-center'>
 
           <img
-            className='h-[400px] sm:h-[300px] inset-0 object-cover'
+            className='h-[400px] sm:h-[300px] border-2 rounded-full w-[400px] sm:w-[300px] inset-0 object-cover'
             src={pic}
             alt="staff picture" 
+            loading="lazy"
           />
         </div>
         <p className='border-1 text-center py-1 text-[22px] sm:text-[18px] border-b-0'>{title}</p>
