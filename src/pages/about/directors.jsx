@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 
 import samplePic from '../../board-images/sample.jpg'
 import olisaPic from '../../board-images/Okeke_low.png'
@@ -13,6 +13,7 @@ import chiomaPic from '../../board-images/chioma.png'
 import emmanuelPic from '../../board-images/Emmanuel.png'
 import josemariaPic from '../../board-images/josemariaEbisi.png'
 import ijaraPic from '../../board-images/chigozieIjara.png'
+import trimText from '../../utils/trimText'
 
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md'
 
@@ -42,11 +43,11 @@ const Directors = () => {
       </StaffTemplate>
 
       <StaffTemplate
-    title={'Bernadine Okeke'}
-    post={'Director'}
-    pic={bernadinePic}
+      title={'Bernadine Okeke'}
+      post={'Director'}
+      pic={bernadinePic}
 
-    >
+      >
       
       <p>
         Mrs. Okeke graduated from Hampton University, Virginia, USA in 1978 with Bachelor degree in Accounting and from Suffolk University, Boston, USA with an MBA degree in 1981. She started her banking career at the Bank of New England, Boston in the USA in 1981.
@@ -80,7 +81,6 @@ const Directors = () => {
         title={'Oliver Obi'}
         post={'Director'}
         pic={oliverObiPic}
-
       >
 
         <p>
@@ -164,11 +164,11 @@ const Directors = () => {
     </StaffTemplate>,
 
     <StaffTemplate
-  title={'Bernadine Okeke'}
-  post={'Director'}
-  pic={bernadinePic}
+    title={'Bernadine Okeke'}
+    post={'Director'}
+    pic={bernadinePic}
 
-  >
+    >
     
     <p>
       Mrs. Okeke graduated from Hampton University, Virginia, USA in 1978 with Bachelor degree in Accounting and from Suffolk University, Boston, USA with an MBA degree in 1981. She started her banking career at the Bank of New England, Boston in the USA in 1981.
@@ -292,7 +292,6 @@ const Directors = () => {
         </p>
       </StaffTemplate>
 
-
       <StaffTemplate
         title={'Chigozie Ijara'}
         post={'Head, Information Technology'}
@@ -320,6 +319,7 @@ const Directors = () => {
       <p>
       Emmanuel Ikogho is a Graduate of Accounting and a member of the Institute of Chartered Accountants of Nigeria (ICAN). He has sixteen years work experience spanning Banking, Telecommunications, and Estate Development sectors.
       </p>
+      <p></p>
       </StaffTemplate>
 
       <StaffTemplate
@@ -350,7 +350,7 @@ const Directors = () => {
         </p>
 
       </StaffTemplate>
-    </GroupImage>
+    </GroupImage>,
 
   ]
 
@@ -408,6 +408,7 @@ const Directors = () => {
       <p>
       Emmanuel Ikogho is a Graduate of Accounting and a member of the Institute of Chartered Accountants of Nigeria (ICAN). He has sixteen years work experience spanning Banking, Telecommunications, and Estate Development sectors.
       </p>
+      <p></p>
       </StaffTemplate>,
 
       <StaffTemplate
@@ -509,6 +510,7 @@ const Directors = () => {
             />
             {managementList[managementIndex]}
           </div>
+
           <div className='hidden sm:flex flex-col sm:flex-col-reverse gap-2'>
             <Carosel 
               handleLeft={()=> {
@@ -555,12 +557,17 @@ const ClickIcon = ({Icon,handleClick=()=>{}}) => {
 
 
 const StaffTemplate = ({pic=samplePic, title, post, children}) => {
+
+  const [readMore, setReadMore] = useState(false)
+  useEffect(()=> {
+    setReadMore(false)
+  },[title])
   return (
     <div className='flex flex-col gap-5 sm:gap-1 w-[33%] sm:w-[100%] '>
 
       <div  className='w-full sm:w-[100%] flex flex-col'>
 
-        <div className='w-full aspect-ratio-16/9 flex'>
+        {!readMore && <div className='w-full aspect-ratio-16/9 flex'>
 
           <img
             className='h-[400px] sm:h-[300px] bg-[#f2f2f2] w-full sm:w-full inset-0 object-cover'
@@ -568,15 +575,41 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
             alt="staff" 
             loading="lazy"
           />
-        </div>
+        </div>}
         <p className='py-1 text-[22px] sm:text-[18px]'>{title}</p>
         <p className='py-1 text-[14px] sm:text-[12px] text-[#292D32]'>{post}</p>
 
       </div>
 
-      <div className='w-full sm:border-1 sm:border-t-0 text-justify sm:px-2 flex flex-col sm:text-[14px] gap-4 text-[#565555]'>
-        {children}
-      </div>
+      {children && <div className='w-full sm:border-1 sm:border-t-0 text-justify sm:px-2 flex flex-col sm:text-[14px] gap-4 text-[#565555]'>
+        {children?.map((x, index) => (
+          <div>
+            <p className={`${index === 0 ? '': 'hidden'}`}>
+              {!readMore ? trimText(x?.props?.children, 200, 200) : x} 
+
+              {!readMore && <span 
+                onClick={()=> setReadMore(true)}
+                className='cursor-pointer text-green-500'
+              > Read more...
+              </span>}
+            </p>
+
+            {readMore && <p className={`${index !== 0 ? '': 'hidden'}`}>
+              {x}
+               {(index === children.length - 1) && 
+               <p
+                onClick={() => setReadMore(false)}
+                className='cursor-pointer text-green-500 mt-4'
+                >
+                  View few
+                </p>}
+            </p>}
+
+          </div>
+
+          
+        ))}
+      </div>}
     </div>
   )
 }
