@@ -570,14 +570,14 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
         {!readMore && <div className='w-full aspect-ratio-16/9 flex'>
 
           <img
-            className='h-[400px] sm:h-[300px] bg-[#f2f2f2] w-full sm:w-full inset-0 object-cover'
+            className='h-[400px] sm:h-[300px] rounded-full bg-[#f2f2f2] w-full sm:w-full inset-0 object-cover'
             src={pic}
             alt="staff" 
             loading="lazy"
           />
         </div>}
-        <p className='py-1 text-[22px] sm:text-[18px]'>{title}</p>
-        <p className='py-1 text-[14px] sm:text-[12px] text-[#292D32]'>{post}</p>
+        <p className='py-1 text-[22px] sm:text-[18px] text-center'>{title}</p>
+        <p className='py-1 text-[14px] sm:text-[12px] text-center text-[#292D32]'>{post}</p>
 
       </div>
 
