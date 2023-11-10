@@ -563,7 +563,7 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
     setReadMore(false)
   },[title])
   return (
-    <div className='flex flex-col gap-5 sm:gap-1 w-[33%] sm:w-[100%] '>
+    <div className='flex flex-col gap-5 sm:gap-1 w-[400px] sm:w-[100%] '>
 
       <div  className='w-full sm:w-[100%] flex flex-col'>
 
