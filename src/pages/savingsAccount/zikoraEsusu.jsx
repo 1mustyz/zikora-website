@@ -13,6 +13,7 @@ const ZikoraEsusu = () => {
             marginTop: '8rem',
             marginLeft: '5rem',
             marginRight: '5rem',
+            justifyContent: 'space-between',
             '@media (max-width: 639px)': {
               flexDirection: 'column',
               margin: '3rem 2rem 0 2rem',
@@ -22,7 +23,7 @@ const ZikoraEsusu = () => {
         }}>
             {/* left */}
             <Box >
-            <Box className='w-[75%] sm:w-[100%]'>
+            <Box className='w-[100%] sm:w-[100%]'>
                 <img src={loanPic1} alt="acquire loan" />
             </Box>
             </Box>

@@ -13,6 +13,7 @@ const ZikoraSalary = () => {
             marginTop: '8rem',
             marginLeft: '5rem',
             marginRight: '5rem',
+            justifyContent: 'space-between',
             '@media (max-width: 639px)': {
               flexDirection: 'column',
               margin: '3rem 2rem 0 2rem',
@@ -22,9 +23,9 @@ const ZikoraSalary = () => {
         }}>
             {/* left */}
             <Box >
-            <Box className='w-[75%] sm:w-[100%]'>
-                <img src={loanPic1} alt="acquire loan" />
-            </Box>
+              <Box className='w-[100%] sm:w-[100%]'>
+                  <img src={loanPic1} alt="acquire loan" />
+              </Box>
             </Box>
             {/* right */}
             <Box sx={{

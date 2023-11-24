@@ -571,13 +571,13 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
 
       <div  className='w-full sm:w-[100%] flex flex-col'>
 
-        <div style={{
+        {!readMore && <div style={{
           backgroundImage: `url(${pic})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
           }} className='w-full h-[400px] sm:h-[300px] rounded-full bg-[#f2f2f2] sm:w-full items-center justify-center flex'>
         
-        </div>
+        </div>}
         <p className='py-1 text-[22px] sm:text-[18px] text-center'>{title}</p>
         <p className='py-1 text-[14px] sm:text-[12px] text-center text-[#292D32]'>{post}</p>
 
@@ -596,11 +596,7 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
       {children && <div className='w-full sm:border-1 sm:border-t-0 text-justify sm:px-2 flex flex-col sm:text-[14px] gap-4 text-[#565555]'>
         {children?.map((x, index) => (
           <div>
-            <p className={`${index === 0 ? '': 'hidden'}`}>
-              {!readMore ? trimText(x?.props?.children, 200, 200) : x} 
-            </p>
-
-            {readMore && <p className={`${index !== 0 ? '': 'hidden'}`}>
+            {readMore && <p className={''}>
               {x}
                {(index === children.length - 1) && 
                <p
