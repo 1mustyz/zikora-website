@@ -16,6 +16,9 @@ import ijaraPic from '../../board-images/chigozieIjara.png'
 import trimText from '../../utils/trimText'
 
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md'
+import { useTransition, animated } from '@react-spring/web'
+
+
 
 
 
@@ -562,22 +565,31 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
   useEffect(()=> {
     setReadMore(false)
   },[title])
+
   return (
     <div className='flex flex-col gap-5 sm:gap-1 w-[400px] sm:w-[100%] '>
 
       <div  className='w-full sm:w-[100%] flex flex-col'>
 
-        {!readMore && <div className='w-full aspect-ratio-16/9 flex'>
-
-          <img
-            className='h-[400px] sm:h-[300px] rounded-full bg-[#f2f2f2] w-full sm:w-full inset-0 object-cover'
-            src={pic}
-            alt="staff" 
-            loading="lazy"
-          />
-        </div>}
+        <div style={{
+          backgroundImage: `url(${pic})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+          }} className='w-full h-[400px] sm:h-[300px] rounded-full bg-[#f2f2f2] sm:w-full items-center justify-center flex'>
+        
+        </div>
         <p className='py-1 text-[22px] sm:text-[18px] text-center'>{title}</p>
         <p className='py-1 text-[14px] sm:text-[12px] text-center text-[#292D32]'>{post}</p>
+
+        {!readMore ? <p 
+                onClick={()=> setReadMore(true)}
+                className='cursor-pointer text-green-500 text-center'
+              > 
+              Read more...
+        </p>
+        :
+        <p className='h-6'></p>
+        }
 
       </div>
 
@@ -586,12 +598,6 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
           <div>
             <p className={`${index === 0 ? '': 'hidden'}`}>
               {!readMore ? trimText(x?.props?.children, 200, 200) : x} 
-
-              {!readMore && <span 
-                onClick={()=> setReadMore(true)}
-                className='cursor-pointer text-green-500'
-              > Read more...
-              </span>}
             </p>
 
             {readMore && <p className={`${index !== 0 ? '': 'hidden'}`}>

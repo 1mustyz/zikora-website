@@ -153,7 +153,7 @@ const Channels = () => {
                         paddingLeft: '2.5rem',
                         paddingTop: '3rem',
                         backgroundImage: `url(${channelsPic3})`,
-                        backgroundSize: '8rem 8rem',
+                        backgroundSize: '5rem 8rem',
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         backgroundPositionY: 'bottom',
