@@ -291,7 +291,7 @@ const Directors = () => {
           Matthew Eze is a Graduate of Accounting and a member of the Chartered Institute of Bankers of Nigeria (CIBN). He has over fourteen cognate years of experience in Banking. He worked with Forward Microfinance Bank Limited for 6 years and rose to the level of Acting Head, Credit and Marketing. He joined Accion Microfinance Bank Limited in 2016 and worked in Internal Control as Branch Controller for 2 years and moved to Commercial Department as a Supervisor and later became the Branch Manager. 
         </p>
         <p>
-          He had many recognitions and Awards from Accion Microfinance Bank Limited and was exceptional promoted by the Management Team for being the Best Manager in the year 2020.
+          He had many recognitions and Awards from Accion Microfinance Bank Limited and was exceptionally promoted by the Management Team for being the Best Manager in the year 2020.
         </p>
       </StaffTemplate>
 
