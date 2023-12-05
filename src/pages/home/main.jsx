@@ -1,14 +1,11 @@
 import React from 'react'
 import Header from '../../components/header'
-import Button from '../../components/button'
 import homeMainBg from '../../images/home-main-bg.png'
 import homeMainFrame from '../../images/homepage 1.png'
 import homeMainBgSmall from '../../small-images/sm:home-main.png'
-import {FaAppStoreIos,FaGooglePlay} from 'react-icons/fa'
-import { Typography } from '@mui/material'
-import ButtonM from '@mui/material/Button'
 import AppStoreImage from '../../images/apple-store.png'
 import GooglePlay from '../../images/google-play.png'
+import CustomButton from '../../components/CustomButton'
 
 import Box from '@mui/material/Box';
 
@@ -71,29 +68,3 @@ const HomeMain = () => {
 
 export default HomeMain
 
-function CustomButton({children,color,linkTo,backgroundImageUrl}) {
-    return (
-      <ButtonM variant='contained' sx={{
-          padding: '1rem 0',
-          color: 'white',
-          fontWeight: 'bold',
-          textTransform: 'none',
-          fontSize: '20px',
-          width: '12rem',
-          height: '3rem',
-          backgroundImage: `url(${backgroundImageUrl})`,
-          backgroundSize: 'cover', // You can customize the background properties here
-          backgroundPosition: 'center center',
-          backgroundColor: color !== undefined ? 'white':'#404040',
-          "&:hover": {
-              backgroundColor: '#8c8c8c',
-              
-          },
-          '@media (max-width: 639px)': {
-             width: '85%',
-           },
-      }} onClick={()=>{window.location = linkTo}}>
-          {children}
-      </ButtonM>
-    )
-  }

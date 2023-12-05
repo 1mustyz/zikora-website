@@ -1,7 +1,5 @@
 import React from 'react'
 import {Box, Typography, Button} from '@mui/material';
-// import Button from '../../components/button';
-import loanPic2 from '../../images/loan-page-image2.png'
 import loanPic3 from '../../images/loan-page-image3.png'
 import loanPic4 from '../../images/loan-page-image4.png'
 import loanPic5 from '../../images/loan-page-image5.png'
@@ -36,12 +34,11 @@ const buttonMobileView = {
                  textTransform: 'none',
                  width: '30%',
                  color: '#66A681',
-                 gap: '1rem',
                  fontSize: '16px',
                  '@media (max-width: 639px)': {
                   ...buttonMobileView
                }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply</Typography> <MdArrowForwardIos/> </Button>
           </>
           <>
             <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Asset Acquisition Financing</p>
@@ -52,12 +49,11 @@ const buttonMobileView = {
                  textTransform: 'none',
                  width: '30%',
                  color: '#66A681',
-                 gap: '1rem',
                  fontSize: '16px',
                  '@media (max-width: 639px)': {
                   ...buttonMobileView
                }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply</Typography> <MdArrowForwardIos/> </Button>
           </>
         </CustomPlate>
 
@@ -66,21 +62,20 @@ const buttonMobileView = {
           <>
             <p className='text-[22px] sm:text-[18px] text-[white] font-[500]'>Bridge Loan Finance</p>
               <p className='text-[16px] sm:text-[14px] text-[white] leading-[2rem]'>
-              We provide short time financing options to our credit worthy users to satisfy their urgent cash liquidity needs.
+              We provide short term financing options to our credit worthy users to satisfy their urgent cash liquidity needs.
               </p>
               <Button sx={{
                  textTransform: 'none',
                  width: '30%',
                  color: '#66A681',
-                 gap: '1rem',
                  fontSize: '16px',
                  '@media (max-width: 639px)': {
                   ...buttonMobileView
                }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply</Typography> <MdArrowForwardIos/> </Button>
           </>
           <>
-            <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Staff Loan</p>
+            <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Salary Loan</p>
               <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[2rem]' >
               At Zikora, we understand the realities. Quite often, users might need funds prior to payday so we have created a package to get our users to payday hassle free.
               </p>
@@ -88,12 +83,11 @@ const buttonMobileView = {
                  textTransform: 'none',
                  width: '30%',
                  color: '#66A681',
-                 gap: '1rem',
                  fontSize: '16px',
                  '@media (max-width: 639px)': {
                   ...buttonMobileView
                }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply</Typography> <MdArrowForwardIos/> </Button>
           </>
         </CustomPlate>
         
@@ -108,12 +102,11 @@ const buttonMobileView = {
                  textTransform: 'none',
                  width: '30%',
                  color: '#66A681',
-                 gap: '1rem',
                  fontSize: '16px',
                  '@media (max-width: 639px)': {
                   ...buttonMobileView
                }
-                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply Loan</Typography> <MdArrowForwardIos/> </Button>
+                 }}> <Typography sx={{fontWeight: 'bold'}}>Apply</Typography> <MdArrowForwardIos/> </Button>
           </>
           <>
             {/* <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Zikora Overdraft</p>
@@ -124,7 +117,6 @@ const buttonMobileView = {
                  textTransform: 'none',
                  width: '30%',
                  color: '#66A681',
-                 gap: '1rem',
                  fontSize: '16px',
                  '@media (max-width: 639px)': {
                   ...buttonMobileView

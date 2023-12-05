@@ -456,7 +456,7 @@ const Directors = () => {
 
 
 
-          <div className='sm:hidden flex flex-col gap-2'>
+          <div className='sm:hidden flex flex-col gap-2 w-full'>
             <Carosel 
               handleLeft={()=> {
                 if(directorIndex > 0) setDirectorIndex(directorIndex - 1)
@@ -472,7 +472,7 @@ const Directors = () => {
             {directorsList[directorIndex]}
           </div>
 
-          <div className='hidden sm:flex flex-col sm:flex-col-reverse gap-2'>
+          <div className='hidden w-[100%] sm:flex flex-col sm:flex-col-reverse gap-2'>
             <Carosel 
               handleLeft={()=> {
                 if(directorIndex > 0) setDirectorIndex(directorIndex - 1)
@@ -514,7 +514,7 @@ const Directors = () => {
             {managementList[managementIndex]}
           </div>
 
-          <div className='hidden sm:flex flex-col sm:flex-col-reverse gap-2'>
+          <div className='hidden w-[100%] sm:flex flex-col sm:flex-col-reverse gap-2'>
             <Carosel 
               handleLeft={()=> {
                 if(managementIndex > 0) setManagementIndex(managementIndex - 1)
@@ -567,9 +567,9 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
   },[title])
 
   return (
-    <div className='flex flex-col gap-5 sm:gap-1 w-[400px] sm:w-[100%] '>
+    <div className='flex flex-col sm:items-center gap-5 sm:gap-1 w-[400px] sm:w-full '>
 
-      <div  className='w-full sm:w-[100%] flex flex-col'>
+      <div  className='w-full sm:w-[85%] flex flex-col'>
 
         {!readMore && <div style={{
           backgroundImage: `url(${pic})`,
@@ -618,7 +618,7 @@ const StaffTemplate = ({pic=samplePic, title, post, children}) => {
 
 const GroupImage = ({children}) => {
   return (
-    <div className='w-full flex gap-5 justify-center'>
+    <div className='w-[100%] flex gap-5 justify-center'>
       {children}
     </div>
   )
@@ -628,8 +628,8 @@ const GroupImage = ({children}) => {
 const Carosel = ({handleLeft, handleRight, data, setIndex, index}) => {
 
   return (
-    <div className='mt-12 flex flex-col gap-2 self-end sm:self-center items-center'>
-    <div className='flex gap-5 '>
+    <div className='mt-12 flex flex-col gap-2 self-end  sm:self-center items-center'>
+    <div className='flex gap-5'>
 
       <ClickIcon 
         handleClick={handleLeft}
