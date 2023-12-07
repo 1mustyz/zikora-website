@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Typography,} from '@mui/material';
 import loanPic1 from '../../images/savings 1.png'
 import greenCardPic from '../../images/savings 2.png'
+import GreenCard from '../../components/GreenCard';
 
 
 const ZikoraSave = () => {
@@ -78,82 +79,15 @@ const ZikoraSave = () => {
                     
             </Box>
         </Box>
-        <GreenCard />
+        <GreenCard greenCardPic={greenCardPic}>
+          <li>Signed copy of Zikora account opening form</li>
+          <li>Valid identification (Passport, Driving license etc)</li>
+          <li>One passport photograph</li>
+          <li>3 Months utility bill with current address</li>
+        </GreenCard>
     </Box>
   )
 }
 
-const GreenCard = () => {
-    return (
-      <Box className='h-full width-full pt-20 sm:pt-[3rem] flex flex-col items-center'
-      sx={{
-        backgroundColor: '#F7F7F7'
-      }}
-      >
-           <p className='text-[16px] sm:text-[14px] text-[#5E5E5E]'>
-              How To
-          </p>
-          <p className='text-[28px] sm:text-[22px] text-[#404040] font-[700]'>
-              Get Started
-          </p>
-  
-          {/* green card */}
-          <Box sx={{
-            width: '85%',
-            height: '50%',
-            marginTop: '2rem',
-            display: 'flex',
-            flexDirection: 'row',
-            '@media (max-width: 639px)': {
-              flexDirection: 'column'
-          },
-          }}>
-            {/* left */}
-              <Box sx={{
-                width: '50%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                paddingLeft: '4rem',
-                paddingRight: '6rem',
-                backgroundColor: '#608E75',
-                borderTopLeftRadius: '1.2rem',
-                color: 'white',
-              '@media (max-width: 639px)': {
-                width: '100%',
-                borderTopLeftRadius: '0.8rem',
-                borderTopRightRadius: '0.8rem',
-                padding: '2rem 1.5rem 2rem 1.5rem',
-                
-            },
-                }}>
-                <p className='text-[34px] font-[700] sm:text-[24px]'>
-                    Requirements.
-                </p>
-  
-                <ul style={{listStyleType: 'disc'}} className='mt-[1rem] ml-[1rem] leading-[180%] text-[white] font-[600] sm:font-[500] text-[17px] sm:text-[16px]'>
-                    <li>Signed copy of Zikora account opening form</li>
-                    <li>Valid identification (Passport, Driving license etc)</li>
-                    <li>One passport photograph</li>
-                    <li>3 Months utility bill with current address</li>
-                </ul>
-              </Box>
-              {/* right */}
-              <Box sx={{
-                backgroundColor: '#404040',
-                width: '50%',
-                borderTopRightRadius: '1.2rem',
-                '@media (max-width: 639px)': {
-                  width: '100%',
-                  borderRadius: '0',
-              },
-  
-              }}>
-                      <img src={greenCardPic} alt="green card" />
-              </Box>
-          </Box>
-      </Box>
-    )
-  }
 
 export default ZikoraSave

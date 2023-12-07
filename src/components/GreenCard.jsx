@@ -1,6 +1,6 @@
-import CustomButton from "../../components/CustomButton"
-import AppStoreImage from '../../images/apple-store.png'
-import GooglePlay from '../../images/google-play.png'
+import CustomButton from "./CustomButton"
+import AppStoreImage from '../images/apple-store.png'
+import GooglePlay from '../images/google-play.png'
 
 
 

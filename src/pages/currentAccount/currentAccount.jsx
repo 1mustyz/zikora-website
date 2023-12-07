@@ -2,7 +2,7 @@ import React from 'react'
 import {Box, Typography,} from '@mui/material';
 import loanPic1 from '../../images/Current accounts 1.png'
 import greenCardPic from '../../images/Current accounts 2.png'
-import GreenCard from './GreenCard';
+import GreenCard from '../../components/GreenCard';
 
 
 const CuurentAccount = () => {
