@@ -18,6 +18,9 @@ import { toast } from 'react-toastify';
 const validationSchema = Yup.object({
   userName: Yup.string().required('Full Name is required'),
   email: Yup.string().email('Invalid email address').required('Email is required'),
+  phone: Yup.string().required('Phone number is required'),
+  address: Yup.string().required('Address is required'),
+
 });
 
 const buttonMobileView = {
@@ -35,7 +38,9 @@ const ShowCase = () => {
   const formik = useFormik({
     initialValues: {
       userName: '',
-      email: ''
+      email: '',
+      phone: '',
+      address: ''
     },
 
     validationSchema: validationSchema,
@@ -47,7 +52,10 @@ const ShowCase = () => {
         userEmail: values.email,
         zikoraEmail: 'customer.service@zikoramfb.com',
         subject: `Loan Support`,
-        body: `Name: ${values.userName}, Email: ${values.email}`
+        body: `Name: ${values.userName}, 
+              Email: ${values.email},
+              Phone: ${values.phone},
+              Address: ${values.address}`
       }
       sendEmail(data)
       .then(val => {
@@ -74,7 +82,7 @@ const ShowCase = () => {
   return (
     <div>
       <CustomModal 
-        modalClassName='max-h-[300px]'
+        modalClassName='max-h-[500px]'
         open={openModal} 
         handleClose={()=> !isLoading && handleCloseModal()}
       >
@@ -103,6 +111,28 @@ const ShowCase = () => {
                     name={'email'} 
                     formik={formik} 
                     title={'Enter Email'}
+                    showError
+                  />
+                </div>
+
+                <div className='flex flex-col gap-1 text-[14px]'>
+                  <p className='text-[12px]'>Phone</p>
+                  <InputField 
+                    className='border-1 rounded-sm py-2'
+                    name={'phone'} 
+                    formik={formik} 
+                    title={'Enter Phone Number'}
+                    showError
+                  />
+                </div>
+
+                <div className='flex flex-col gap-1 text-[14px]'>
+                  <p className='text-[12px]'>Address</p>
+                  <InputField 
+                    className='border-1 rounded-sm py-2'
+                    name={'address'} 
+                    formik={formik} 
+                    title={'Enter Address'}
                     showError
                   />
                 </div>
@@ -140,7 +170,7 @@ const ShowCase = () => {
             <>
               <p className='text-[22px] sm:text-[18px] text-[#404040] font-[500]' >Retail Loans</p>
                 <p className='text-[16px] sm:text-[14px] text-[#5E5E5E] leading-[2rem]' >
-                We provide quick loans to our trusted users to ease the pressures that may be facing from their urgent financial needs.
+                We provide quick loans to our trusted users to ease the pressures they may be facing from their urgent financial needs.
                 </p>
                 <Button 
                   onClick={handleOpenModal}

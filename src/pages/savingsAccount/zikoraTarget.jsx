@@ -15,6 +15,7 @@ const ZikoraTarget = () => {
             marginTop: '8rem',
             marginLeft: '5rem',
             marginRight: '5rem',
+            gap: '70px',
             '@media (max-width: 639px)': {
               flexDirection: 'column',
               margin: '3rem 2rem 0 2rem',
@@ -23,14 +24,17 @@ const ZikoraTarget = () => {
             },
         }}>
             {/* left */}
-            <Box >
-            <Box className='w-[75%] sm:w-[100%]'>
+            <Box className=''>
 
-                <img src={loanPic1} alt="acquire loan" />
+              <Box className='w-[95%] sm:w-[100%]'>
+
+                  <img src={loanPic1} alt="acquire loan" />
+              </Box>
+
             </Box>
-            </Box>
-            {/* right */}
-            <Box sx={{
+            
+              {/* right */}
+              <Box sx={{
             width: '50%',
             display: 'flex',
             flexDirection: 'column',
@@ -76,7 +80,7 @@ const ZikoraTarget = () => {
             </ul>
 
                     
-            </Box>
+              </Box>
         </Box>
         <GreenCard greenCardPic={greenCardPic}>
             <li>Minimum opening balance of N1,000</li>
