@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const InputField = ({title,multiline, name, formik, className='', showError=false}) => {
+export const InputField = ({title,multiline, rows=6, name, formik, className='', showError=false}) => {
   return (
     <div className='w-full'>
          {!multiline ? 
@@ -21,7 +21,7 @@ export const InputField = ({title,multiline, name, formik, className='', showErr
       
       <textarea 
         className={`pl-2 w-full outline-none ${className}`} 
-        rows={6} 
+        rows={rows} 
         type="text" 
         placeholder={title} 
         name={name}

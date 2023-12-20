@@ -20,6 +20,9 @@ const validationSchema = Yup.object({
   email: Yup.string().email('Invalid email address').required('Email is required'),
   phone: Yup.string().required('Phone number is required'),
   address: Yup.string().required('Address is required'),
+  amount: Yup.string().required('Loan Amount is required'),
+  purpose: Yup.string().required('Loan Purpose is required'),
+
 
 });
 
@@ -40,7 +43,9 @@ const ShowCase = () => {
       userName: '',
       email: '',
       phone: '',
-      address: ''
+      address: '',
+      amount: '',
+      purpose: ''
     },
 
     validationSchema: validationSchema,
@@ -52,10 +57,42 @@ const ShowCase = () => {
         userEmail: values.email,
         zikoraEmail: 'customer.service@zikoramfb.com',
         subject: `Loan Support`,
-        body: `Name: ${values.userName}, 
-              Email: ${values.email},
-              Phone: ${values.phone},
-              Address: ${values.address}`
+        body: `<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>User Information</title>
+        </head>
+        <body>
+          <table>
+            <tr>
+              <td><strong>Name:</strong></td>
+              <td>${values.userName}</td>
+            </tr>
+            <tr>
+              <td><strong>Email:</strong></td>
+              <td>${values.email}</td>
+            </tr>
+            <tr>
+              <td><strong>Phone:</strong></td>
+              <td>${values.phone}</td>
+            </tr>
+            <tr>
+              <td><strong>Address:</strong></td>
+              <td>${values.address}</td>
+            </tr>
+            <tr>
+              <td><strong>Loan Amount:</strong></td>
+              <td>${values.amount}</td>
+            </tr>
+            <tr>
+              <td><strong>Loan Purpose:</strong></td>
+              <td>${values.purpose}</td>
+            </tr>
+          </table>
+        </body>
+        </html>              
+              `
       }
       sendEmail(data)
       .then(val => {
@@ -82,7 +119,8 @@ const ShowCase = () => {
   return (
     <div>
       <CustomModal 
-        modalClassName='max-h-[500px]'
+        modalClassName='overflow-y-auto max-h-[95vh]'
+        parentContainer='!mt-4 sm:!mt-6'
         open={openModal} 
         handleClose={()=> !isLoading && handleCloseModal()}
       >
@@ -134,6 +172,30 @@ const ShowCase = () => {
                     formik={formik} 
                     title={'Enter Address'}
                     showError
+                  />
+                </div>
+
+                <div className='flex flex-col gap-1 text-[14px]'>
+                  <p className='text-[12px]'>Loan Amount</p>
+                  <InputField 
+                    className='border-1 rounded-sm py-2'
+                    name={'amount'} 
+                    formik={formik} 
+                    title={'Enter Amount'}
+                    showError
+                  />
+                </div>
+
+                <div className='flex flex-col gap-1 text-[14px]'>
+                  <p className='text-[12px]'>Loan Purpose</p>
+                  <InputField 
+                    className='border-1 rounded-sm py-2'
+                    name={'purpose'} 
+                    formik={formik} 
+                    title={'Enter Purpose'}
+                    showError
+                    multiline={true}
+                    rows={3}
                   />
                 </div>
 
