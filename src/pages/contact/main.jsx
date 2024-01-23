@@ -19,7 +19,7 @@ import { sendEmail } from "../../NetworkServices/services";
 import { InputField } from "../../components/formsField";
 
 const ContactMain = () => {
-  const [isLoading, setIsLoading] = useState(false); //
+  const [isLoading, setIsLoading] = useState(false);
 
   const formik = useFormik({
     initialValues: {
