@@ -78,7 +78,7 @@ const Footer = () => {
             To get the updates
             </p>
             <p className='font-[700] text-[#404040] text-[28px] sm:text-[24px]'>
-                Subscribe our Newsletter
+                Subscribe to our Newsletter
             </p>
 
             <Box sx={{
